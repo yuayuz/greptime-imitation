@@ -274,7 +274,11 @@ const darkMode = () => {
         </div>
       </div>
     </div>
-    <div class="tw-w-full tw-pt-[4.25rem] lg:tw-hidden" :hidden="!onDrawer">
+    <div
+      style="z-index: -1"
+      class="tw-relative tw-w-full tw-pt-[4.25rem] lg:tw-hidden"
+      :hidden="!onDrawer"
+    >
       <ul>
         <li
           class="tw-group tw-h-[5rem] tw-content-center tw-border-b tw-border-b-gray-500 tw-px-8"

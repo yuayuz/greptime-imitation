@@ -1,0 +1,90 @@
+<script setup lang="ts"></script>
+
+<template>
+  <div style="z-index: -1" class="lg:tw-hidden">
+    <div style="z-index: -1" class="tw-absolute tw--left-36 tw-flex">
+      <v-img src="/public/home-bg0.png" height="576" width="1168"></v-img>
+    </div>
+    <div class="tw-space-y-6 tw-px-4 tw-py-[3.75rem]">
+      <div class="tw-w-full tw-space-y-12">
+        <p class="tw-text-5xl tw-font-bold">
+          Grep All Your Time Series Data Your Way
+        </p>
+        <div class="tw-mb-4 tw-flex tw-space-x-3">
+          <span class="tw-text-4xl">with</span>
+          <span class="tw-text-4xl tw-font-bold">Flexible Deployment</span>
+        </div>
+        <p class="tw-text-xl">
+          The unified time series database for metrics, logs, and events. Gain
+          real-time insights from Edge to Cloud at any scale.
+        </p>
+        <div class="tw-flex tw-space-x-5">
+          <button
+            class="tw-rounded-md tw-bg-zinc-100 tw-px-12 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-transition-shadow hover:tw-opacity-80 hover:tw-shadow-2xl dark:tw-shadow-gray-500"
+          >
+            Start for free
+          </button>
+          <button
+            style="z-index: -1"
+            class="tw-transform tw-rounded-md tw-border tw-border-white tw-px-8 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-shadow-white hover:tw-shadow-2xl hover:tw-shadow-white dark:tw-shadow-white"
+          >
+            Request a Demo
+          </button>
+        </div>
+      </div>
+      <!-- code 组件   -->
+      <div class="tw-w-full">
+        <code-component></code-component>
+      </div>
+    </div>
+  </div>
+
+  <!-- lg 以上 -->
+  <div style="z-index: -1" class="tw-hidden lg:tw-relative lg:tw-block">
+    <div class="tw-absolute tw--left-10 tw-isolation-auto tw-flex">
+      <v-img
+        style="z-index: -1"
+        src="/public/home-bg0.png"
+        height="576"
+        width="1168"
+      ></v-img>
+    </div>
+    <div class="tw-absolute tw-h-[22.25rem] tw-w-full tw-py-[6.25rem]">
+      <div>
+        <div class="tw-mx-[8.5rem] tw-flex">
+          <div class="tw-w-[51rem] tw-space-y-12">
+            <p class="tw-text-5xl tw-font-bold">
+              Grep All Your Time Series Data Your Way
+            </p>
+            <div class="tw-mb-4 tw-flex tw-space-x-3">
+              <span class="tw-text-4xl">with</span>
+              <span class="tw-text-4xl tw-font-bold">Flexible Deployment</span>
+            </div>
+            <p class="tw-text-xl">
+              The unified time series database for metrics, logs, and events.
+              Gain real-time insights from Edge to Cloud at any scale.
+            </p>
+            <div class="tw-flex tw-space-x-5">
+              <button
+                class="tw-rounded-md tw-bg-zinc-100 tw-px-12 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-transition-shadow hover:tw-opacity-80 hover:tw-shadow-2xl dark:tw-shadow-gray-500"
+              >
+                Start for free
+              </button>
+              <button
+                style="z-index: -1"
+                class="tw-transform tw-rounded-md tw-border tw-border-white tw-px-8 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-shadow-white hover:tw-shadow-2xl hover:tw-shadow-white dark:tw-shadow-white"
+              >
+                Request a Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- code 组件-->
+          <code-component />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped></style>

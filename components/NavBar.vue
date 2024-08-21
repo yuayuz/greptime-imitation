@@ -23,9 +23,11 @@ const darkMode = () => {
 <template>
   <div class="tw-w-full">
     <div
-      class="tw-fixed tw-left-0 tw-right-0 tw-top-0 tw-h-[4.25rem] tw-border-b tw-border-b-gray-500 tw-bg-violet-400 tw-px-4 tw-shadow dark:tw-bg-zinc-900"
+      class="tw-fixed tw-left-0 tw-right-0 tw-top-0 tw-h-[4.25rem] tw-w-full tw-border-b tw-border-b-gray-500 tw-bg-violet-400 tw-px-4 tw-shadow dark:tw-bg-zinc-900"
     >
-      <div class="tw-flex tw-h-full tw-items-center tw-justify-around">
+      <div
+        class="tw-mx-auto tw-flex tw-h-full tw-max-w-[86rem] tw-items-center"
+      >
         <v-img src="~/public/logo-text.png" height="42" width="162"></v-img>
         <div
           class="tw-relative tw-flex tw-h-full tw-w-full tw-items-center tw-justify-end lg:tw-hidden"
@@ -42,8 +44,9 @@ const darkMode = () => {
             :icon="onDrawer ? 'mdi-close' : 'mdi-menu'"
           ></v-icon>
         </div>
+        <!--  lg 以上      -->
         <div
-          class="tw-hidden lg:tw-relative lg:tw-flex lg:tw-h-full lg:tw-w-full lg:tw-items-center lg:tw-justify-between"
+          class="tw-hidden lg:tw-relative lg:tw-mx-auto lg:tw-flex lg:tw-h-full lg:tw-w-full lg:tw-items-center lg:tw-justify-between"
         >
           <div>
             <v-menu open-on-hover v-model="onProductOpen">

@@ -2,24 +2,21 @@
 
 <template>
   <div
-    class="bg-clip-padding tw-relative tw-w-full tw-rounded-lg tw-border tw-bg-gray-50 lg:tw-max-w-[30rem] dark:tw-bg-gray-900"
+    class="bg-clip-padding tw-relative tw-w-full tw-rounded-lg tw-border tw-bg-gray-50 lg:tw-max-w-[30rem] dark:tw-bg-stone-900"
   >
     <div
-      class="tw-rounded-t-lg tw-border-b-violet-400 tw-bg-violet-400 tw-px-3 tw-py-4 dark:tw-bg-black"
+      class="tw-rounded-t-lg tw-border-b-violet-400 tw-bg-violet-400 tw-py-4 dark:tw-bg-black"
     >
-      <div class="tw-flex tw-w-full tw-justify-end">
-        <div class="tw-absolute">
-          <v-img
-            width="143"
-            height="22"
-            src="/public/sql-title.png"
-            style="z-index: 0"
-          ></v-img>
+      <div class="tw-absolute tw-flex tw-w-full tw-items-center tw-justify-end">
+        <div>
+          <v-img width="143" height="16" src="/public/sql-title.png"></v-img>
         </div>
       </div>
-      Unified Metrics and Events Analysis in ONE SQL Query
+      <div class="tw-px-3 tw-text-base tw-leading-4">
+        Unified Metrics and Events Analysis in ONE SQL Query
+      </div>
     </div>
-    <div class="tw-my-3.5 tw-px-4 *:tw-text-xs *:tw-leading-3">
+    <div class="tw-my-3.5 tw-px-4 *:tw-text-sm *:tw-leading-5">
       <span>SELECT</span> <br />
       <span> time</span><span>,</span> <br />
       <span>host</span><span>,</span> <br />

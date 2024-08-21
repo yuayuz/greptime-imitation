@@ -41,7 +41,7 @@
 
   <!-- lg 以上 -->
   <div style="z-index: -1" class="tw-hidden lg:tw-relative lg:tw-block">
-    <div class="tw-absolute tw--left-10 tw-isolation-auto tw-flex">
+    <div class="tw-absolute tw--left-44 tw-flex">
       <v-img
         style="z-index: -1"
         src="/public/home-bg0.png"
@@ -49,13 +49,13 @@
         width="1168"
       ></v-img>
     </div>
-    <div class="tw-absolute tw-h-[22.25rem] tw-w-full tw-py-[6.25rem]">
-      <div>
-        <div class="tw-mx-[8.5rem] tw-flex">
+    <div class="tw-absolute tw-flex tw-w-full tw-py-[6.25rem]">
+      <div class="tw-w-max-[82.5rem] tw-mx-auto tw-flex">
+        <div class="tw-flex tw-space-x-14">
           <div class="tw-w-[51rem] tw-space-y-12">
-            <p class="tw-text-5xl tw-font-bold">
+            <div class="tw-text-6xl tw-font-bold tw-tracking-tighter">
               Grep All Your Time Series Data Your Way
-            </p>
+            </div>
             <div class="tw-mb-4 tw-flex tw-space-x-3">
               <span class="tw-text-4xl">with</span>
               <span class="tw-text-4xl tw-font-bold">Flexible Deployment</span>

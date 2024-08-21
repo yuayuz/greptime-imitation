@@ -7,7 +7,9 @@ definePageMeta({
 </script>
 
 <template>
-  <home></home>
+  <div class="lg:tw-w-max-[82.5rem] tw-mx-auto 2xl:tw-w-[82.5rem]">
+    <home></home>
+  </div>
 </template>
 
 <style scoped></style>

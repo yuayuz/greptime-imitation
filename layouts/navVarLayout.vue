@@ -1,9 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const hidden = ref();
+</script>
 
 <template>
-    <nav-bar />
-    <div class="tw-h-full tw-pt-[4.25rem]">
-      <div class="tw-h-full">
+  <nav-bar v-model="hidden" />
+  <div class="tw-h-full tw-pt-[4.25rem]" :hidden="hidden">
+    <div class="tw-h-full">
       <slot />
     </div>
   </div>

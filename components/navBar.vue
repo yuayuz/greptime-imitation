@@ -2,7 +2,7 @@
 const onProductOpen = ref(false);
 const onSolutionOpen = ref(false);
 const onResourcesOpen = ref(false);
-const onDrawer = ref(false);
+const onDrawer = defineModel();
 
 const theme = useTheme();
 const mode = ref("light");

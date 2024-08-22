@@ -10,6 +10,7 @@ definePageMeta({
 <template>
   <div class="tw-mx-auto 2xl:tw-w-[82.5rem]">
     <home></home>
+    <item1></item1>
   </div>
 </template>
 

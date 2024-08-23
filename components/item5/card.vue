@@ -1,0 +1,35 @@
+<script setup lang="ts">
+const props = defineProps(["svg", "title", "list1", "list2"]);
+</script>
+
+<template>
+  <v-card
+    variant="text"
+    class="tw-mx-8 tw-my-6 tw-grid tw-h-[10rem] tw-w-full tw-max-w-[24.5rem]"
+  >
+    <div class="tw-mb-4 tw-flex tw-items-center tw-space-x-3">
+      <component :is="props.svg"></component>
+      <div class="tw-text-xl tw-font-black">{{ props.title }}</div>
+    </div>
+    <div>
+      <ul class="list tw-list-inside">
+        <li class="tw-text-base">
+          {{ props.list1 }}
+        </li>
+        <li class="tw-text-base">
+          {{ props.list2 }}
+        </li>
+      </ul>
+    </div>
+  </v-card>
+</template>
+
+<style scoped>
+.list {
+  list-style-type: disc;
+
+  ::marker {
+    color: #7afbe6;
+  }
+}
+</style>

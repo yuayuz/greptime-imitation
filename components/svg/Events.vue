@@ -1,0 +1,40 @@
+<script setup lang="ts"></script>
+
+<template>
+  <svg
+    class="tw-mx-auto"
+    preserveAspectRatio="xMidYMid meet"
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    fill="currentColor"
+    viewBox="0 0 18 22"
+  >
+    <!--?lit$585805965$-->
+    <g>
+      <g fill="none" fill-rule="evenodd">
+        <path d="M-3-1h24v24H-3z"></path>
+        <g
+          data-follow-stroke="currentColor"
+          stroke="currentColor"
+          stroke-linecap="round"
+        >
+          <path
+            d="M1.5 1.018h10.037a.5.5 0 0 1 .373.166l5.187 5.8a.5.5 0 0 1 .127.333V20.5a.5.5 0 0 1-.5.5H1.5a.5.5 0 0 1-.5-.5V1.518a.5.5 0 0 1 .5-.5Z"
+            stroke-width="1.5"
+          ></path>
+          <path
+            d="m11.956 1.247 5.09 5.694a.5.5 0 0 1-.372.833h-5.09a.5.5 0 0 1-.5-.5V1.58a.5.5 0 0 1 .872-.333Z"
+            stroke-width="1.5"
+          ></path>
+          <path
+            d="M3.879 11.415h8.267M3.879 14.9h4.134"
+            stroke-width="1.6"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>
+
+<style scoped></style>

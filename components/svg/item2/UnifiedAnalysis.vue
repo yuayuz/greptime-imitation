@@ -1,0 +1,39 @@
+<script setup lang="ts"></script>
+
+<template>
+  <svg
+    preserveAspectRatio="xMidYMid meet"
+    xmlns="http://www.w3.org/2000/svg"
+    class="tw-bg-violet-700 dark:tw-bg-opacity-0"
+    width="44"
+    height="44"
+    fill=""
+    viewBox="0 0 41 38"
+  >
+    <!--?lit$0399570365$-->
+    <g>
+      <g fill="none" fill-rule="evenodd">
+        <path d="M-4-6h50v50H-4z"></path>
+        <g transform="translate(2 2)" stroke-linecap="round" stroke-width="2.5">
+          <path
+            d="M21.309 26.125H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h32.554a2 2 0 0 1 2 2v17.55h0M1.783 34.563h32.988"
+            stroke="#FFF"
+          ></path>
+          <path
+            d="M34.008 28.633 37 31.938M4.968 15.626 12.78 8.8a1 1 0 0 1 1.317.001l4.426 3.879a1 1 0 0 0 1.304.012l9.367-7.894h0"
+            stroke="#A376FF"
+          ></path>
+          <ellipse
+            stroke="#A376FF"
+            cx="28.976"
+            cy="22.313"
+            rx="8.024"
+            ry="7.875"
+          ></ellipse>
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>
+
+<style scoped></style>

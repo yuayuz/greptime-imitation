@@ -5,6 +5,7 @@ import Item2 from "~/pages/item2.vue";
 import Item3 from "~/pages/item3.vue";
 import Item4 from "~/pages/item4.vue";
 import Item5 from "~/pages/item5.vue";
+import Item6 from "~/pages/item6.vue";
 
 definePageMeta({
   layout: "nav-var-layout",
@@ -19,6 +20,7 @@ definePageMeta({
     <item3></item3>
     <item4></item4>
     <item5></item5>
+    <item6></item6>
   </div>
 </template>
 

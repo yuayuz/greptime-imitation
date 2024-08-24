@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const onLanguageOpen = ref(false);
+const onLanguageOpenLg = ref(false);
 const { locale, setLocale, t } = useI18n();
 </script>
 
@@ -151,7 +152,7 @@ const { locale, setLocale, t } = useI18n();
         <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
         <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
         <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
-        <v-menu v-model="onLanguageOpen" open-on-hover>
+        <v-menu v-model="onLanguageOpenLg" open-on-hover>
           <template v-slot:activator="{ props }">
             <v-btn v-bind="props" class="tw-mt-5">
               <template v-slot:prepend>

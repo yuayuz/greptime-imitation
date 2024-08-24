@@ -5,13 +5,14 @@ import EnterpriseReady from "~/components/item1/EnterpriseReady.vue";
 import FlexibleDeployment from "~/components/item1/FlexibleDeployment.vue";
 
 const model = ref(0);
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-space-y-6 tw-px-4 tw-py-[3.75rem]">
       <p class="tw-mb-16 tw-text-center tw-text-3xl tw-font-black">
-        Optimized for IoT and Observability
+        {{ t("item1.title") }}
       </p>
       <div class="tw-space-y-6">
         <div
@@ -35,7 +36,7 @@ const model = ref(0);
                   ></v-img>
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  Hybrid Workloads
+                  {{ t("item1.button1") }}
                 </p>
               </div>
             </div>
@@ -64,7 +65,7 @@ const model = ref(0);
                   ></v-img>
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  Unlimited Capacity
+                  {{ t("item1.button2") }}
                 </p>
               </div>
             </div>
@@ -94,7 +95,7 @@ const model = ref(0);
                 </div>
 
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  Enterprise Ready
+                  {{ t("item1.button3") }}
                 </p>
               </div>
             </div>
@@ -123,7 +124,7 @@ const model = ref(0);
                   ></v-img>
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  Flexible Deployment
+                  {{ t("item1.button4") }}
                 </p>
               </div>
             </div>
@@ -136,7 +137,7 @@ const model = ref(0);
 
   <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
     <p class="tw-mb-16 tw-text-center tw-text-3xl tw-font-black">
-      Optimized for IoT and Observability
+      {{ t("item1.title") }}
     </p>
     <div class="tw-flex tw-space-x-16">
       <div class="tw-space-y-4">
@@ -160,7 +161,7 @@ const model = ref(0);
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              Hybrid Workloads
+              {{ t("item1.button1") }}
             </p>
           </div>
         </div>
@@ -185,7 +186,7 @@ const model = ref(0);
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              Unlimited Capacity
+              {{ t("item1.button2") }}
             </p>
           </div>
         </div>
@@ -210,7 +211,7 @@ const model = ref(0);
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              Enterprise Ready
+              {{ t("item1.button3") }}
             </p>
           </div>
         </div>
@@ -235,7 +236,7 @@ const model = ref(0);
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              Flexible Deployment
+              {{ t("item1.button4") }}
             </p>
           </div>
         </div>

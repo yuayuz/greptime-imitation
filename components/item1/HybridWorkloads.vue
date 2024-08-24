@@ -3,6 +3,8 @@ import Metrics from "~/components/svg/Metrics.vue";
 import Events from "~/components/svg/Events.vue";
 import Analytics from "~/components/svg/Analytics.vue";
 import Streaming from "~/components/svg/Streaming.vue";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -17,7 +19,7 @@ import Streaming from "~/components/svg/Streaming.vue";
       >
         <div class="tw-justify-center tw-text-center">
           <Metrics></Metrics>
-          <div>Metrics</div>
+          <div>{{ t("item1.window1.card1") }}</div>
         </div>
       </v-card>
     </div>
@@ -32,7 +34,9 @@ import Streaming from "~/components/svg/Streaming.vue";
       >
         <div class="tw-justify-center tw-text-center">
           <Events></Events>
-          <div>Events</div>
+          <div>
+            {{ t("item1.window1.card2") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -47,7 +51,7 @@ import Streaming from "~/components/svg/Streaming.vue";
       >
         <div class="tw-justify-center tw-text-center">
           <Analytics></Analytics>
-          <div>Analytics</div>
+          <div>{{ t("item1.window1.card3") }}</div>
         </div>
       </v-card>
     </div>
@@ -62,7 +66,7 @@ import Streaming from "~/components/svg/Streaming.vue";
       >
         <div class="tw-justify-center tw-text-center">
           <Streaming></Streaming>
-          <div>Streaming</div>
+          <div>{{ t("item1.window1.card4") }}</div>
         </div>
       </v-card>
     </div>
@@ -70,12 +74,7 @@ import Streaming from "~/components/svg/Streaming.vue";
 
   <div>
     <p data-v-6ec0c23b="">
-      GreptimeDB treats all time series as contextual events with timestamps,
-      and thus
-      <strong>unifies the processing of metrics, logs, and events</strong>. It
-      supports analyzing metrics, logs, and events with
-      <strong>SQL, PromQL</strong>, and streaming with
-      <strong>continuous aggregation</strong>.
+      {{ t("item1.window1.message") }}
     </p>
   </div>
 </template>

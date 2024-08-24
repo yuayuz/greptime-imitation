@@ -4,7 +4,8 @@ import { en as vuetifyEn, zhHans as vuetifyZhHans } from "vuetify/locale";
 
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: "en",
+  locales: ["en", "zhHans"],
+  defaultLocale: "en",
   messages: {
     en: Object.assign({}, vuetifyEn, en),
     zhHans: Object.assign({}, vuetifyZhHans, zhHans),

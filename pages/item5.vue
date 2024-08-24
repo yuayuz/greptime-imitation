@@ -2,37 +2,39 @@
 import EdgeDatabase from "~/components/svg/item5/EdgeDatabase.vue";
 import LowerData from "~/components/svg/item5/LowerData.vue";
 import Cloud from "~/components/svg/item5/Cloud.vue";
+
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-px-4 tw-py-[3.75rem]">
       <p class="tw-text-center tw-text-3xl tw-font-black">
-        Edge-Cloud Integrated Solution
+        {{ t("item5.title") }}
       </p>
       <p class="tw-mb-16 tw-text-center tw-text-lg">
-        Processing High-volume Time Series both At the Edge or On the Cloud
+        {{ t("item5.subheader") }}
       </p>
       <div class="tw-grid tw-w-full tw-grid-cols-2">
         <item5-card
           :svg="EdgeDatabase"
-          :title="'Edge Database'"
-          :list1="'Embedded database for ARM architecture compatible Android/Linux system'"
-          :list2="'Low resource requirements to support edge applications'"
+          :title="t('item5.card1.title')"
+          :list1="t('item5.card1.li1')"
+          :list2="t('item5.card1.li2')"
         ></item5-card>
         <item5-card
           :svg="LowerData"
-          :title="'Lower Data Async Cost'"
-          :list1="'Highly compressed data files directly sync without format transformation'"
-          :list2="'Use object storage for ultra-low storage cost (1/30 of the original)'"
+          :title="t('item5.card2.title')"
+          :list1="t('item5.card2.li1')"
+          :list2="t('item5.card2.li2')"
         ></item5-card>
       </div>
       <div class="tw-grid tw-w-full tw-grid-cols-2">
         <item5-card
           :svg="Cloud"
-          :title="'Cloud-Edge Collaboration'"
-          :list1="'Push down queries to the edge'"
-          :list2="'One control plane for edge and cloud'"
+          :title="t('item5.card3.title')"
+          :list1="t('item5.card3.li1')"
+          :list2="t('item5.card3.li2')"
         ></item5-card>
       </div>
       <div
@@ -40,14 +42,14 @@ import Cloud from "~/components/svg/item5/Cloud.vue";
       >
         <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-10">
           <item5-comment
-            :comment="'After integrating GreptimeDB into our mass-produced vehicles, it has not only significantly reduced our data processing costs, but also established a foundation for streamlined in-vehicle and edge computing, ensuring the security and efficiency of data-driven applications.'"
-            :unit="'Leading Manufacturer of New Energy Vehicles'"
-            :author="'Tao W. | Staff Engineer'"
+            :comment="t('item5.card4.message')"
+            :unit="t('item5.card4.unit')"
+            :author="t('item5.card4.author')"
           ></item5-comment>
           <item5-comment
-            :comment="'GreptimeDB successfully replaced InfluxDB in our IoT project. The entire migration process was smooth and painless. Its cluster version excellently meets our scalability and performance requirements, and the SQL queries are more user-friendly and powerful.'"
-            :unit="'SGCC'"
-            :author="'JianX L. | Staff Engineer'"
+            :comment="t('item5.card5.message')"
+            :unit="t('item5.card5.unit')"
+            :author="t('item5.card5.author')"
           ></item5-comment>
         </div>
       </div>
@@ -56,29 +58,29 @@ import Cloud from "~/components/svg/item5/Cloud.vue";
 
   <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
     <p class="tw-text-center tw-text-3xl tw-font-black">
-      Edge-Cloud Integrated Solution
+      {{ t("item5.title") }}
     </p>
     <p class="tw-mb-16 tw-text-center tw-text-lg">
-      Processing High-volume Time Series both At the Edge or On the Cloud
+      {{ t("item5.header") }}
     </p>
     <div class="tw-grid tw-w-full tw-grid-cols-3">
       <item5-card
         :svg="EdgeDatabase"
-        :title="'Edge Database'"
-        :list1="'Embedded database for ARM architecture compatible Android/Linux system'"
-        :list2="'Low resource requirements to support edge applications'"
+        :title="t('item5.card1.title')"
+        :list1="t('item5.card1.li1')"
+        :list2="t('item5.card1.li2')"
       ></item5-card>
       <item5-card
         :svg="LowerData"
-        :title="'Lower Data Async Cost'"
-        :list1="'Highly compressed data files directly sync without format transformation'"
-        :list2="'Use object storage for ultra-low storage cost (1/30 of the original)'"
+        :title="t('item5.card2.title')"
+        :list1="t('item5.card2.li1')"
+        :list2="t('item5.card2.li2')"
       ></item5-card>
       <item5-card
         :svg="Cloud"
-        :title="'Cloud-Edge Collaboration'"
-        :list1="'Push down queries to the edge'"
-        :list2="'One control plane for edge and cloud'"
+        :title="t('item5.card3.title')"
+        :list1="t('item5.card3.li1')"
+        :list2="t('item5.card3.li2')"
       ></item5-card>
     </div>
     <div
@@ -86,14 +88,14 @@ import Cloud from "~/components/svg/item5/Cloud.vue";
     >
       <div class="tw-mt-5 tw-grid tw-w-full tw-grid-cols-2 tw-gap-10">
         <item5-comment
-          :comment="'After integrating GreptimeDB into our mass-produced vehicles, it has not only significantly reduced our data processing costs, but also established a foundation for streamlined in-vehicle and edge computing, ensuring the security and efficiency of data-driven applications.'"
-          :unit="'Leading Manufacturer of New Energy Vehicles'"
-          :author="'Tao W. | Staff Engineer'"
+          :comment="t('item5.card4.message')"
+          :unit="t('item5.card4.unit')"
+          :author="t('item5.card4.author')"
         ></item5-comment>
         <item5-comment
-          :comment="'GreptimeDB successfully replaced InfluxDB in our IoT project. The entire migration process was smooth and painless. Its cluster version excellently meets our scalability and performance requirements, and the SQL queries are more user-friendly and powerful.'"
-          :unit="'SGCC'"
-          :author="'JianX L. | Staff Engineer'"
+          :comment="t('item5.card5.message')"
+          :unit="t('item5.card5.unit')"
+          :author="t('item5.card5.author')"
         ></item5-comment>
       </div>
     </div>

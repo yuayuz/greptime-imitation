@@ -3,6 +3,8 @@ import AtEdge from "~/components/svg/AtEdge.vue";
 import OnTheCloud from "~/components/svg/OnTheCloud.vue";
 import NetworkResilience from "~/components/svg/NetworkResilience.vue";
 import TrafficCosts from "~/components/svg/TrafficCosts.vue";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -19,7 +21,7 @@ import TrafficCosts from "~/components/svg/TrafficCosts.vue";
           >
             <at-edge></at-edge>
           </div>
-          <div class="tw-font-bold">At Edge</div>
+          <div class="tw-font-bold">{{ t("item1.window4.card1") }}</div>
         </div>
       </v-card>
     </div>
@@ -36,7 +38,7 @@ import TrafficCosts from "~/components/svg/TrafficCosts.vue";
           >
             <on-the-cloud></on-the-cloud>
           </div>
-          <div class="tw-font-bold">On the Cloud</div>
+          <div class="tw-font-bold">{{ t("item1.window4.card2") }}</div>
         </div>
       </v-card>
     </div>
@@ -53,7 +55,7 @@ import TrafficCosts from "~/components/svg/TrafficCosts.vue";
           >
             <network-resilience></network-resilience>
           </div>
-          <div class="tw-font-bold">Network resilience</div>
+          <div class="tw-font-bold">{{ t("item1.window4.card3") }}</div>
         </div>
       </v-card>
     </div>
@@ -71,7 +73,7 @@ import TrafficCosts from "~/components/svg/TrafficCosts.vue";
             <traffic-costs></traffic-costs>
           </div>
           <div class="tw-font-bold">
-            <strong>50%</strong>reduction Traffic costs
+            {{ t("item1.window4.card4") }}
           </div>
         </div>
       </v-card>
@@ -79,13 +81,8 @@ import TrafficCosts from "~/components/svg/TrafficCosts.vue";
   </div>
 
   <div>
-    <p data-v-6ec0c23b="">
-      Written in <strong>Rust</strong>, GreptimeDB can be deployed on
-      <strong>ARM architecture-compatible</strong> Android/Linux systems as well
-      as <strong>cloud</strong> environments. Providing identical APIs and
-      control planes, and running the application
-      <strong>at the edge or on the cloud</strong> without modification.
-      Extremely easy and efficient <strong>data synchronization</strong>.
+    <p>
+      {{ t("item1.window4.message") }}
     </p>
   </div>
 </template>

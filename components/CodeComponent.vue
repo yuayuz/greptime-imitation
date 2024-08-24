@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 
 <template>
   <div
@@ -13,7 +15,7 @@
         </div>
       </div>
       <div class="tw-px-3 tw-text-base tw-leading-4">
-        Unified Metrics and Events Analysis in ONE SQL Query
+        {{ t("home.code") }}
       </div>
     </div>
     <div class="tw-my-3.5 tw-px-4 *:tw-text-sm *:tw-leading-5">

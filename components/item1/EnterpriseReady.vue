@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import EnterpriseReadySVG from "~/components/svg/EnterpriseReadySVG.vue";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -7,32 +9,26 @@ import EnterpriseReadySVG from "~/components/svg/EnterpriseReadySVG.vue";
     <div class="tw-flex tw-h-8 tw-items-center">
       <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
-        Multi-tenancy, enterprise functionalities
+        {{ t("item1.window3.p1") }}
       </div>
     </div>
 
     <div class="tw-flex tw-h-8 tw-items-center">
       <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
-        Professional technical services
+        {{ t("item1.window3.p2") }}
       </div>
     </div>
 
     <div class="tw-flex tw-h-8 tw-items-center">
       <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
-        Fully-managed cloud
+        {{ t("item1.window3.p3") }}
       </div>
     </div>
   </div>
   <p>
-    GreptimeCloud is the
-    <strong>fully-managed Database as a Service (DBaaS)</strong>
-    offering based on GreptimeDB Enterprise, enabling you to start from any size
-    and scale as your business grows.
-    <strong>GreptimeDB Enterprise</strong> implements
-    <strong>multi-tenancy, enterprise-specific functionalities</strong>, and
-    <strong>professional technical services</strong>.
+    {{ t("item1.window3.message") }}
   </p>
 </template>
 

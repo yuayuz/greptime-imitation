@@ -1,1 +1,159 @@
-{}
+{
+  "home": {
+    "title": "Grep All Your Time Series Data Your Way",
+    "message": "The unified time series database for metrics, logs, and events. Gain real-time insights from Edge to Cloud at any scale.",
+    "button1": "Start for free",
+    "button2": "Request a Demo",
+    "code": "Unified Metrics and Events Analysis in ONE SQL Query"
+  },
+  "item1": {
+    "title": "Optimized for IoT and Observability",
+    "button1": "Hybrid Workloads",
+    "button2": "Unlimited Capacity",
+    "button3": "Enterprise Ready",
+    "button4": "Flexible Deployment",
+    "window1": {
+      "message": "GreptimeDB treats all time series as contextual events with timestamps, and thus unifies the processing of metrics, logs, and events. It supports analyzing metrics, logs, and events with SQL, PromQL, and streaming with continuous aggregation.",
+      "card1": "Metrics",
+      "card2": "Events",
+      "card3": "Analytics",
+      "card4": "Streaming"
+    },
+    "window2": {
+      "message": "GreptimeDB significantly reduces the TCO for your time series data stack. It also supports cross-cloud deployment with a built-in unified data access layer over different object storages. By leveraging Object Storage (S3, and others), separating compute and storage will lead to scaling stateless compute nodes arbitrarily.",
+      "card1": "Cost Efficiency with Object Storage",
+      "card2": "Nodes in Single Cluster",
+      "card3": "Deployment Spans Multiple Vendors"
+    },
+    "window3": {
+      "message": "GreptimeCloud is the fully-managed Database as a Service (DBaaS) offering based on GreptimeDB Enterprise, enabling you to start from any size and scale as your business grows. GreptimeDB Enterprise implements multi-tenancy, enterprise-specific functionalities, and professional technical services.",
+      "p1": "Multi-tenancy, enterprise functionalities",
+      "p2": "Professional technical services",
+      "p3": "Fully-managed cloud"
+    },
+    "window4": {
+      "message": "Written in Rust, GreptimeDB can be deployed on ARM architecture-compatible Android/Linux systems as well as cloud environments. Providing identical APIs and control planes, and running the application at the edge or on the cloud without modification. Extremely easy and efficient data synchronization.",
+      "card1": "At Edge",
+      "card2": "On the Cloud",
+      "card3": "Network resilience",
+      "card4": "50% reduction Traffic costs"
+    }
+  },
+  "item2": {
+    "subheader": "Open-source, Cloud-scale, Fast and Efficient Time Series Database",
+    "card1": {
+      "title": "Scaling horizontally",
+      "message": "A transparent experience for both developers and administrators. Seamlessly scale from a standalone binary at the edge to a robust, highly available distributed cluster in the cloud."
+    },
+    "card2": {
+      "title": "Unified Analysis",
+      "message": "Embrace the broad analytics ecosystem to query metrics, logs, events, and traces (planning) together with standard SQL and PromQL."
+    },
+    "card3": {
+      "title": "Cost-effective",
+      "message": "Optimized columnar layout for handling metrics and events; compacted, compressed, and stored on various storage backends, particularly cloud object storage with 50x cost efficiency."
+    },
+    "card4": {
+      "title": "Compatibility",
+      "message": "Widely adopted database protocols and APIs, including SQL, InfluxDB, OpenTelemetry, Prometheus Remote Storage, and more."
+    },
+    "button": "Learn More"
+  },
+  "item3": {
+    "title": "GreptimeDB Enterprise",
+    "subheader": "One-stop Time Series Solution to Your Specific Business Needs",
+    "card1": "Enterprise Ready",
+    "card2": "Advanced Features",
+    "card3": "Professional Technical Services",
+    "card4": "Flexible Deployment Options",
+    "button": "Compared to GreptimeDB OSS"
+  },
+  "item4": {
+    "subheader": "Your IoT & Observerbility Data Stack on the Cloud, Fully Managed",
+    "card1": {
+      "title": "Integrations",
+      "message": "Built-in data ingestion, observing, and analyzing tools, with instant data visualization and altering."
+    },
+    "card2": {
+      "title": "Out-of-the-box Experience",
+      "message": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available."
+    },
+    "card3": {
+      "title": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available.",
+      "message": "You can start from small, and scale seamlessly with the Serverless (pay-as-you-go) or Dedicated Plan."
+    },
+    "card4": {
+      "title": "Bring Your Own Cloud",
+      "message": "Accessible within your cloud environment through the Bring Your Own Cloud (BYOC) deployment option."
+    },
+    "button": "Sign up for free"
+  },
+  "item5": {
+    "title": "Edge-Cloud Integrated Solution",
+    "subheader": "Processing High-volume Time Series both At the Edge or On the Cloud",
+    "card1": {
+      "title": "Edge Database",
+      "li1": "Embedded database for ARM architecture compatible Android/Linux system",
+      "li2": "Low resource requirements to support edge applications"
+    },
+    "card2": {
+      "title": "Lower Data Async Cost",
+      "li1": "Highly compressed data files directly sync without format transformation",
+      "li2": "Use object storage for ultra-low storage cost (1/30 of the original)"
+    },
+    "card3": {
+      "title": "Cloud-Edge Collaboration",
+      "li1": "Push down queries to the edge",
+      "li2": "One control plane for edge and cloud"
+    },
+    "card4": {
+      "message": "After integrating GreptimeDB into our mass-produced vehicles, it has not only significantly reduced our data processing costs, but also established a foundation for streamlined in-vehicle and edge computing, ensuring the security and efficiency of data-driven applications.",
+      "unit": "Leading Manufacturer of New Energy Vehicles",
+      "author": "Tao W. | Staff Engineer"
+    },
+    "card5": {
+      "message": "GreptimeDB successfully replaced InfluxDB in our IoT project. The entire migration process was smooth and painless. Its cluster version excellently meets our scalability and performance requirements, and the SQL queries are more user-friendly and powerful.",
+      "unit": "SGCC",
+      "author": "JianX L. | Staff Engineer"
+    }
+  },
+  "item6": {
+    "list1": {
+      "title": "Products",
+      "li1": "GreptimeDB Enterprise",
+      "li2": "GreptimeCloud",
+      "li3": "GreptimeDB OSS"
+    },
+    "list2": {
+      "title": "Resources",
+      "li1": "Documentation",
+      "li2": "Blog",
+      "li3": "GreptimePlay",
+      "li4": "Download",
+      "li5": "Docker Repository",
+      "li6": "Service Status"
+    },
+    "list3": {
+      "title": "Community",
+      "li1": "Open Source",
+      "li2": "Roadmap",
+      "li3": "Contribute Guide",
+      "li4": "Slack Community"
+    },
+    "list4": {
+      "title": "Company",
+      "li1": "About Greptime",
+      "li2": "Careers",
+      "li3": "Brand",
+      "li4": "Contact",
+      "li5": "Privacy",
+      "li6": "Terms"
+    },
+    "subscribe": {
+      "title": "Subscribe to our newsletter",
+      "message": "Email Address",
+      "button": "subscribe"
+    },
+    "footer": "©Copyright 2024 Greptime Inc. All Rights Reserved"
+  }
+}

@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 
 <template>
   <div class="tw-flex tw-justify-between">
@@ -12,7 +14,9 @@
       >
         <div class="tw-justify-center tw-space-y-1 tw-text-center">
           <div class="tw-text-4xl tw-font-bold">50x</div>
-          <div class="tw-text-sm">Cost Efficiency with Object Storage</div>
+          <div class="tw-text-sm">
+            {{ t("item1.window2.card1") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -27,7 +31,9 @@
       >
         <div class="tw-justify-center tw-space-y-1 tw-text-center">
           <div class="tw-text-4xl tw-font-bold">1000+</div>
-          <div class="tw-text-sm">Nodes in Single Cluster</div>
+          <div class="tw-text-sm">
+            {{ t("item1.window2.card2") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -42,7 +48,7 @@
       >
         <div class="tw-justify-center tw-space-y-1 tw-text-center">
           <div class="tw-text-3xl tw-font-bold">Cross-Cloud</div>
-          <div class="tw-text-xs">Deployment Spans Multiple Vendors</div>
+          <div class="tw-text-xs">{{ t("item1.window2.card3") }}</div>
         </div>
       </v-card>
     </div>
@@ -50,13 +56,7 @@
 
   <div>
     <p>
-      GreptimeDB significantly <strong>reduces the TCO</strong> for your time
-      series data stack. It also supports
-      <strong>cross-cloud deployment</strong> with a built-in unified data
-      access layer over different object storages. By leveraging
-      <strong>Object Storage</strong> (S3, and others), separating compute and
-      storage will lead to <strong>scaling</strong> stateless compute nodes
-      <strong>arbitrarily</strong>.
+      {{ t("item1.window2.message") }}
     </p>
   </div>
 </template>

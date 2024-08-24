@@ -1,1 +1,159 @@
-{}
+{
+  "home": {
+    "title": "随心所欲地分析你的时序数据",
+    "message": "统一处理指标（Metric）、日志（Log）、事件（Event）和追踪（Trace）的时序数据库。从边缘到云端，实时获取数据洞察",
+    "button1": "免费试用",
+    "button2": "预约演示",
+    "code": "只需一个 SQL 查询即可实现统一的时序分析"
+  },
+  "item1": {
+    "title": "专为 IoT 和可观测性场景优化",
+    "button1": "混合应用负载",
+    "button2": "无限数据规模",
+    "button3": "企业生产就绪",
+    "button4": "灵活部署环境",
+    "window1": {
+      "message": "GreptimeDB 将所有时序数据统一抽象成带有时间戳和上下文的事件，从而统一了指标、日志和事件的存储和分析。GreptimeDB 支持使用 SQL 和 PromQL 进行分析，以及通过持续聚合能力来实现流处理。",
+      "card1": "Metrics",
+      "card2": "Events",
+      "card3": "Analytics",
+      "card4": "Streaming"
+    },
+    "window2": {
+      "message": "通过利用对象存储（例如 S3 等）、实现存算分离以及支持任意扩展无状态计算节点的规模，GreptimeDB 极大程度减少了指标与事件数据栈的总体拥有成本。同时，GreptimeDB 实现了一个支持不同对象存储服务的统一数据访问层，使得整个数据栈能够灵活地跨云部署。",
+      "card1": "基于对象存储的成本优势",
+      "card2": "单集群节点数",
+      "card3": "多云供应商部署"
+    },
+    "window3": {
+      "message": "GreptimeDB 企业版实现了多租户等企业级功能，同时提供专业的技术支持。GreptimeCloud 是一个基于 GreptimeDB 企业版的云上全托管数据库即服务（DBaaS），允许用户从极小规模开始使用，并随业务规模增长无限扩展。",
+      "p1": "多租户等企业功能",
+      "p2": "专家技术支持",
+      "p3": "全托管云服务"
+    },
+    "window4": {
+      "message": "Rust 语言实现的 GreptimeDB 能够部署在多种不同的环境当中。从 ARM 架构兼容的 Android/Linux 系统，到不同提供商的云环境，GreptimeDB 提供了统一的用户 API 和管控面，使得应用无需任何修改就能同时跑在边缘端和云端。基于这个架构的边云一体解决方案广泛地受到国家电网和某新能源汽车领军企业等客户的信赖。",
+      "card1": "边缘计算",
+      "card2": "云端部署",
+      "card3": "可靠网络",
+      "card4": "50% 网络传输成本"
+    }
+  },
+  "item2": {
+    "subheader": "高性能、低成本、云原生的开源时序数据库",
+    "card1": {
+      "title": "无限扩展",
+      "message": "从边缘端的嵌入式数据库，到云端强大、高可用的分布式集群之间可以无缝无限扩展，为开发者和管理员提供透明的体验"
+    },
+    "card2": {
+      "title": "联合分析",
+      "message": "支持 SQL 和 PromQL 查询语言，拥抱庞大的数据分析生态，并可以联合分析指标（Metric）、日志（Log）、事件（Event）和追踪（Trace）"
+    },
+    "card3": {
+      "title": "成本可控",
+      "message": "高度优化的列式存储可以极大压缩各种形式的时序数据；无损压缩后可存储在各种云端对象存储当中，整体节省超过 50 倍的存储成本"
+    },
+    "card4": {
+      "title": "高度兼容",
+      "message": "支持大量被广泛采用的数据库协议和 API，包括 SQL、InfluxDB、OpenTelemetry 和 Prometheus 远程存储等"
+    },
+    "button": "了解更多"
+  },
+  "item3": {
+    "title": "GreptimeDB 企业版",
+    "subheader": "专为您的应用场景打造的一站式时序数据解决方案",
+    "card1": "企业生产就绪",
+    "card2": "高级功能支持",
+    "card3": "专业技术服务",
+    "card4": "灵活部署选择",
+    "button": "企业版和开源版的对比"
+  },
+  "item4": {
+    "subheader": "全托管的云上 IoT & 可观测数据栈",
+    "card1": {
+      "title": "丰富的数据生态集成",
+      "message": "内置数据导入、观测和分析工具，可实现实时数据可视化和告警"
+    },
+    "card2": {
+      "title": "开箱即用的流畅体验",
+      "message": "在几秒钟内即可启动运行，无需手动配置；云端控制台提供了开箱即用的查询界面、仪表盘和数据库接口"
+    },
+    "card3": {
+      "title": "无服务化的任意扩展",
+      "message": "可以从小规模开始使用，然后利用 Serverless 计划（按需付费）或 Dedicated 计划无缝无限扩展"
+    },
+    "card4": {
+      "title": "Bring Your Own Cloud",
+      "message": "可通过 BYOC 选项部署在您拥有的云服务资源上"
+    },
+    "button": "立即注册"
+  },
+  "item5": {
+    "title": "边云一体方案",
+    "subheader": "边云协同处理海量时序数据",
+    "card1": {
+      "title": "边缘端数据库",
+      "li1": "可用于 ARM 架构 Android/Linux 系统的嵌入式数据库",
+      "li2": "极小的资源占用，可在车机等边缘端上运行"
+    },
+    "card2": {
+      "title": "极低的数据同步开销",
+      "li1": "高度压缩的数据文件直接同步到云端，无需格式转换",
+      "li2": "利用对象存储实现超低的存储成本，可实现超过 30 倍的无损压缩"
+    },
+    "card3": {
+      "title": "零拷贝数据导入",
+      "li1": "支持查询下推到边缘端上运行",
+      "li2": "从边到云，统一的控制面"
+    },
+    "card4": {
+      "message": "GreptimeDB 在集成到我们的量产车型之后，不仅大幅降低了数据处理的成本，而且还为简化车机和边缘计算奠定了基础，确保了数据驱动应用的安全性和效率。",
+      "unit": "某新能源汽车领军企业",
+      "author": "Tao W. | 专家工程师"
+    },
+    "card5": {
+      "message": "GreptimeDB 成功替换了数字换流站项目中的 InfluxDB，整个迁移过程平滑无痛。其集群版本出色地满足项目的可扩展性和性能要求，相比 InfluxQL，SQL 查询语言更为易用且功能强大",
+      "unit": "国家电网",
+      "author": "JianX L. | 国家电网数字换流站项目架构师"
+    }
+  },
+  "item6": {
+    "list1": {
+      "title": "产品",
+      "li1": "GreptimeDB 企业版",
+      "li2": "GreptimeCloud",
+      "li3": "GreptimeDB 开源版"
+    },
+    "list2": {
+      "title": "资源中心",
+      "li1": "文档",
+      "li2": "Blog",
+      "li3": "GreptimePlay",
+      "li4": "下载",
+      "li5": "Docker 仓库",
+      "li6": "服务状态"
+    },
+    "list3": {
+      "title": "开发者社区",
+      "li1": "GitHub",
+      "li2": "Roadmap",
+      "li3": "贡献指南",
+      "li4": "入门指南"
+    },
+    "list4": {
+      "title": "公司",
+      "li1": "关于 Greptime",
+      "li2": "Careers",
+      "li3": "品牌",
+      "li4": "联系我们",
+      "li5": "Privacy",
+      "li6": "Terms"
+    },
+    "subscribe": {
+      "title": "订阅我们的邮件",
+      "message": "邮件地址",
+      "button": "订阅"
+    },
+    "footer": "©2024 格睿云(北京)技术咨询有限公司 | 京ICP备 2023008042号 | 京公网安备 11010502052203号"
+  }
+}

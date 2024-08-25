@@ -6,37 +6,37 @@
     "button2": "预约演示",
     "code": "只需一个 SQL 查询即可实现统一的时序分析"
   },
-  "item1": {
+  "Optimized": {
     "title": "专为 IoT 和可观测性场景优化",
-    "button1": "混合应用负载",
-    "button2": "无限数据规模",
-    "button3": "企业生产就绪",
-    "button4": "灵活部署环境",
-    "window1": {
-      "message": "GreptimeDB 将所有时序数据统一抽象成带有时间戳和上下文的事件，从而统一了指标、日志和事件的存储和分析。GreptimeDB 支持使用 SQL 和 PromQL 进行分析，以及通过持续聚合能力来实现流处理。",
-      "card1": "Metrics",
-      "card2": "Events",
-      "card3": "Analytics",
-      "card4": "Streaming"
+    "HybridWorkloadsButton": "混合应用负载",
+    "UnlimitedCapacityButton": "无限数据规模",
+    "EnterpriseReadyButton": "企业生产就绪",
+    "FlexibleDeploymentButton": "灵活部署环境",
+    "HybridWorkloadsWindow": {
+      "Message": "GreptimeDB 将所有时序数据统一抽象成带有时间戳和上下文的事件，从而统一了指标、日志和事件的存储和分析。GreptimeDB 支持使用 SQL 和 PromQL 进行分析，以及通过持续聚合能力来实现流处理。",
+      "Metrics": "Metrics",
+      "Events": "Events",
+      "Analytics": "Analytics",
+      "Streaming": "Streaming"
     },
-    "window2": {
-      "message": "通过利用对象存储（例如 S3 等）、实现存算分离以及支持任意扩展无状态计算节点的规模，GreptimeDB 极大程度减少了指标与事件数据栈的总体拥有成本。同时，GreptimeDB 实现了一个支持不同对象存储服务的统一数据访问层，使得整个数据栈能够灵活地跨云部署。",
-      "card1": "基于对象存储的成本优势",
-      "card2": "单集群节点数",
-      "card3": "多云供应商部署"
+    "UnlimitedCapacityWindow": {
+      "Message": "通过利用对象存储（例如 S3 等）、实现存算分离以及支持任意扩展无状态计算节点的规模，GreptimeDB 极大程度减少了指标与事件数据栈的总体拥有成本。同时，GreptimeDB 实现了一个支持不同对象存储服务的统一数据访问层，使得整个数据栈能够灵活地跨云部署。",
+      "CostEfficiency": "基于对象存储的成本优势",
+      "Nodes": "单集群节点数",
+      "Vendors": "多云供应商部署"
     },
-    "window3": {
-      "message": "GreptimeDB 企业版实现了多租户等企业级功能，同时提供专业的技术支持。GreptimeCloud 是一个基于 GreptimeDB 企业版的云上全托管数据库即服务（DBaaS），允许用户从极小规模开始使用，并随业务规模增长无限扩展。",
-      "p1": "多租户等企业功能",
-      "p2": "专家技术支持",
-      "p3": "全托管云服务"
+    "EnterpriseReadyWindow": {
+      "Message": "GreptimeDB 企业版实现了多租户等企业级功能，同时提供专业的技术支持。GreptimeCloud 是一个基于 GreptimeDB 企业版的云上全托管数据库即服务（DBaaS），允许用户从极小规模开始使用，并随业务规模增长无限扩展。",
+      "EnterpriseFunctionalities": "多租户等企业功能",
+      "TechnicalServices": "专家技术支持",
+      "Fully-managedCloud": "全托管云服务"
     },
-    "window4": {
-      "message": "Rust 语言实现的 GreptimeDB 能够部署在多种不同的环境当中。从 ARM 架构兼容的 Android/Linux 系统，到不同提供商的云环境，GreptimeDB 提供了统一的用户 API 和管控面，使得应用无需任何修改就能同时跑在边缘端和云端。基于这个架构的边云一体解决方案广泛地受到国家电网和某新能源汽车领军企业等客户的信赖。",
-      "card1": "边缘计算",
-      "card2": "云端部署",
-      "card3": "可靠网络",
-      "card4": "50% 网络传输成本"
+    "FlexibleDeploymentWindow": {
+      "Message": "Rust 语言实现的 GreptimeDB 能够部署在多种不同的环境当中。从 ARM 架构兼容的 Android/Linux 系统，到不同提供商的云环境，GreptimeDB 提供了统一的用户 API 和管控面，使得应用无需任何修改就能同时跑在边缘端和云端。基于这个架构的边云一体解决方案广泛地受到国家电网和某新能源汽车领军企业等客户的信赖。",
+      "Edge": "边缘计算",
+      "Cloud": "云端部署",
+      "Network": "可靠网络",
+      "TrafficCosts": "50% 网络传输成本"
     }
   },
   "item2": {

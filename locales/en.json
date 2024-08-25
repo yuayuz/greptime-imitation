@@ -6,37 +6,37 @@
     "button2": "Request a Demo",
     "code": "Unified Metrics and Events Analysis in ONE SQL Query"
   },
-  "item1": {
+  "Optimized": {
     "title": "Optimized for IoT and Observability",
-    "button1": "Hybrid Workloads",
-    "button2": "Unlimited Capacity",
-    "button3": "Enterprise Ready",
-    "button4": "Flexible Deployment",
-    "window1": {
-      "message": "GreptimeDB treats all time series as contextual events with timestamps, and thus unifies the processing of metrics, logs, and events. It supports analyzing metrics, logs, and events with SQL, PromQL, and streaming with continuous aggregation.",
-      "card1": "Metrics",
-      "card2": "Events",
-      "card3": "Analytics",
-      "card4": "Streaming"
+    "HybridWorkloadsButton": "Hybrid Workloads",
+    "UnlimitedCapacityButton": "Unlimited Capacity",
+    "EnterpriseReadyButton": "Enterprise Ready",
+    "FlexibleDeploymentButton": "Flexible Deployment",
+    "HybridWorkloadsWindow": {
+      "Message": "GreptimeDB treats all time series as contextual events with timestamps, and thus unifies the processing of metrics, logs, and events. It supports analyzing metrics, logs, and events with SQL, PromQL, and streaming with continuous aggregation.",
+      "Metrics": "Metrics",
+      "Events": "Events",
+      "Analytics": "Analytics",
+      "Streaming": "Streaming"
     },
-    "window2": {
-      "message": "GreptimeDB significantly reduces the TCO for your time series data stack. It also supports cross-cloud deployment with a built-in unified data access layer over different object storages. By leveraging Object Storage (S3, and others), separating compute and storage will lead to scaling stateless compute nodes arbitrarily.",
-      "card1": "Cost Efficiency with Object Storage",
-      "card2": "Nodes in Single Cluster",
-      "card3": "Deployment Spans Multiple Vendors"
+    "UnlimitedCapacityWindow": {
+      "Message": "GreptimeDB significantly reduces the TCO for your time series data stack. It also supports cross-cloud deployment with a built-in unified data access layer over different object storages. By leveraging Object Storage (S3, and others), separating compute and storage will lead to scaling stateless compute nodes arbitrarily.",
+      "CostEfficiency": "Cost Efficiency with Object Storage",
+      "Nodes": "Nodes in Single Cluster",
+      "Vendors": "Deployment Spans Multiple Vendors"
     },
-    "window3": {
-      "message": "GreptimeCloud is the fully-managed Database as a Service (DBaaS) offering based on GreptimeDB Enterprise, enabling you to start from any size and scale as your business grows. GreptimeDB Enterprise implements multi-tenancy, enterprise-specific functionalities, and professional technical services.",
-      "p1": "Multi-tenancy, enterprise functionalities",
-      "p2": "Professional technical services",
-      "p3": "Fully-managed cloud"
+    "EnterpriseReadyWindow": {
+      "Message": "GreptimeCloud is the fully-managed Database as a Service (DBaaS) offering based on GreptimeDB Enterprise, enabling you to start from any size and scale as your business grows. GreptimeDB Enterprise implements multi-tenancy, enterprise-specific functionalities, and professional technical services.",
+      "EnterpriseFunctionalities": "Multi-tenancy, enterprise functionalities",
+      "TechnicalServices": "Professional technical services",
+      "Fully-managedCloud": "Fully-managed cloud"
     },
-    "window4": {
+    "FlexibleDeploymentWindow": {
       "message": "Written in Rust, GreptimeDB can be deployed on ARM architecture-compatible Android/Linux systems as well as cloud environments. Providing identical APIs and control planes, and running the application at the edge or on the cloud without modification. Extremely easy and efficient data synchronization.",
-      "card1": "At Edge",
-      "card2": "On the Cloud",
-      "card3": "Network resilience",
-      "card4": "50% reduction Traffic costs"
+      "Edge": "At Edge",
+      "Cloud": "On the Cloud",
+      "Network": "Network resilience",
+      "TrafficCosts": "50% reduction Traffic costs"
     }
   },
   "item2": {

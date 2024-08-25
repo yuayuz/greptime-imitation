@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Metrics from "~/components/svg/Metrics.vue";
-import Events from "~/components/svg/Events.vue";
-import Analytics from "~/components/svg/Analytics.vue";
-import Streaming from "~/components/svg/Streaming.vue";
+import Metrics from "~/components/svg/optimized/Metrics.vue";
+import Events from "~/components/svg/optimized/Events.vue";
+import Analytics from "~/components/svg/optimized/Analytics.vue";
+import Streaming from "~/components/svg/optimized/Streaming.vue";
 
 const { t } = useI18n();
 </script>
@@ -19,7 +19,7 @@ const { t } = useI18n();
       >
         <div class="tw-justify-center tw-text-center">
           <Metrics></Metrics>
-          <div>{{ t("item1.window1.card1") }}</div>
+          <div>{{ t("Optimized.HybridWorkloadsWindow.Metrics") }}</div>
         </div>
       </v-card>
     </div>
@@ -35,7 +35,7 @@ const { t } = useI18n();
         <div class="tw-justify-center tw-text-center">
           <Events></Events>
           <div>
-            {{ t("item1.window1.card2") }}
+            {{ t("Optimized.HybridWorkloadsWindow.Events") }}
           </div>
         </div>
       </v-card>
@@ -51,7 +51,7 @@ const { t } = useI18n();
       >
         <div class="tw-justify-center tw-text-center">
           <Analytics></Analytics>
-          <div>{{ t("item1.window1.card3") }}</div>
+          <div>{{ t("Optimized.HybridWorkloadsWindow.Analytics") }}</div>
         </div>
       </v-card>
     </div>
@@ -66,7 +66,7 @@ const { t } = useI18n();
       >
         <div class="tw-justify-center tw-text-center">
           <Streaming></Streaming>
-          <div>{{ t("item1.window1.card4") }}</div>
+          <div>{{ t("Optimized.HybridWorkloadsWindow.Streaming") }}</div>
         </div>
       </v-card>
     </div>
@@ -74,7 +74,7 @@ const { t } = useI18n();
 
   <div>
     <p data-v-6ec0c23b="">
-      {{ t("item1.window1.message") }}
+      {{ t("Optimized.HybridWorkloadsWindow.Message") }}
     </p>
   </div>
 </template>

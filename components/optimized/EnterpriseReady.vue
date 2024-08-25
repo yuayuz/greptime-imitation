@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import EnterpriseReadySVG from "~/components/svg/EnterpriseReadySVG.vue";
+import EnterpriseReadySVG from "~/components/svg/optimized/EnterpriseReadySVG.vue";
 
 const { t } = useI18n();
 </script>
@@ -9,26 +9,26 @@ const { t } = useI18n();
     <div class="tw-flex tw-h-8 tw-items-center">
       <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
-        {{ t("item1.window3.p1") }}
+        {{ t("Optimized.EnterpriseReadyWindow.EnterpriseFunctionalities") }}
       </div>
     </div>
 
     <div class="tw-flex tw-h-8 tw-items-center">
       <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
-        {{ t("item1.window3.p2") }}
+        {{ t("Optimized.EnterpriseReadyWindow.TechnicalServices") }}
       </div>
     </div>
 
     <div class="tw-flex tw-h-8 tw-items-center">
       <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
-        {{ t("item1.window3.p3") }}
+        {{ t("Optimized.EnterpriseReadyWindow.Fully-managedCloud") }}
       </div>
     </div>
   </div>
   <p>
-    {{ t("item1.window3.message") }}
+    {{ t("Optimized.EnterpriseReadyWindow.Message") }}
   </p>
 </template>
 

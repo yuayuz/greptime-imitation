@@ -15,7 +15,7 @@ const { t } = useI18n();
         <div class="tw-justify-center tw-space-y-1 tw-text-center">
           <div class="tw-text-4xl tw-font-bold">50x</div>
           <div class="tw-text-sm">
-            {{ t("item1.window2.card1") }}
+            {{ t("Optimized.UnlimitedCapacityWindow.CostEfficiency") }}
           </div>
         </div>
       </v-card>
@@ -32,7 +32,7 @@ const { t } = useI18n();
         <div class="tw-justify-center tw-space-y-1 tw-text-center">
           <div class="tw-text-4xl tw-font-bold">1000+</div>
           <div class="tw-text-sm">
-            {{ t("item1.window2.card2") }}
+            {{ t("Optimized.UnlimitedCapacityWindow.Nodes") }}
           </div>
         </div>
       </v-card>
@@ -48,7 +48,9 @@ const { t } = useI18n();
       >
         <div class="tw-justify-center tw-space-y-1 tw-text-center">
           <div class="tw-text-3xl tw-font-bold">Cross-Cloud</div>
-          <div class="tw-text-xs">{{ t("item1.window2.card3") }}</div>
+          <div class="tw-text-xs">
+            {{ t("Optimized.UnlimitedCapacityWindow.Vendors") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -56,7 +58,7 @@ const { t } = useI18n();
 
   <div>
     <p>
-      {{ t("item1.window2.message") }}
+      {{ t("Optimized.UnlimitedCapacityWindow.Message") }}
     </p>
   </div>
 </template>

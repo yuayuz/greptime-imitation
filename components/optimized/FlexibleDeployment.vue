@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import AtEdge from "~/components/svg/AtEdge.vue";
-import OnTheCloud from "~/components/svg/OnTheCloud.vue";
-import NetworkResilience from "~/components/svg/NetworkResilience.vue";
-import TrafficCosts from "~/components/svg/TrafficCosts.vue";
+import AtEdge from "~/components/svg/optimized/AtEdge.vue";
+import OnTheCloud from "~/components/svg/optimized/OnTheCloud.vue";
+import NetworkResilience from "~/components/svg/optimized/NetworkResilience.vue";
+import TrafficCosts from "~/components/svg/optimized/TrafficCosts.vue";
 
 const { t } = useI18n();
 </script>
@@ -21,7 +21,9 @@ const { t } = useI18n();
           >
             <at-edge></at-edge>
           </div>
-          <div class="tw-font-bold">{{ t("item1.window4.card1") }}</div>
+          <div class="tw-font-bold">
+            {{ t("Optimized.FlexibleDeploymentWindow.Edge") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -38,7 +40,9 @@ const { t } = useI18n();
           >
             <on-the-cloud></on-the-cloud>
           </div>
-          <div class="tw-font-bold">{{ t("item1.window4.card2") }}</div>
+          <div class="tw-font-bold">
+            {{ t("Optimized.FlexibleDeploymentWindow.Cloud") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -55,7 +59,9 @@ const { t } = useI18n();
           >
             <network-resilience></network-resilience>
           </div>
-          <div class="tw-font-bold">{{ t("item1.window4.card3") }}</div>
+          <div class="tw-font-bold">
+            {{ t("Optimized.FlexibleDeploymentWindow.Network") }}
+          </div>
         </div>
       </v-card>
     </div>
@@ -73,7 +79,7 @@ const { t } = useI18n();
             <traffic-costs></traffic-costs>
           </div>
           <div class="tw-font-bold">
-            {{ t("item1.window4.card4") }}
+            {{ t("Optimized.FlexibleDeploymentWindow.TrafficCosts") }}
           </div>
         </div>
       </v-card>
@@ -82,7 +88,7 @@ const { t } = useI18n();
 
   <div>
     <p>
-      {{ t("item1.window4.message") }}
+      {{ t("Optimized.FlexibleDeploymentWindow.Message") }}
     </p>
   </div>
 </template>

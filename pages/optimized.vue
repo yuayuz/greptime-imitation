@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import UnlimitedCapacity from "~/components/item1/UnlimitedCapacity.vue";
-import HybridWorkloads from "~/components/item1/HybridWorkloads.vue";
-import EnterpriseReady from "~/components/item1/EnterpriseReady.vue";
-import FlexibleDeployment from "~/components/item1/FlexibleDeployment.vue";
+import UnlimitedCapacity from "~/components/optimized/UnlimitedCapacity.vue";
+import HybridWorkloads from "~/components/optimized/HybridWorkloads.vue";
+import EnterpriseReady from "~/components/optimized/EnterpriseReady.vue";
+import FlexibleDeployment from "~/components/optimized/FlexibleDeployment.vue";
 
 const model = ref(0);
 const { t } = useI18n();
@@ -12,7 +12,7 @@ const { t } = useI18n();
   <div class="lg:tw-hidden">
     <div class="tw-space-y-6 tw-px-4 tw-py-[3.75rem]">
       <p class="tw-mb-16 tw-text-center tw-text-3xl tw-font-black">
-        {{ t("item1.title") }}
+        {{ t("Optimized.title") }}
       </p>
       <div class="tw-space-y-6">
         <div
@@ -36,7 +36,7 @@ const { t } = useI18n();
                   ></v-img>
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("item1.button1") }}
+                  {{ t("Optimized.HybridWorkloadsButton") }}
                 </p>
               </div>
             </div>
@@ -65,7 +65,7 @@ const { t } = useI18n();
                   ></v-img>
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("item1.button2") }}
+                  {{ t("Optimized.UnlimitedCapacityButton") }}
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const { t } = useI18n();
                 </div>
 
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("item1.button3") }}
+                  {{ t("Optimized.EnterpriseReadyButton") }}
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ const { t } = useI18n();
                   ></v-img>
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("item1.button4") }}
+                  {{ t("Optimized.FlexibleDeploymentButton") }}
                 </p>
               </div>
             </div>
@@ -137,7 +137,7 @@ const { t } = useI18n();
 
   <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
     <p class="tw-mb-16 tw-text-center tw-text-3xl tw-font-black">
-      {{ t("item1.title") }}
+      {{ t("Optimized.title") }}
     </p>
     <div class="tw-flex tw-space-x-16">
       <div class="tw-space-y-4">
@@ -161,7 +161,7 @@ const { t } = useI18n();
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("item1.button1") }}
+              {{ t("Optimized.HybridWorkloadsButton") }}
             </p>
           </div>
         </div>
@@ -186,7 +186,7 @@ const { t } = useI18n();
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("item1.button2") }}
+              {{ t("Optimized.UnlimitedCapacityButton") }}
             </p>
           </div>
         </div>
@@ -211,7 +211,7 @@ const { t } = useI18n();
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("item1.button3") }}
+              {{ t("Optimized.EnterpriseReadyButton") }}
             </p>
           </div>
         </div>
@@ -236,7 +236,7 @@ const { t } = useI18n();
               height="40"
             ></v-img>
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("item1.button4") }}
+              {{ t("Optimized.FlexibleDeploymentButton") }}
             </p>
           </div>
         </div>

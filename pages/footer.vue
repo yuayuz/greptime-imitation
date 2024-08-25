@@ -2,6 +2,13 @@
 const onLanguageOpen = ref(false);
 const onLanguageOpenLg = ref(false);
 const { locale, setLocale, t } = useI18n();
+import github from "/public/github.png";
+import youtube from "/public/youtube.png";
+import twitter from "/public/twitter.png";
+import slack from "/public/slack.png";
+import linkedin from "/public/linkedin.png";
+import rss from "/public/rss.png";
+import logo from "/public/logo-text.png";
 </script>
 
 <template>
@@ -9,7 +16,7 @@ const { locale, setLocale, t } = useI18n();
     <div class="tw-px-4 tw-py-[3.75rem]">
       <div class="tw-space-y-16">
         <div class="tw-w-[8.5rem]">
-          <v-img src="/public/logo-text.png" class="tw-mb-5"></v-img>
+          <v-img :src="logo" class="tw-mb-5"></v-img>
           <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
           <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
           <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
@@ -129,12 +136,12 @@ const { locale, setLocale, t } = useI18n();
             {{ t("Footer.Subscribe.Button") }}
           </v-btn>
           <div class="tw-mt-5 tw-grid tw-w-[18rem] tw-grid-cols-6">
-            <v-img src="/public/github.png" width="28" height="28"></v-img>
-            <v-img src="/public/youtube.png" width="28" height="28"></v-img>
-            <v-img src="/public/twitter.png" width="28" height="28"></v-img>
-            <v-img src="/public/slack.png" width="28" height="28"></v-img>
-            <v-img src="/public/linkedin.png" width="28" height="28"></v-img>
-            <v-img src="/public/rss.png" width="28" height="28"></v-img>
+            <v-img :src="github" width="28" height="28"></v-img>
+            <v-img :src="youtube" width="28" height="28"></v-img>
+            <v-img :src="twitter" width="28" height="28"></v-img>
+            <v-img :src="slack" width="28" height="28"></v-img>
+            <v-img :src="linkedin" width="28" height="28"></v-img>
+            <v-img :src="rss" width="28" height="28"></v-img>
           </div>
         </div>
       </div>
@@ -148,7 +155,7 @@ const { locale, setLocale, t } = useI18n();
   <div class="tw-hidden tw-w-full tw-border-t tw-py-[3.75rem] lg:tw-block">
     <div class="tw-flex tw-justify-between">
       <div class="tw-w-[8.5rem]">
-        <v-img src="/public/logo-text.png" class="tw-mb-5"></v-img>
+        <v-img :src="logo" class="tw-mb-5"></v-img>
         <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
         <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
         <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
@@ -256,12 +263,12 @@ const { locale, setLocale, t } = useI18n();
           {{ t("Footer.Subscribe.Button") }}
         </v-btn>
         <div class="tw-mt-5 tw-grid tw-grid-cols-6">
-          <v-img src="/public/github.png" width="28" height="28"></v-img>
-          <v-img src="/public/youtube.png" width="28" height="28"></v-img>
-          <v-img src="/public/twitter.png" width="28" height="28"></v-img>
-          <v-img src="/public/slack.png" width="28" height="28"></v-img>
-          <v-img src="/public/linkedin.png" width="28" height="28"></v-img>
-          <v-img src="/public/rss.png" width="28" height="28"></v-img>
+          <v-img :src="github" width="28" height="28"></v-img>
+          <v-img :src="youtube" width="28" height="28"></v-img>
+          <v-img :src="twitter" width="28" height="28"></v-img>
+          <v-img :src="slack" width="28" height="28"></v-img>
+          <v-img :src="linkedin" width="28" height="28"></v-img>
+          <v-img :src="rss" width="28" height="28"></v-img>
         </div>
       </div>
     </div>

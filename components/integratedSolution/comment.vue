@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import user_avatar from "public/user-avatar.png";
+
 const props = defineProps(["comment", "unit", "author"]);
 </script>
 
@@ -12,11 +14,7 @@ const props = defineProps(["comment", "unit", "author"]);
     </div>
     <div class="tw-flex tw-space-x-3">
       <div>
-        <v-img
-          src="public/user-avatar.png"
-          width="45.67"
-          height="45.67"
-        ></v-img>
+        <v-img :src="user_avatar" width="45.67" height="45.67"></v-img>
       </div>
       <div>
         <div class="tw-text-lg tw-font-black">{{ props.unit }}</div>

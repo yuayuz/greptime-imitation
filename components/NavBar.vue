@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import image from "~/public/logo-text.png";
+
 const onProductOpen = ref(false);
 const onSolutionOpen = ref(false);
 const onResourcesOpen = ref(false);
@@ -26,7 +28,7 @@ const darkMode = () => {
     style="z-index: 1"
   >
     <div class="tw-mx-auto tw-flex tw-h-full tw-max-w-[86rem] tw-items-center">
-      <v-img src="~/public/logo-text.png" height="42" width="162"></v-img>
+      <v-img :src="image" height="42" width="162"></v-img>
       <div
         class="tw-relative tw-flex tw-h-full tw-w-full tw-items-center tw-justify-end lg:tw-hidden"
       >

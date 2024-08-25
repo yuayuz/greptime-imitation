@@ -3,6 +3,14 @@ import UnlimitedCapacity from "~/components/optimized/UnlimitedCapacity.vue";
 import HybridWorkloads from "~/components/optimized/HybridWorkloads.vue";
 import EnterpriseReady from "~/components/optimized/EnterpriseReady.vue";
 import FlexibleDeployment from "~/components/optimized/FlexibleDeployment.vue";
+import domain_1 from "/public/domain-1.png";
+import domain_2 from "/public/domain-2.png";
+import domain_3 from "/public/domain-3.png";
+import domain_4 from "/public/domain-4.png";
+import scale_workload from "/public/scale_workload.png";
+import scale_capacity from "/public/scale_capacity.png";
+import scale_organization from "/public/scale_organization.png";
+import scale_deployment from "/public/scale_deployment.png";
 
 const model = ref(0);
 const { t } = useI18n();
@@ -19,7 +27,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img src="/public/domain-1.png" width="400" height="400"></v-img>
+            <v-img :src="domain_1" width="400" height="400"></v-img>
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -30,7 +38,7 @@ const { t } = useI18n();
               >
                 <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
                   <v-img
-                    src="/public/scale_workload.png"
+                    :src="scale_workload"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
                   ></v-img>
@@ -48,7 +56,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img src="/public/domain-2.png" width="400" height="400"></v-img>
+            <v-img :src="domain_2" width="400" height="400"></v-img>
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -59,7 +67,7 @@ const { t } = useI18n();
               >
                 <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
                   <v-img
-                    src="/public/scale_capacity.png"
+                    :src="scale_capacity"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
                   ></v-img>
@@ -77,7 +85,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img src="/public/domain-3.png" width="400" height="400"></v-img>
+            <v-img :src="domain_3" width="400" height="400"></v-img>
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -88,7 +96,7 @@ const { t } = useI18n();
               >
                 <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
                   <v-img
-                    src="/public/scale_organization.png"
+                    :src="scale_organization"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
                   ></v-img>
@@ -107,7 +115,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img src="/public/domain-4.png" width="400" height="400"></v-img>
+            <v-img :src="domain_4" width="400" height="400"></v-img>
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -118,7 +126,7 @@ const { t } = useI18n();
               >
                 <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
                   <v-img
-                    src="/public/scale_deployment.png"
+                    :src="scale_deployment"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
                   ></v-img>
@@ -154,7 +162,7 @@ const { t } = useI18n();
             @click="model = 0"
           >
             <v-img
-              src="/public/scale_workload.png"
+              :src="scale_workload"
               style="z-index: -1"
               class="tw-bg-violet-800"
               width="42"
@@ -179,7 +187,7 @@ const { t } = useI18n();
             @click="model = 1"
           >
             <v-img
-              src="/public/scale_capacity.png"
+              :src="scale_capacity"
               class="tw-bg-violet-800"
               style="z-index: -1"
               width="42"
@@ -204,7 +212,7 @@ const { t } = useI18n();
             @click="model = 2"
           >
             <v-img
-              src="/public/scale_organization.png"
+              :src="scale_organization"
               class="tw-bg-violet-800"
               style="z-index: -1"
               width="42"
@@ -229,7 +237,7 @@ const { t } = useI18n();
             @click="model = 3"
           >
             <v-img
-              src="/public/scale_deployment.png"
+              :src="scale_deployment"
               class="tw-bg-violet-800"
               style="z-index: -1"
               width="42"
@@ -253,11 +261,7 @@ const { t } = useI18n();
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img
-                src="/public/domain-1.png"
-                width="400"
-                height="400"
-              ></v-img>
+              <v-img :src="domain_1" width="400" height="400"></v-img>
             </div>
             <div class="tw-space-y-12 tw-p-8">
               <hybrid-workloads></hybrid-workloads>
@@ -267,11 +271,7 @@ const { t } = useI18n();
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img
-                src="/public/domain-2.png"
-                width="400"
-                height="400"
-              ></v-img>
+              <v-img :src="domain_2" width="400" height="400"></v-img>
             </div>
             <div class="tw-space-y-12 tw-p-8">
               <unlimited-capacity></unlimited-capacity>
@@ -281,11 +281,7 @@ const { t } = useI18n();
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img
-                src="/public/domain-3.png"
-                width="400"
-                height="400"
-              ></v-img>
+              <v-img :src="domain_3" width="400" height="400"></v-img>
             </div>
             <div class="tw-space-y-12 tw-p-8">
               <enterprise-ready></enterprise-ready>
@@ -295,11 +291,7 @@ const { t } = useI18n();
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img
-                src="/public/domain-4.png"
-                width="400"
-                height="400"
-              ></v-img>
+              <v-img :src="domain_4" width="400" height="400"></v-img>
             </div>
             <div class="tw-space-y-12 tw-p-8">
               <flexible-deployment></flexible-deployment>

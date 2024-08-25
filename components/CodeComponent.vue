@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import sqlTitle from "/public/sql-title.png";
+
 const { t } = useI18n();
 </script>
 
@@ -11,7 +13,7 @@ const { t } = useI18n();
     >
       <div class="tw-absolute tw-flex tw-w-full tw-items-center tw-justify-end">
         <div>
-          <v-img width="143" height="16" src="/public/sql-title.png"></v-img>
+          <v-img width="143" height="16" :src="sqlTitle"></v-img>
         </div>
       </div>
       <div class="tw-px-3 tw-text-base tw-leading-4">

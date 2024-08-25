@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import EnterpriseReady from "~/components/svg/enterprise/EnterpriseReady.vue";
-import AdvancedFeatures from "~/components/svg/enterprise/AdvancedFeatures.vue";
-import TechnicalServices from "~/components/svg/enterprise/TechnicalServices.vue";
-import DeploymentOptions from "~/components/svg/enterprise/DeploymentOptions.vue";
+import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg";
+import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg";
+import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg";
+import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg";
 
 const { t } = useI18n();
 </script>
@@ -20,20 +20,26 @@ const { t } = useI18n();
         class="tw-mx-auto tw-mb-8 tw-max-w-[82.5rem] tw-rounded-md tw-border tw-bg-white tw-shadow"
       >
         <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
-          <enterprise-card :svg="EnterpriseReady" class="tw-border-r"
-            >{{ t("Enterprise.EnterpriseReady") }}
-          </enterprise-card>
-          <enterprise-card :svg="AdvancedFeatures">{{
-            t("Enterprise.AdvancedFeatures")
-          }}</enterprise-card>
+          <enterprise-card
+            :svg="EnterpriseReady"
+            class="tw-border-r"
+            :title="t('Enterprise.EnterpriseReady')"
+          />
+          <enterprise-card
+            :svg="AdvancedFeatures"
+            :title="t('Enterprise.AdvancedFeatures')"
+          />
         </div>
         <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
-          <enterprise-card :svg="TechnicalServices" class="tw-border-r"
-            >{{ t("Enterprise.TechnicalServices") }}
-          </enterprise-card>
-          <enterprise-card :svg="DeploymentOptions"
-            >{{ t("Enterprise.DeploymentOptions") }}
-          </enterprise-card>
+          <enterprise-card
+            :svg="TechnicalServices"
+            class="tw-border-r"
+            :title="t('Enterprise.TechnicalServices')"
+          />
+          <enterprise-card
+            :svg="DeploymentOptions"
+            :title="t('Enterprise.DeploymentOptions')"
+          />
         </div>
       </div>
       <div class="tw-flex tw-w-full tw-justify-center">
@@ -61,18 +67,25 @@ const { t } = useI18n();
       class="tw-mx-auto tw-mb-8 tw-max-w-[82.5rem] tw-rounded-md tw-border tw-bg-white tw-shadow"
     >
       <div class="tw-grid tw-grid-cols-4 tw-gap-8 tw-py-10">
-        <enterprise-card :svg="EnterpriseReady" class="tw-border-r"
-          >{{ t("Enterprise.EnterpriseReady") }}
-        </enterprise-card>
-        <enterprise-card :svg="AdvancedFeatures" class="tw-border-r"
-          >{{ t("Enterprise.AdvancedFeatures") }}
-        </enterprise-card>
-        <enterprise-card :svg="TechnicalServices" class="tw-border-r"
-          >{{ t("Enterprise.TechnicalServices") }}
-        </enterprise-card>
-        <enterprise-card :svg="DeploymentOptions"
-          >{{ t("Enterprise.DeploymentOptions") }}
-        </enterprise-card>
+        <enterprise-card
+          :svg="EnterpriseReady"
+          class="tw-border-r"
+          :title="t('Enterprise.TechnicalServices')"
+        />
+        <enterprise-card
+          :svg="AdvancedFeatures"
+          class="tw-border-r"
+          :title="t('Enterprise.AdvancedFeatures')"
+        />
+        <enterprise-card
+          :svg="TechnicalServices"
+          class="tw-border-r"
+          :title="t('Enterprise.TechnicalServices')"
+        />
+        <enterprise-card
+          :svg="DeploymentOptions"
+          :title="t('Enterprise.DeploymentOptions')"
+        />
       </div>
     </div>
     <div class="tw-flex tw-w-full tw-justify-center">

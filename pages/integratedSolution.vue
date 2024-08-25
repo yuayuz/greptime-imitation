@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import EdgeDatabase from "~/components/svg/integratedSolution/EdgeDatabase.vue";
-import LowerData from "~/components/svg/integratedSolution/LowerData.vue";
-import Cloud from "~/components/svg/integratedSolution/Cloud.vue";
+import EdgeDatabase from "~/public/svg/integratedSolution/EdgeDatabase.svg";
+import LowerData from "~/public/svg/integratedSolution/LowerData.svg";
+import Cloud from "~/public/svg/integratedSolution/Cloud.svg";
 
 const { t } = useI18n();
 </script>

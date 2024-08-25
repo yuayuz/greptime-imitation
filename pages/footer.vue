@@ -9,6 +9,7 @@ import slack from "/public/slack.png";
 import linkedin from "/public/linkedin.png";
 import rss from "/public/rss.png";
 import logo from "/public/logo-text.png";
+import language from "~/public/svg/footer/language.svg";
 </script>
 
 <template>
@@ -24,7 +25,7 @@ import logo from "/public/logo-text.png";
             <template v-slot:activator="{ props }">
               <v-btn v-bind="props" class="tw-mt-5">
                 <template v-slot:prepend>
-                  <svg-footer-language />
+                  <img :src="language" alt="language" />
                 </template>
                 {{ locale === "EN" ? "English" : "简体中文" }}
                 <template v-slot:append>
@@ -163,7 +164,7 @@ import logo from "/public/logo-text.png";
           <template v-slot:activator="{ props }">
             <v-btn v-bind="props" class="tw-mt-5">
               <template v-slot:prepend>
-                <svg-footer-language />
+                <img :src="language" alt="language" />
               </template>
               {{ locale === "en" ? "English" : "简体中文" }}
               <template v-slot:append>

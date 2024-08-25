@@ -1,6 +1,7 @@
 <script setup lang="ts">
 interface Props {
-  svg: object;
+  svg: string;
+  title: string;
 }
 
 const props = defineProps<Props>();
@@ -11,10 +12,10 @@ const props = defineProps<Props>();
     class="tw-flex tw-h-[6.625rem] tw-w-full tw-flex-col tw-justify-center tw-space-y-2 tw-pr-5 tw-text-black"
   >
     <div class="tw-mx-auto tw-flex">
-      <component :is="props.svg" />
+      <img :src="props.svg" :alt="props.title" />
     </div>
     <div class="tw-text-center tw-text-2xl tw-font-bold">
-      <slot />
+      {{ props.title }}
     </div>
   </div>
 </template>

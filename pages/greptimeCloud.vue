@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Integrations from "~/components/svg/greptimeCloud/Integrations.vue";
-import Experience from "~/components/svg/greptimeCloud/Experience.vue";
-import ServerlessScaling from "~/components/svg/greptimeCloud/ServerlessScaling.vue";
-import Cloud from "~/components/svg/greptimeCloud/Cloud.vue";
+import Integrations from "~/public/svg/greptimeCloud/Integrations.svg";
+import Experience from "~/public/svg/greptimeCloud/Experience.svg";
+import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg";
+import Cloud from "~/public/svg/greptimeCloud/Cloud.svg";
 
 const { t } = useI18n();
 </script>

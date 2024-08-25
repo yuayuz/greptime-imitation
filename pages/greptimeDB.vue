@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import ScalingHorizontally from "~/components/svg/greptimeDB/ScalingHorizontally.vue";
-import UnifiedAnalysis from "~/components/svg/greptimeDB/UnifiedAnalysis.vue";
-import CostEffective from "~/components/svg/greptimeDB/CostEffective.vue";
-import Compatibility from "~/components/svg/greptimeDB/Compatibility.vue";
+import ScalingHorizontally from "~/public/svg/greptimeDB/ScalingHorizontally.svg";
+import UnifiedAnalysis from "~/public/svg/greptimeDB/UnifiedAnalysis.svg";
+import CostEffective from "~/public/svg/greptimeDB/CostEffective.svg";
+import Compatibility from "~/public/svg/greptimeDB/Compatibility.svg";
 
 const { t } = useI18n();
 </script>

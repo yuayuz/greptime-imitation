@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import AtEdge from "~/components/svg/optimized/AtEdge.vue";
-import OnTheCloud from "~/components/svg/optimized/OnTheCloud.vue";
-import NetworkResilience from "~/components/svg/optimized/NetworkResilience.vue";
-import TrafficCosts from "~/components/svg/optimized/TrafficCosts.vue";
+import AtEdge from "~/public/svg/optimized/AtEdge.svg";
+import OnTheCloud from "~/public/svg/optimized/OnTheCloud.svg";
+import NetworkResilience from "~/public/svg/optimized/NetworkResilience.svg";
+import TrafficCosts from "~/public/svg/optimized/TrafficCosts.svg";
 
 const { t } = useI18n();
 </script>
@@ -19,7 +19,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <at-edge />
+            <img :src="AtEdge" alt="AtEdge" />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.Edge") }}
@@ -38,7 +38,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <on-the-cloud />
+            <img :src="OnTheCloud" alt="OnTheCloud" />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.Cloud") }}
@@ -57,7 +57,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <network-resilience />
+            <img :src="NetworkResilience" alt="NetworkResilience" />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.Network") }}
@@ -76,7 +76,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <traffic-costs />
+            <img :src="TrafficCosts" alt="TrafficCosts" />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.TrafficCosts") }}

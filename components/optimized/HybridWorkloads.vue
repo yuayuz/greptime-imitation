@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Metrics from "~/components/svg/optimized/Metrics.vue";
-import Events from "~/components/svg/optimized/Events.vue";
-import Analytics from "~/components/svg/optimized/Analytics.vue";
-import Streaming from "~/components/svg/optimized/Streaming.vue";
+import Metrics from "~/public/svg/optimized/Metrics.svg";
+import Events from "~/public/svg/optimized/Events.svg";
+import Analytics from "~/public/svg/optimized/Analytics.svg";
+import Streaming from "~/public/svg/optimized/Streaming.svg";
 
 const { t } = useI18n();
 </script>
@@ -18,7 +18,9 @@ const { t } = useI18n();
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Metrics />
+          <div class="tw-flex tw-justify-center">
+            <img :src="Metrics" alt="Metrics" />
+          </div>
           <div>{{ t("Optimized.HybridWorkloadsWindow.Metrics") }}</div>
         </div>
       </v-card>
@@ -33,7 +35,9 @@ const { t } = useI18n();
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Events />
+          <div class="tw-flex tw-justify-center">
+            <img :src="Events" alt="Events" />
+          </div>
           <div>
             {{ t("Optimized.HybridWorkloadsWindow.Events") }}
           </div>
@@ -50,7 +54,9 @@ const { t } = useI18n();
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Analytics />
+          <div class="tw-flex tw-justify-center">
+            <img :src="Analytics" alt="Analytics" />
+          </div>
           <div>{{ t("Optimized.HybridWorkloadsWindow.Analytics") }}</div>
         </div>
       </v-card>
@@ -65,7 +71,9 @@ const { t } = useI18n();
         class="tw-flex tw-w-full tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Streaming />
+          <div class="tw-flex tw-justify-center">
+            <img :src="Streaming" alt="Streaming" />
+          </div>
           <div>{{ t("Optimized.HybridWorkloadsWindow.Streaming") }}</div>
         </div>
       </v-card>

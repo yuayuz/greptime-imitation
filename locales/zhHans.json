@@ -39,25 +39,25 @@
       "TrafficCosts": "50% 网络传输成本"
     }
   },
-  "item2": {
-    "subheader": "高性能、低成本、云原生的开源时序数据库",
-    "card1": {
+  "GreptimeDB": {
+    "Subheader": "高性能、低成本、云原生的开源时序数据库",
+    "ScalingHorizontally": {
       "title": "无限扩展",
       "message": "从边缘端的嵌入式数据库，到云端强大、高可用的分布式集群之间可以无缝无限扩展，为开发者和管理员提供透明的体验"
     },
-    "card2": {
+    "UnifiedAnalysis": {
       "title": "联合分析",
       "message": "支持 SQL 和 PromQL 查询语言，拥抱庞大的数据分析生态，并可以联合分析指标（Metric）、日志（Log）、事件（Event）和追踪（Trace）"
     },
-    "card3": {
+    "Cost-effective": {
       "title": "成本可控",
       "message": "高度优化的列式存储可以极大压缩各种形式的时序数据；无损压缩后可存储在各种云端对象存储当中，整体节省超过 50 倍的存储成本"
     },
-    "card4": {
+    "Compatibility": {
       "title": "高度兼容",
       "message": "支持大量被广泛采用的数据库协议和 API，包括 SQL、InfluxDB、OpenTelemetry 和 Prometheus 远程存储等"
     },
-    "button": "了解更多"
+    "Button": "了解更多"
   },
   "item3": {
     "title": "GreptimeDB 企业版",

@@ -39,25 +39,25 @@
       "TrafficCosts": "50% reduction Traffic costs"
     }
   },
-  "item2": {
-    "subheader": "Open-source, Cloud-scale, Fast and Efficient Time Series Database",
-    "card1": {
+  "GreptimeDB": {
+    "Subheader": "Open-source, Cloud-scale, Fast and Efficient Time Series Database",
+    "ScalingHorizontally": {
       "title": "Scaling horizontally",
       "message": "A transparent experience for both developers and administrators. Seamlessly scale from a standalone binary at the edge to a robust, highly available distributed cluster in the cloud."
     },
-    "card2": {
+    "UnifiedAnalysis": {
       "title": "Unified Analysis",
       "message": "Embrace the broad analytics ecosystem to query metrics, logs, events, and traces (planning) together with standard SQL and PromQL."
     },
-    "card3": {
+    "Cost-effective": {
       "title": "Cost-effective",
       "message": "Optimized columnar layout for handling metrics and events; compacted, compressed, and stored on various storage backends, particularly cloud object storage with 50x cost efficiency."
     },
-    "card4": {
+    "Compatibility": {
       "title": "Compatibility",
       "message": "Widely adopted database protocols and APIs, including SQL, InfluxDB, OpenTelemetry, Prometheus Remote Storage, and more."
     },
-    "button": "Learn More"
+    "Button": "Learn More"
   },
   "item3": {
     "title": "GreptimeDB Enterprise",

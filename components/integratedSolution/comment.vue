@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import user_avatar from "public/user-avatar.png";
 
-const props = defineProps(["comment", "unit", "author"]);
+interface Props {
+  comment: string;
+  unit: string;
+  author: string;
+}
+
+const props = defineProps<Props>();
 </script>
 
 <template>

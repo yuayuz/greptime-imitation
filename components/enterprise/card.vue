@@ -1,7 +1,9 @@
 <script setup lang="ts">
-const props = defineProps({
-  svg: "svg",
-});
+interface Props {
+  svg: object;
+}
+
+const props = defineProps<Props>();
 </script>
 
 <template>

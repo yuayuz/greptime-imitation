@@ -1,5 +1,12 @@
 <script setup lang="ts">
-const props = defineProps(["svg", "title", "list1", "list2"]);
+interface Props {
+  svg: object;
+  title: string;
+  list1: string;
+  list2: string;
+}
+
+const props = defineProps<Props>();
 </script>
 
 <template>

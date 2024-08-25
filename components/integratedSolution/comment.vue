@@ -20,7 +20,7 @@ const props = defineProps<Props>();
     </div>
     <div class="tw-flex tw-space-x-3">
       <div>
-        <v-img :src="user_avatar" width="45.67" height="45.67"></v-img>
+        <v-img :src="user_avatar" width="45.67" height="45.67" />
       </div>
       <div>
         <div class="tw-text-lg tw-font-black">{{ props.unit }}</div>

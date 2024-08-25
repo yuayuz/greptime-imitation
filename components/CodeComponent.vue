@@ -13,7 +13,7 @@ const { t } = useI18n();
     >
       <div class="tw-absolute tw-flex tw-w-full tw-items-center tw-justify-end">
         <div>
-          <v-img width="143" height="16" :src="sqlTitle"></v-img>
+          <v-img width="143" height="16" :src="sqlTitle" />
         </div>
       </div>
       <div class="tw-px-3 tw-text-base tw-leading-4">

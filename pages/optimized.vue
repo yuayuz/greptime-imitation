@@ -27,7 +27,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_1" width="400" height="400"></v-img>
+            <v-img :src="domain_1" width="400" height="400" />
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -41,14 +41,14 @@ const { t } = useI18n();
                     :src="scale_workload"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
-                  ></v-img>
+                  />
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
                   {{ t("Optimized.HybridWorkloadsButton") }}
                 </p>
               </div>
             </div>
-            <hybrid-workloads></hybrid-workloads>
+            <hybrid-workloads />
           </div>
         </div>
 
@@ -56,7 +56,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_2" width="400" height="400"></v-img>
+            <v-img :src="domain_2" width="400" height="400" />
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -70,14 +70,14 @@ const { t } = useI18n();
                     :src="scale_capacity"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
-                  ></v-img>
+                  />
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
                   {{ t("Optimized.UnlimitedCapacityButton") }}
                 </p>
               </div>
             </div>
-            <unlimited-capacity></unlimited-capacity>
+            <unlimited-capacity />
           </div>
         </div>
 
@@ -85,7 +85,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_3" width="400" height="400"></v-img>
+            <v-img :src="domain_3" width="400" height="400" />
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -99,7 +99,7 @@ const { t } = useI18n();
                     :src="scale_organization"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
-                  ></v-img>
+                  />
                 </div>
 
                 <p class="tw-w-full tw-text-xl tw-font-black">
@@ -107,7 +107,7 @@ const { t } = useI18n();
                 </p>
               </div>
             </div>
-            <enterprise-ready></enterprise-ready>
+            <enterprise-ready />
           </div>
         </div>
 
@@ -115,7 +115,7 @@ const { t } = useI18n();
           class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
         >
           <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_4" width="400" height="400"></v-img>
+            <v-img :src="domain_4" width="400" height="400" />
           </div>
           <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
             <div
@@ -129,14 +129,14 @@ const { t } = useI18n();
                     :src="scale_deployment"
                     style="z-index: -1"
                     class="tw-bg-violet-800"
-                  ></v-img>
+                  />
                 </div>
                 <p class="tw-w-full tw-text-xl tw-font-black">
                   {{ t("Optimized.FlexibleDeploymentButton") }}
                 </p>
               </div>
             </div>
-            <flexible-deployment></flexible-deployment>
+            <flexible-deployment />
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@ const { t } = useI18n();
               class="tw-bg-violet-800"
               width="42"
               height="40"
-            ></v-img>
+            />
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
               {{ t("Optimized.HybridWorkloadsButton") }}
             </p>
@@ -192,7 +192,7 @@ const { t } = useI18n();
               style="z-index: -1"
               width="42"
               height="40"
-            ></v-img>
+            />
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
               {{ t("Optimized.UnlimitedCapacityButton") }}
             </p>
@@ -217,7 +217,7 @@ const { t } = useI18n();
               style="z-index: -1"
               width="42"
               height="40"
-            ></v-img>
+            />
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
               {{ t("Optimized.EnterpriseReadyButton") }}
             </p>
@@ -242,7 +242,7 @@ const { t } = useI18n();
               style="z-index: -1"
               width="42"
               height="40"
-            ></v-img>
+            />
             <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
               {{ t("Optimized.FlexibleDeploymentButton") }}
             </p>
@@ -261,40 +261,40 @@ const { t } = useI18n();
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_1" width="400" height="400"></v-img>
+              <v-img :src="domain_1" width="400" height="400" />
             </div>
             <div class="tw-space-y-12 tw-p-8">
-              <hybrid-workloads></hybrid-workloads>
+              <hybrid-workloads />
             </div>
           </template>
         </v-carousel-item>
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_2" width="400" height="400"></v-img>
+              <v-img :src="domain_2" width="400" height="400" />
             </div>
             <div class="tw-space-y-12 tw-p-8">
-              <unlimited-capacity></unlimited-capacity>
+              <unlimited-capacity />
             </div>
           </template>
         </v-carousel-item>
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_3" width="400" height="400"></v-img>
+              <v-img :src="domain_3" width="400" height="400" />
             </div>
             <div class="tw-space-y-12 tw-p-8">
-              <enterprise-ready></enterprise-ready>
+              <enterprise-ready />
             </div>
           </template>
         </v-carousel-item>
         <v-carousel-item>
           <template v-slot:default>
             <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_4" width="400" height="400"></v-img>
+              <v-img :src="domain_4" width="400" height="400" />
             </div>
             <div class="tw-space-y-12 tw-p-8">
-              <flexible-deployment></flexible-deployment>
+              <flexible-deployment />
             </div>
           </template>
         </v-carousel-item>

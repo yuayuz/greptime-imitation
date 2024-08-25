@@ -8,7 +8,7 @@ const { t } = useI18n();
 <template>
   <div class="lg:tw-hidden">
     <div style="z-index: -1" class="tw-absolute tw--left-36 tw-flex">
-      <v-img :src="homeImage" height="576" width="1168"></v-img>
+      <v-img :src="homeImage" height="576" width="1168" />
     </div>
     <div class="tw-space-y-6 tw-px-4 tw-py-[3.75rem]">
       <div class="tw-w-full tw-space-y-12">
@@ -35,14 +35,14 @@ const { t } = useI18n();
         </div>
       </div>
       <!-- code 组件   -->
-      <code-component></code-component>
+      <code-component />
     </div>
   </div>
 
   <!-- lg 以上 -->
   <div class="tw-hidden lg:tw-relative lg:tw-block">
     <div class="tw-absolute tw--left-44" style="z-index: -1">
-      <v-img :src="homeImage" height="576" width="1168"></v-img>
+      <v-img :src="homeImage" height="576" width="1168" />
     </div>
     <div class="tw-flex tw-w-full tw-py-[6.25rem]">
       <div class="tw-w-max-[82.5rem] tw-mx-auto tw-flex">

@@ -28,7 +28,7 @@ const darkMode = () => {
     style="z-index: 1"
   >
     <div class="tw-mx-auto tw-flex tw-h-full tw-max-w-[86rem] tw-items-center">
-      <v-img :src="image" height="42" width="162"></v-img>
+      <v-img :src="image" height="42" width="162" />
       <div
         class="tw-relative tw-flex tw-h-full tw-w-full tw-items-center tw-justify-end lg:tw-hidden"
       >

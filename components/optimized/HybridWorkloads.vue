@@ -18,7 +18,7 @@ const { t } = useI18n();
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Metrics></Metrics>
+          <Metrics />
           <div>{{ t("Optimized.HybridWorkloadsWindow.Metrics") }}</div>
         </div>
       </v-card>
@@ -33,7 +33,7 @@ const { t } = useI18n();
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Events></Events>
+          <Events />
           <div>
             {{ t("Optimized.HybridWorkloadsWindow.Events") }}
           </div>
@@ -50,7 +50,7 @@ const { t } = useI18n();
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Analytics></Analytics>
+          <Analytics />
           <div>{{ t("Optimized.HybridWorkloadsWindow.Analytics") }}</div>
         </div>
       </v-card>
@@ -65,7 +65,7 @@ const { t } = useI18n();
         class="tw-flex tw-w-full tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
-          <Streaming></Streaming>
+          <Streaming />
           <div>{{ t("Optimized.HybridWorkloadsWindow.Streaming") }}</div>
         </div>
       </v-card>

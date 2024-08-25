@@ -14,11 +14,11 @@ const props = defineProps<Props>();
     <v-card height="276" color="white">
       <div class="tw-mx-auto tw-w-full tw-max-w-[17.4rem] tw-space-y-3 tw-py-8">
         <div class="tw-flex tw-justify-center">
-          <component :is="props.svg"></component>
+          <component :is="props.svg" />
         </div>
         <p class="tw-text-center tw-text-xl tw-font-bold">{{ props.title }}</p>
         <div class="tw-text-center">
-          <slot></slot>
+          <slot />
         </div>
       </div>
     </v-card>

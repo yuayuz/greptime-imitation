@@ -16,7 +16,7 @@ import logo from "/public/logo-text.png";
     <div class="tw-px-4 tw-py-[3.75rem]">
       <div class="tw-space-y-16">
         <div class="tw-w-[8.5rem]">
-          <v-img :src="logo" class="tw-mb-5"></v-img>
+          <v-img :src="logo" class="tw-mb-5" />
           <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
           <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
           <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
@@ -24,7 +24,7 @@ import logo from "/public/logo-text.png";
             <template v-slot:activator="{ props }">
               <v-btn v-bind="props" class="tw-mt-5">
                 <template v-slot:prepend>
-                  <svg-footer-language></svg-footer-language>
+                  <svg-footer-language />
                 </template>
                 {{ locale === "EN" ? "English" : "简体中文" }}
                 <template v-slot:append>
@@ -136,12 +136,12 @@ import logo from "/public/logo-text.png";
             {{ t("Footer.Subscribe.Button") }}
           </v-btn>
           <div class="tw-mt-5 tw-grid tw-w-[18rem] tw-grid-cols-6">
-            <v-img :src="github" width="28" height="28"></v-img>
-            <v-img :src="youtube" width="28" height="28"></v-img>
-            <v-img :src="twitter" width="28" height="28"></v-img>
-            <v-img :src="slack" width="28" height="28"></v-img>
-            <v-img :src="linkedin" width="28" height="28"></v-img>
-            <v-img :src="rss" width="28" height="28"></v-img>
+            <v-img :src="github" width="28" height="28" />
+            <v-img :src="youtube" width="28" height="28" />
+            <v-img :src="twitter" width="28" height="28" />
+            <v-img :src="slack" width="28" height="28" />
+            <v-img :src="linkedin" width="28" height="28" />
+            <v-img :src="rss" width="28" height="28" />
           </div>
         </div>
       </div>
@@ -155,7 +155,7 @@ import logo from "/public/logo-text.png";
   <div class="tw-hidden tw-w-full tw-border-t tw-py-[3.75rem] lg:tw-block">
     <div class="tw-flex tw-justify-between">
       <div class="tw-w-[8.5rem]">
-        <v-img :src="logo" class="tw-mb-5"></v-img>
+        <v-img :src="logo" class="tw-mb-5" />
         <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
         <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
         <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
@@ -163,7 +163,7 @@ import logo from "/public/logo-text.png";
           <template v-slot:activator="{ props }">
             <v-btn v-bind="props" class="tw-mt-5">
               <template v-slot:prepend>
-                <svg-footer-language></svg-footer-language>
+                <svg-footer-language />
               </template>
               {{ locale === "en" ? "English" : "简体中文" }}
               <template v-slot:append>
@@ -263,12 +263,12 @@ import logo from "/public/logo-text.png";
           {{ t("Footer.Subscribe.Button") }}
         </v-btn>
         <div class="tw-mt-5 tw-grid tw-grid-cols-6">
-          <v-img :src="github" width="28" height="28"></v-img>
-          <v-img :src="youtube" width="28" height="28"></v-img>
-          <v-img :src="twitter" width="28" height="28"></v-img>
-          <v-img :src="slack" width="28" height="28"></v-img>
-          <v-img :src="linkedin" width="28" height="28"></v-img>
-          <v-img :src="rss" width="28" height="28"></v-img>
+          <v-img :src="github" width="28" height="28" />
+          <v-img :src="youtube" width="28" height="28" />
+          <v-img :src="twitter" width="28" height="28" />
+          <v-img :src="slack" width="28" height="28" />
+          <v-img :src="linkedin" width="28" height="28" />
+          <v-img :src="rss" width="28" height="28" />
         </div>
       </div>
     </div>

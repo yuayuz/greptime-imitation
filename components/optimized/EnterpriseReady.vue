@@ -7,21 +7,21 @@ const { t } = useI18n();
 <template>
   <div class="tw-space-y-6">
     <div class="tw-flex tw-h-8 tw-items-center">
-      <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
+      <enterprise-ready-s-v-g />
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
         {{ t("Optimized.EnterpriseReadyWindow.EnterpriseFunctionalities") }}
       </div>
     </div>
 
     <div class="tw-flex tw-h-8 tw-items-center">
-      <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
+      <enterprise-ready-s-v-g />
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
         {{ t("Optimized.EnterpriseReadyWindow.TechnicalServices") }}
       </div>
     </div>
 
     <div class="tw-flex tw-h-8 tw-items-center">
-      <enterprise-ready-s-v-g></enterprise-ready-s-v-g>
+      <enterprise-ready-s-v-g />
       <div class="tw-ml-2 tw-text-base tw-font-semibold">
         {{ t("Optimized.EnterpriseReadyWindow.Fully-managedCloud") }}
       </div>

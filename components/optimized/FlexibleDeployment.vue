@@ -19,7 +19,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <at-edge></at-edge>
+            <at-edge />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.Edge") }}
@@ -38,7 +38,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <on-the-cloud></on-the-cloud>
+            <on-the-cloud />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.Cloud") }}
@@ -57,7 +57,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <network-resilience></network-resilience>
+            <network-resilience />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.Network") }}
@@ -76,7 +76,7 @@ const { t } = useI18n();
           <div
             class="tw-mx-auto tw-flex tw-aspect-square tw-w-12 tw-items-center tw-justify-center tw-rounded-lg tw-border tw-border-white tw-bg-purple-500 dark:tw-bg-purple-950"
           >
-            <traffic-costs></traffic-costs>
+            <traffic-costs />
           </div>
           <div class="tw-font-bold">
             {{ t("Optimized.FlexibleDeploymentWindow.TrafficCosts") }}

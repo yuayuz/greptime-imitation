@@ -14,13 +14,13 @@ definePageMeta({
 
 <template>
   <div class="tw-mx-auto 2xl:tw-w-[82.5rem]">
-    <home></home>
-    <optimized></optimized>
-    <greptimeDB></greptimeDB>
-    <enterprise></enterprise>
-    <greptime-cloud></greptime-cloud>
-    <integrated-solution></integrated-solution>
-    <index-footer></index-footer>
+    <home />
+    <optimized />
+    <greptime-d-b />
+    <enterprise />
+    <greptime-cloud />
+    <integrated-solution />
+    <index-footer />
   </div>
 </template>
 

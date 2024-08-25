@@ -88,33 +88,33 @@
     },
     "Button": "Sign up for free"
   },
-  "item5": {
-    "title": "Edge-Cloud Integrated Solution",
-    "subheader": "Processing High-volume Time Series both At the Edge or On the Cloud",
-    "card1": {
-      "title": "Edge Database",
-      "li1": "Embedded database for ARM architecture compatible Android/Linux system",
-      "li2": "Low resource requirements to support edge applications"
+  "IntegratedSolution": {
+    "Title": "Edge-Cloud Integrated Solution",
+    "Subheader": "Processing High-volume Time Series both At the Edge or On the Cloud",
+    "EdgeDatabase": {
+      "Title": "Edge Database",
+      "Message1": "Embedded database for ARM architecture compatible Android/Linux system",
+      "Message2": "Low resource requirements to support edge applications"
     },
-    "card2": {
-      "title": "Lower Data Async Cost",
-      "li1": "Highly compressed data files directly sync without format transformation",
-      "li2": "Use object storage for ultra-low storage cost (1/30 of the original)"
+    "DataAsyncCost": {
+      "Title": "Lower Data Async Cost",
+      "Message1": "Highly compressed data files directly sync without format transformation",
+      "Message2": "Use object storage for ultra-low storage cost (1/30 of the original)"
     },
-    "card3": {
-      "title": "Cloud-Edge Collaboration",
-      "li1": "Push down queries to the edge",
-      "li2": "One control plane for edge and cloud"
+    "Collaboration": {
+      "Title": "Cloud-Edge Collaboration",
+      "Message1": "Push down queries to the edge",
+      "Message2": "One control plane for edge and cloud"
     },
-    "card4": {
-      "message": "After integrating GreptimeDB into our mass-produced vehicles, it has not only significantly reduced our data processing costs, but also established a foundation for streamlined in-vehicle and edge computing, ensuring the security and efficiency of data-driven applications.",
-      "unit": "Leading Manufacturer of New Energy Vehicles",
-      "author": "Tao W. | Staff Engineer"
+    "Comment1": {
+      "Message": "After integrating GreptimeDB into our mass-produced vehicles, it has not only significantly reduced our data processing costs, but also established a foundation for streamlined in-vehicle and edge computing, ensuring the security and efficiency of data-driven applications.",
+      "Unit": "Leading Manufacturer of New Energy Vehicles",
+      "Author": "Tao W. | Staff Engineer"
     },
-    "card5": {
-      "message": "GreptimeDB successfully replaced InfluxDB in our IoT project. The entire migration process was smooth and painless. Its cluster version excellently meets our scalability and performance requirements, and the SQL queries are more user-friendly and powerful.",
-      "unit": "SGCC",
-      "author": "JianX L. | Staff Engineer"
+    "Comment2": {
+      "Message": "GreptimeDB successfully replaced InfluxDB in our IoT project. The entire migration process was smooth and painless. Its cluster version excellently meets our scalability and performance requirements, and the SQL queries are more user-friendly and powerful.",
+      "Unit": "SGCC",
+      "Author": "JianX L. | Staff Engineer"
     }
   },
   "item6": {

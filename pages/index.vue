@@ -4,7 +4,7 @@ import Optimized from "~/pages/optimized.vue";
 import GreptimeDB from "~/pages/greptimeDB.vue";
 import enterprise from "~/pages/enterprise.vue";
 import GreptimeCloud from "~/pages/greptimeCloud.vue";
-import Item5 from "~/pages/item5.vue";
+import IntegratedSolution from "~/pages/integratedSolution.vue";
 import Item6 from "~/pages/item6.vue";
 
 definePageMeta({
@@ -19,7 +19,7 @@ definePageMeta({
     <greptimeDB></greptimeDB>
     <enterprise></enterprise>
     <greptime-cloud></greptime-cloud>
-    <item5></item5>
+    <integrated-solution></integrated-solution>
     <item6></item6>
   </div>
 </template>

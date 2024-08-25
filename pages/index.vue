@@ -8,7 +8,7 @@ import IntegratedSolution from "~/pages/integratedSolution.vue";
 import IndexFooter from "~/pages/footer.vue";
 
 definePageMeta({
-  layout: "nav-var-layout",
+  layout: "nav-bar-layout",
 });
 </script>
 

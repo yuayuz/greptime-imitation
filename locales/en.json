@@ -68,25 +68,25 @@
     "DeploymentOptions": "Flexible Deployment Options",
     "Button": "Compared to GreptimeDB OSS"
   },
-  "item4": {
-    "subheader": "Your IoT & Observerbility Data Stack on the Cloud, Fully Managed",
-    "card1": {
-      "title": "Integrations",
-      "message": "Built-in data ingestion, observing, and analyzing tools, with instant data visualization and altering."
+  "GreptimeCloud": {
+    "Subheader": "Your IoT & Observerbility Data Stack on the Cloud, Fully Managed",
+    "Integrations": {
+      "Title": "Integrations",
+      "Message": "Built-in data ingestion, observing, and analyzing tools, with instant data visualization and altering."
     },
-    "card2": {
-      "title": "Out-of-the-box Experience",
-      "message": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available."
+    "Experience": {
+      "Title": "Out-of-the-box Experience",
+      "Message": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available."
     },
-    "card3": {
-      "title": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available.",
-      "message": "You can start from small, and scale seamlessly with the Serverless (pay-as-you-go) or Dedicated Plan."
+    "ServerlessScaling": {
+      "Title": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available.",
+      "Message": "You can start from small, and scale seamlessly with the Serverless (pay-as-you-go) or Dedicated Plan."
     },
-    "card4": {
-      "title": "Bring Your Own Cloud",
-      "message": "Accessible within your cloud environment through the Bring Your Own Cloud (BYOC) deployment option."
+    "Cloud": {
+      "Title": "Bring Your Own Cloud",
+      "Message": "Accessible within your cloud environment through the Bring Your Own Cloud (BYOC) deployment option."
     },
-    "button": "Sign up for free"
+    "Button": "Sign up for free"
   },
   "item5": {
     "title": "Edge-Cloud Integrated Solution",

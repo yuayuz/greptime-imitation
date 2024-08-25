@@ -68,25 +68,25 @@
     "DeploymentOptions": "灵活部署选择",
     "Button": "企业版和开源版的对比"
   },
-  "item4": {
-    "subheader": "全托管的云上 IoT & 可观测数据栈",
-    "card1": {
-      "title": "丰富的数据生态集成",
-      "message": "内置数据导入、观测和分析工具，可实现实时数据可视化和告警"
+  "GreptimeCloud": {
+    "Subheader": "全托管的云上 IoT & 可观测数据栈",
+    "Integrations": {
+      "Title": "丰富的数据生态集成",
+      "Message": "内置数据导入、观测和分析工具，可实现实时数据可视化和告警"
     },
-    "card2": {
-      "title": "开箱即用的流畅体验",
-      "message": "在几秒钟内即可启动运行，无需手动配置；云端控制台提供了开箱即用的查询界面、仪表盘和数据库接口"
+    "Experience": {
+      "Title": "开箱即用的流畅体验",
+      "Message": "在几秒钟内即可启动运行，无需手动配置；云端控制台提供了开箱即用的查询界面、仪表盘和数据库接口"
     },
-    "card3": {
-      "title": "无服务化的任意扩展",
-      "message": "可以从小规模开始使用，然后利用 Serverless 计划（按需付费）或 Dedicated 计划无缝无限扩展"
+    "ServerlessScaling": {
+      "Title": "无服务化的任意扩展",
+      "Message": "可以从小规模开始使用，然后利用 Serverless 计划（按需付费）或 Dedicated 计划无缝无限扩展"
     },
-    "card4": {
-      "title": "Bring Your Own Cloud",
-      "message": "可通过 BYOC 选项部署在您拥有的云服务资源上"
+    "Cloud": {
+      "Title": "Bring Your Own Cloud",
+      "Message": "可通过 BYOC 选项部署在您拥有的云服务资源上"
     },
-    "button": "立即注册"
+    "Button": "立即注册"
   },
   "item5": {
     "title": "边云一体方案",

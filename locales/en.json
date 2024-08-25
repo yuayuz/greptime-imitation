@@ -117,43 +117,43 @@
       "Author": "JianX L. | Staff Engineer"
     }
   },
-  "item6": {
-    "list1": {
-      "title": "Products",
-      "li1": "GreptimeDB Enterprise",
-      "li2": "GreptimeCloud",
-      "li3": "GreptimeDB OSS"
+  "Footer": {
+    "Products": {
+      "Title": "Products",
+      "Enterprise": "GreptimeDB Enterprise",
+      "Cloud": "GreptimeCloud",
+      "OSS": "GreptimeDB OSS"
     },
-    "list2": {
-      "title": "Resources",
-      "li1": "Documentation",
-      "li2": "Blog",
-      "li3": "GreptimePlay",
-      "li4": "Download",
-      "li5": "Docker Repository",
-      "li6": "Service Status"
+    "Resources": {
+      "Title": "Resources",
+      "Documentation": "Documentation",
+      "Blog": "Blog",
+      "GreptimePlay": "GreptimePlay",
+      "Download": "Download",
+      "DockerRepository": "Docker Repository",
+      "ServiceStatus": "Service Status"
     },
-    "list3": {
-      "title": "Community",
-      "li1": "Open Source",
-      "li2": "Roadmap",
-      "li3": "Contribute Guide",
-      "li4": "Slack Community"
+    "Community": {
+      "Title": "Community",
+      "OpenSource": "Open Source",
+      "Roadmap": "Roadmap",
+      "ContributeGuide": "Contribute Guide",
+      "SlackCommunity": "Slack Community"
     },
-    "list4": {
-      "title": "Company",
-      "li1": "About Greptime",
-      "li2": "Careers",
-      "li3": "Brand",
-      "li4": "Contact",
-      "li5": "Privacy",
-      "li6": "Terms"
+    "Company": {
+      "Title": "Company",
+      "AboutGreptime": "About Greptime",
+      "Careers": "Careers",
+      "Brand": "Brand",
+      "Contact": "Contact",
+      "Privacy": "Privacy",
+      "Terms": "Terms"
     },
-    "subscribe": {
-      "title": "Subscribe to our newsletter",
-      "message": "Email Address",
-      "button": "subscribe"
+    "Subscribe": {
+      "Title": "Subscribe to our newsletter",
+      "Message": "Email Address",
+      "Button": "subscribe"
     },
-    "footer": "©Copyright 2024 Greptime Inc. All Rights Reserved"
+    "Footer": "©Copyright 2024 Greptime Inc. All Rights Reserved"
   }
 }

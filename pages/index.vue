@@ -5,7 +5,7 @@ import GreptimeDB from "~/pages/greptimeDB.vue";
 import enterprise from "~/pages/enterprise.vue";
 import GreptimeCloud from "~/pages/greptimeCloud.vue";
 import IntegratedSolution from "~/pages/integratedSolution.vue";
-import Item6 from "~/pages/item6.vue";
+import IndexFooter from "~/pages/footer.vue";
 
 definePageMeta({
   layout: "nav-var-layout",
@@ -20,7 +20,7 @@ definePageMeta({
     <enterprise></enterprise>
     <greptime-cloud></greptime-cloud>
     <integrated-solution></integrated-solution>
-    <item6></item6>
+    <index-footer></index-footer>
   </div>
 </template>
 

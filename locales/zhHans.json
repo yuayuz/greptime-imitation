@@ -116,43 +116,43 @@
       "Author": "JianX L. | 国家电网数字换流站项目架构师"
     }
   },
-  "item6": {
-    "list1": {
-      "title": "产品",
-      "li1": "GreptimeDB 企业版",
-      "li2": "GreptimeCloud",
-      "li3": "GreptimeDB 开源版"
+  "Footer": {
+    "Products": {
+      "Title": "产品",
+      "Enterprise": "GreptimeDB 企业版",
+      "Cloud": "GreptimeCloud",
+      "OSS": "GreptimeDB 开源版"
     },
-    "list2": {
-      "title": "资源中心",
-      "li1": "文档",
-      "li2": "Blog",
-      "li3": "GreptimePlay",
-      "li4": "下载",
-      "li5": "Docker 仓库",
-      "li6": "服务状态"
+    "Resources": {
+      "Title": "资源中心",
+      "Documentation": "文档",
+      "Blog": "Blog",
+      "GreptimePlay": "GreptimePlay",
+      "Download": "下载",
+      "DockerRepository": "Docker 仓库",
+      "ServiceStatus": "服务状态"
     },
-    "list3": {
-      "title": "开发者社区",
-      "li1": "GitHub",
-      "li2": "Roadmap",
-      "li3": "贡献指南",
-      "li4": "入门指南"
+    "Community": {
+      "Title": "开发者社区",
+      "OpenSource": "GitHub",
+      "Roadmap": "Roadmap",
+      "ContributeGuide": "贡献指南",
+      "SlackCommunity": "入门指南"
     },
-    "list4": {
-      "title": "公司",
-      "li1": "关于 Greptime",
-      "li2": "Careers",
-      "li3": "品牌",
-      "li4": "联系我们",
-      "li5": "Privacy",
-      "li6": "Terms"
+    "Company": {
+      "Title": "公司",
+      "AboutGreptime": "关于 Greptime",
+      "Careers": "Careers",
+      "Brand": "品牌",
+      "Contact": "联系我们",
+      "Privacy": "Privacy",
+      "Terms": "Terms"
     },
-    "subscribe": {
-      "title": "订阅我们的邮件",
-      "message": "邮件地址",
-      "button": "订阅"
+    "Subscribe": {
+      "Title": "订阅我们的邮件",
+      "Message": "邮件地址",
+      "Button": "订阅"
     },
-    "footer": "©2024 格睿云(北京)技术咨询有限公司 | 京ICP备 2023008042号 | 京公网安备 11010502052203号"
+    "Footer": "©2024 格睿云(北京)技术咨询有限公司 | 京ICP备 2023008042号 | 京公网安备 11010502052203号"
   }
 }

@@ -17,7 +17,7 @@ const { locale, setLocale, t } = useI18n();
             <template v-slot:activator="{ props }">
               <v-btn v-bind="props" class="tw-mt-5">
                 <template v-slot:prepend>
-                  <svg-item6-language></svg-item6-language>
+                  <svg-footer-language></svg-footer-language>
                 </template>
                 {{ locale === "EN" ? "English" : "简体中文" }}
                 <template v-slot:append>
@@ -37,96 +37,96 @@ const { locale, setLocale, t } = useI18n();
         </div>
         <div class="tw-flex">
           <div class="tw-w-[12.3rem]">
-            <div class="tw-mb-5 tw-mt-2">{{ t("item6.list1.title") }}</div>
+            <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Products.Title") }}</div>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list1.li1") }}
+              {{ t("Footer.Products.Enterprise") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list1.li2") }}
+              {{ t("Footer.Products.Cloud") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list1.li3") }}
+              {{ t("Footer.Products.OSS") }}
             </p>
           </div>
           <div class="tw-w-[12.3rem]">
-            <div class="tw-mb-5 tw-mt-2">{{ t("item6.list2.title") }}</div>
+            <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Resources.Title") }}</div>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list2.li1") }}
+              {{ t("Footer.Resources.Documentation") }}
             </p>
             <p
               :hidden="locale === 'zhHans'"
               class="tw-text-sm tw-text-zinc-500"
             >
-              {{ t("item6.list2.li2") }}
+              {{ t("Footer.Resources.Blog") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list2.li3") }}
+              {{ t("Footer.Resources.GreptimePlay") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list2.li4") }}
+              {{ t("Footer.Resources.Download") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list2.li5") }}
+              {{ t("Footer.Resources.DockerRepository") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list2.li6") }}
+              {{ t("Footer.Resources.ServiceStatus") }}
             </p>
           </div>
           <div class="tw-w-[12.3rem]">
-            <div class="tw-mb-5 tw-mt-2">{{ t("item6.list3.title") }}</div>
+            <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Community.Title") }}</div>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list3.li1") }}
+              {{ t("Footer.Community.OpenSource") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list3.li2") }}
+              {{ t("Footer.Community.Roadmap") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list3.li3") }}
+              {{ t("Footer.Community.ContributeGuide") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list3.li4") }}
+              {{ t("Footer.Community.SlackCommunity") }}
             </p>
           </div>
           <div class="tw-w-[12.3rem]">
-            <div class="tw-mb-5 tw-mt-2">{{ t("item6.list4.title") }}</div>
+            <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Company.Title") }}</div>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list4.li1") }}
+              {{ t("Footer.Company.AboutGreptime") }}
             </p>
             <p
               :hidden="locale === 'zhHans'"
               class="tw-text-sm tw-text-zinc-500"
             >
-              {{ t("item6.list4.li2") }}
+              {{ t("Footer.Company.Careers") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list4.li3") }}
+              {{ t("Footer.Company.Brand") }}
             </p>
             <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("item6.list4.li4") }}
+              {{ t("Footer.Company.Contact") }}
             </p>
             <p
               :hidden="locale === 'zhHans'"
               class="tw-text-sm tw-text-zinc-500"
             >
-              {{ t("item6.list4.li5") }}
+              {{ t("Footer.Company.Privacy") }}
             </p>
             <p
               :hidden="locale === 'zhHans'"
               class="tw-text-sm tw-text-zinc-500"
             >
-              {{ t("item6.list4.li6") }}
+              {{ t("Footer.Company.Terms") }}
             </p>
           </div>
         </div>
         <div class="tw-w-[26.25rem]">
           <div class="tw-mb-5 tw-mt-2 tw-text-xl tw-font-black">
-            {{ t("item6.subscribe.title") }}
+            {{ t("Footer.Subscribe.Title") }}
           </div>
           <v-text-field
-            :placeholder="t('item6.subscribe.message')"
+            :placeholder="t('Footer.Subscribe.Message')"
           ></v-text-field>
           <v-btn width="420">
-            {{ t("item6.subscribe.button") }}
+            {{ t("Footer.Subscribe.Button") }}
           </v-btn>
           <div class="tw-mt-5 tw-grid tw-w-[18rem] tw-grid-cols-6">
             <v-img src="/public/github.png" width="28" height="28"></v-img>
@@ -141,7 +141,7 @@ const { locale, setLocale, t } = useI18n();
       <div
         class="tw-mt-[3.75rem] tw-w-full tw-border-t tw-p-6 tw-text-center tw-text-sm tw-text-zinc-500"
       >
-        {{ t("item6.footer") }}
+        {{ t("Footer.Footer") }}
       </div>
     </div>
   </div>
@@ -156,7 +156,7 @@ const { locale, setLocale, t } = useI18n();
           <template v-slot:activator="{ props }">
             <v-btn v-bind="props" class="tw-mt-5">
               <template v-slot:prepend>
-                <svg-item6-language></svg-item6-language>
+                <svg-footer-language></svg-footer-language>
               </template>
               {{ locale === "en" ? "English" : "简体中文" }}
               <template v-slot:append>
@@ -176,54 +176,84 @@ const { locale, setLocale, t } = useI18n();
       </div>
       <div class="tw-grid tw-grid-cols-4">
         <div class="tw-w-[12.3rem]">
-          <div class="tw-mb-5 tw-mt-2">{{ t("item6.list1.title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list1.li1") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list1.li2") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list1.li3") }}</p>
+          <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Products.Title") }}</div>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Products.Enterprise") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Products.Cloud") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Products.OSS") }}
+          </p>
         </div>
         <div class="tw-w-[12.3rem]">
-          <div class="tw-mb-5 tw-mt-2">{{ t("item6.list2.title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list2.li1") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list2.li2") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("item6.list2.li3") }}
+          <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Resources.Title") }}</div>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Resources.Documentation") }}
           </p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list2.li4") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list2.li5") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list2.li6") }}</p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Resources.Blog") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
+            {{ t("Footer.Resources.GreptimePlay") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Resources.Download") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Resources.DockerRepository") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Resources.ServiceStatus") }}
+          </p>
         </div>
         <div class="tw-w-[12.3rem]">
-          <div class="tw-mb-5 tw-mt-2">{{ t("item6.list1.title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list3.li1") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list3.li2") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list3.li3") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list3.li4") }}</p>
+          <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Community.Title") }}</div>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Community.OpenSource") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Community.Roadmap") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Community.ContributeGuide") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Community.SlackCommunity") }}
+          </p>
         </div>
         <div class="tw-w-[12.3rem]">
-          <div class="tw-mb-5 tw-mt-2">{{ t("item6.list4.title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list4.li1") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("item6.list4.li2") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list4.li3") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500">{{ t("item6.list4.li4") }}</p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("item6.list4.li5") }}
+          <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Company.Title") }}</div>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Company.AboutGreptime") }}
           </p>
           <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("item6.list4.li6") }}
+            {{ t("Footer.Company.Careers") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Company.Brand") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500">
+            {{ t("Footer.Company.Contact") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
+            {{ t("Footer.Company.Privacy") }}
+          </p>
+          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
+            {{ t("Footer.Company.Terms") }}
           </p>
         </div>
       </div>
       <div class="tw-w-[18rem]">
         <div class="tw-mb-5 tw-mt-2 tw-text-xl tw-font-black">
-          {{ t("item6.subscribe.title") }}
+          {{ t("Footer.Subscribe.Title") }}
         </div>
         <v-text-field
-          :placeholder="t('item6.subscribe.message')"
+          :placeholder="t('Footer.Subscribe.Message')"
         ></v-text-field>
         <v-btn width="288">
-          {{ t("item6.subscribe.button") }}
+          {{ t("Footer.Subscribe.Button") }}
         </v-btn>
         <div class="tw-mt-5 tw-grid tw-grid-cols-6">
           <v-img src="/public/github.png" width="28" height="28"></v-img>
@@ -238,7 +268,7 @@ const { locale, setLocale, t } = useI18n();
     <div
       class="tw-mt-[3.75rem] tw-w-full tw-border-t tw-p-6 tw-text-center tw-text-sm tw-text-zinc-500"
     >
-      {{ t("item6.footer") }}
+      {{ t("Footer.Footer") }}
     </div>
   </div>
 </template>

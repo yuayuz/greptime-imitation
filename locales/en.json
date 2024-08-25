@@ -59,14 +59,14 @@
     },
     "Button": "Learn More"
   },
-  "item3": {
-    "title": "GreptimeDB Enterprise",
-    "subheader": "One-stop Time Series Solution to Your Specific Business Needs",
-    "card1": "Enterprise Ready",
-    "card2": "Advanced Features",
-    "card3": "Professional Technical Services",
-    "card4": "Flexible Deployment Options",
-    "button": "Compared to GreptimeDB OSS"
+  "Enterprise": {
+    "Title": "GreptimeDB Enterprise",
+    "Subheader": "One-stop Time Series Solution to Your Specific Business Needs",
+    "EnterpriseReady": "Enterprise Ready",
+    "AdvancedFeatures": "Advanced Features",
+    "TechnicalServices": "Professional Technical Services",
+    "DeploymentOptions": "Flexible Deployment Options",
+    "Button": "Compared to GreptimeDB OSS"
   },
   "item4": {
     "subheader": "Your IoT & Observerbility Data Stack on the Cloud, Fully Managed",

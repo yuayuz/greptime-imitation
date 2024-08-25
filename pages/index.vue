@@ -2,7 +2,7 @@
 import Home from "~/pages/home.vue";
 import Optimized from "~/pages/optimized.vue";
 import GreptimeDB from "~/pages/greptimeDB.vue";
-import Item3 from "~/pages/item3.vue";
+import enterprise from "~/pages/enterprise.vue";
 import Item4 from "~/pages/item4.vue";
 import Item5 from "~/pages/item5.vue";
 import Item6 from "~/pages/item6.vue";
@@ -17,7 +17,7 @@ definePageMeta({
     <home></home>
     <optimized></optimized>
     <greptimeDB></greptimeDB>
-    <item3></item3>
+    <enterprise></enterprise>
     <item4></item4>
     <item5></item5>
     <item6></item6>

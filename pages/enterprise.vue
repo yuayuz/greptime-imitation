@@ -1,0 +1,96 @@
+<script setup lang="ts">
+import EnterpriseReady from "~/components/svg/enterprise/EnterpriseReady.vue";
+import AdvancedFeatures from "~/components/svg/enterprise/AdvancedFeatures.vue";
+import TechnicalServices from "~/components/svg/enterprise/TechnicalServices.vue";
+import DeploymentOptions from "~/components/svg/enterprise/DeploymentOptions.vue";
+
+const { t } = useI18n();
+</script>
+
+<template>
+  <div class="lg:tw-hidden">
+    <div class="tw-px-4 tw-py-[3.75rem]">
+      <p class="tw-text-center tw-text-3xl tw-font-black">
+        {{ t("Enterprise.Title") }}
+      </p>
+      <p class="tw-mb-16 tw-text-center tw-text-lg">
+        {{ t("Enterprise.Subheader") }}
+      </p>
+      <div
+        class="tw-mx-auto tw-mb-8 tw-max-w-[82.5rem] tw-rounded-md tw-border tw-bg-white tw-shadow"
+      >
+        <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
+          <enterprise-card :svg="EnterpriseReady" class="tw-border-r"
+            >{{ t("Enterprise.EnterpriseReady") }}
+          </enterprise-card>
+          <enterprise-card :svg="AdvancedFeatures">{{
+            t("Enterprise.AdvancedFeatures")
+          }}</enterprise-card>
+        </div>
+        <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
+          <enterprise-card :svg="TechnicalServices" class="tw-border-r"
+            >{{ t("Enterprise.TechnicalServices") }}
+          </enterprise-card>
+          <enterprise-card :svg="DeploymentOptions"
+            >{{ t("Enterprise.DeploymentOptions") }}
+          </enterprise-card>
+        </div>
+      </div>
+      <div class="tw-flex tw-w-full tw-justify-center">
+        <v-btn
+          width="266.5"
+          height="46"
+          color="#8322ff"
+          density="default"
+          class="tw-text-2xl hover:tw-scale-105"
+        >
+          {{ t("Enterprise.Button") }}
+        </v-btn>
+      </div>
+    </div>
+  </div>
+
+  <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
+    <p class="tw-text-center tw-text-3xl tw-font-black">
+      {{ t("Enterprise.Title") }}
+    </p>
+    <p class="tw-mb-16 tw-text-center tw-text-lg">
+      {{ t("Enterprise.Subheader") }}
+    </p>
+    <div
+      class="tw-mx-auto tw-mb-8 tw-max-w-[82.5rem] tw-rounded-md tw-border tw-bg-white tw-shadow"
+    >
+      <div class="tw-grid tw-grid-cols-4 tw-gap-8 tw-py-10">
+        <enterprise-card :svg="EnterpriseReady" class="tw-border-r"
+          >{{ t("Enterprise.EnterpriseReady") }}
+        </enterprise-card>
+        <enterprise-card :svg="AdvancedFeatures" class="tw-border-r"
+          >{{ t("Enterprise.AdvancedFeatures") }}
+        </enterprise-card>
+        <enterprise-card :svg="TechnicalServices" class="tw-border-r"
+          >{{ t("Enterprise.TechnicalServices") }}
+        </enterprise-card>
+        <enterprise-card :svg="DeploymentOptions"
+          >{{ t("Enterprise.DeploymentOptions") }}
+        </enterprise-card>
+      </div>
+    </div>
+    <div class="tw-flex tw-w-full tw-justify-center">
+      <v-btn
+        width="266.5"
+        height="46"
+        color="#8322ff"
+        density="default"
+        class="tw-text-2xl hover:tw-scale-105"
+      >
+        {{ t("Enterprise.Button") }}
+      </v-btn>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.v-btn {
+  text-transform: none !important;
+}
+</style>

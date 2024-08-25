@@ -59,14 +59,14 @@
     },
     "Button": "了解更多"
   },
-  "item3": {
-    "title": "GreptimeDB 企业版",
-    "subheader": "专为您的应用场景打造的一站式时序数据解决方案",
-    "card1": "企业生产就绪",
-    "card2": "高级功能支持",
-    "card3": "专业技术服务",
-    "card4": "灵活部署选择",
-    "button": "企业版和开源版的对比"
+  "Enterprise": {
+    "Title": "GreptimeDB 企业版",
+    "Subheader": "专为您的应用场景打造的一站式时序数据解决方案",
+    "EnterpriseReady": "企业生产就绪",
+    "AdvancedFeatures": "高级功能支持",
+    "TechnicalServices": "专业技术服务",
+    "DeploymentOptions": "灵活部署选择",
+    "Button": "企业版和开源版的对比"
   },
   "item4": {
     "subheader": "全托管的云上 IoT & 可观测数据栈",

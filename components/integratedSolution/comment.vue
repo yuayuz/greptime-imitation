@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import user_avatar from "public/user-avatar.png";
-
-interface Props {
-  comment: string;
-  unit: string;
-  author: string;
-}
-
-const props = defineProps<Props>();
-</script>
-
 <template>
   <div class="tw-w-full tw-max-w-[24.75rem] tw-space-y-4">
     <div class="tw-h-[10.5rem]">
@@ -29,5 +17,17 @@ const props = defineProps<Props>();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import user_avatar from "public/user-avatar.png";
+
+interface Props {
+  comment: string;
+  unit: string;
+  author: string;
+}
+
+const props = defineProps<Props>();
+</script>
 
 <style scoped></style>

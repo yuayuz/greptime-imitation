@@ -1,3 +1,15 @@
+<template>
+  <div class="tw-mx-auto 2xl:tw-w-[82.5rem]">
+    <home />
+    <optimized />
+    <greptime-d-b />
+    <enterprise />
+    <greptime-cloud />
+    <integrated-solution />
+    <index-footer />
+  </div>
+</template>
+
 <script setup lang="ts">
 import Home from "~/pages/home.vue";
 import Optimized from "~/pages/optimized.vue";
@@ -11,17 +23,5 @@ definePageMeta({
   layout: "nav-bar-layout",
 });
 </script>
-
-<template>
-  <div class="tw-mx-auto 2xl:tw-w-[82.5rem]">
-    <home />
-    <optimized />
-    <greptime-d-b />
-    <enterprise />
-    <greptime-cloud />
-    <integrated-solution />
-    <index-footer />
-  </div>
-</template>
 
 <style scoped></style>

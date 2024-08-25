@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import AtEdge from "~/public/svg/optimized/AtEdge.svg";
-import OnTheCloud from "~/public/svg/optimized/OnTheCloud.svg";
-import NetworkResilience from "~/public/svg/optimized/NetworkResilience.svg";
-import TrafficCosts from "~/public/svg/optimized/TrafficCosts.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="tw-flex tw-justify-evenly">
     <div class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg">
@@ -92,5 +83,14 @@ const { t } = useI18n();
     </p>
   </div>
 </template>
+
+<script setup lang="ts">
+import AtEdge from "~/public/svg/optimized/AtEdge.svg";
+import OnTheCloud from "~/public/svg/optimized/OnTheCloud.svg";
+import NetworkResilience from "~/public/svg/optimized/NetworkResilience.svg";
+import TrafficCosts from "~/public/svg/optimized/TrafficCosts.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

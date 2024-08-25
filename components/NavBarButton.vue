@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <v-hover>
     <template v-slot:default="{ isHovering, props }">
@@ -25,6 +23,8 @@
     </template>
   </v-hover>
 </template>
+
+<script setup lang="ts"></script>
 
 <style scoped>
 .v-btn {

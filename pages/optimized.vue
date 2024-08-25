@@ -1,21 +1,3 @@
-<script setup lang="ts">
-import UnlimitedCapacity from "~/components/optimized/UnlimitedCapacity.vue";
-import HybridWorkloads from "~/components/optimized/HybridWorkloads.vue";
-import EnterpriseReady from "~/components/optimized/EnterpriseReady.vue";
-import FlexibleDeployment from "~/components/optimized/FlexibleDeployment.vue";
-import domain_1 from "/public/domain-1.png";
-import domain_2 from "/public/domain-2.png";
-import domain_3 from "/public/domain-3.png";
-import domain_4 from "/public/domain-4.png";
-import scale_workload from "/public/scale_workload.png";
-import scale_capacity from "/public/scale_capacity.png";
-import scale_organization from "/public/scale_organization.png";
-import scale_deployment from "/public/scale_deployment.png";
-
-const model = ref(0);
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-space-y-6 tw-px-4 tw-py-[3.75rem]">
@@ -302,5 +284,23 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import UnlimitedCapacity from "~/components/optimized/UnlimitedCapacity.vue";
+import HybridWorkloads from "~/components/optimized/HybridWorkloads.vue";
+import EnterpriseReady from "~/components/optimized/EnterpriseReady.vue";
+import FlexibleDeployment from "~/components/optimized/FlexibleDeployment.vue";
+import domain_1 from "/public/domain-1.png";
+import domain_2 from "/public/domain-2.png";
+import domain_3 from "/public/domain-3.png";
+import domain_4 from "/public/domain-4.png";
+import scale_workload from "/public/scale_workload.png";
+import scale_capacity from "/public/scale_capacity.png";
+import scale_organization from "/public/scale_organization.png";
+import scale_deployment from "/public/scale_deployment.png";
+
+const model = ref(0);
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

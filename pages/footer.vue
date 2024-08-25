@@ -1,17 +1,3 @@
-<script setup lang="ts">
-const onLanguageOpen = ref(false);
-const onLanguageOpenLg = ref(false);
-const { locale, setLocale, t } = useI18n();
-import github from "/public/github.png";
-import youtube from "/public/youtube.png";
-import twitter from "/public/twitter.png";
-import slack from "/public/slack.png";
-import linkedin from "/public/linkedin.png";
-import rss from "/public/rss.png";
-import logo from "/public/logo-text.png";
-import language from "~/public/svg/footer/language.svg";
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-px-4 tw-py-[3.75rem]">
@@ -280,6 +266,20 @@ import language from "~/public/svg/footer/language.svg";
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const onLanguageOpen = ref(false);
+const onLanguageOpenLg = ref(false);
+const { locale, setLocale, t } = useI18n();
+import github from "/public/github.png";
+import youtube from "/public/youtube.png";
+import twitter from "/public/twitter.png";
+import slack from "/public/slack.png";
+import linkedin from "/public/linkedin.png";
+import rss from "/public/rss.png";
+import logo from "/public/logo-text.png";
+import language from "~/public/svg/footer/language.svg";
+</script>
 
 <style scoped>
 .v-btn {

@@ -1,12 +1,3 @@
-<script setup lang="ts">
-interface Props {
-  svg: string;
-  title: string;
-}
-
-const props = defineProps<Props>();
-</script>
-
 <template>
   <div
     class="tw-flex tw-h-[6.625rem] tw-w-full tw-flex-col tw-justify-center tw-space-y-2 tw-pr-5 tw-text-black"
@@ -19,5 +10,14 @@ const props = defineProps<Props>();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  svg: string;
+  title: string;
+}
+
+const props = defineProps<Props>();
+</script>
 
 <style scoped></style>

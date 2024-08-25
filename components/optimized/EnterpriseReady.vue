@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import EnterpriseReadySvg from "~/public/svg/optimized/EnterpriseReadySvg.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="tw-space-y-6">
     <div class="tw-flex tw-h-8 tw-items-center">
@@ -31,5 +25,11 @@ const { t } = useI18n();
     {{ t("Optimized.EnterpriseReadyWindow.Message") }}
   </p>
 </template>
+
+<script setup lang="ts">
+import EnterpriseReadySvg from "~/public/svg/optimized/EnterpriseReadySvg.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

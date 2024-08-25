@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import sqlTitle from "/public/sql-title.png";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div
     class="bg-clip-padding tw-relative tw-w-full tw-rounded-lg tw-border tw-bg-gray-50 lg:tw-max-w-[30rem] dark:tw-bg-stone-900"
@@ -58,5 +52,11 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import sqlTitle from "/public/sql-title.png";
+
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

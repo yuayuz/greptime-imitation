@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg";
-import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg";
-import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg";
-import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-px-4 tw-py-[3.75rem]">
@@ -101,6 +92,15 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg";
+import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg";
+import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg";
+import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped>
 .v-btn {

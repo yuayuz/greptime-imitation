@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const hidden = ref();
-</script>
-
 <template>
   <nav-bar v-model="hidden" />
   <div class="tw-h-full tw-pt-[4.25rem]" :hidden="hidden">
@@ -10,5 +6,9 @@ const hidden = ref();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const hidden = ref();
+</script>
 
 <style scoped></style>

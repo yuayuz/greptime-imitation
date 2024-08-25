@@ -1,10 +1,3 @@
-<script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import homeImage from "/public/home-bg0.png";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div style="z-index: -1" class="tw-absolute tw--left-36 tw-flex">
@@ -79,5 +72,12 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import homeImage from "/public/home-bg0.png";
+
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

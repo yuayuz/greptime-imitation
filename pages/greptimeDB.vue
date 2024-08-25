@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import ScalingHorizontally from "~/public/svg/greptimeDB/ScalingHorizontally.svg";
-import UnifiedAnalysis from "~/public/svg/greptimeDB/UnifiedAnalysis.svg";
-import CostEffective from "~/public/svg/greptimeDB/CostEffective.svg";
-import Compatibility from "~/public/svg/greptimeDB/Compatibility.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-px-4 tw-py-[3.75rem]">
@@ -86,6 +77,15 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import ScalingHorizontally from "~/public/svg/greptimeDB/ScalingHorizontally.svg";
+import UnifiedAnalysis from "~/public/svg/greptimeDB/UnifiedAnalysis.svg";
+import CostEffective from "~/public/svg/greptimeDB/CostEffective.svg";
+import Compatibility from "~/public/svg/greptimeDB/Compatibility.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped>
 .v-btn {

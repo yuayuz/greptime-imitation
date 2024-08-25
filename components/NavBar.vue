@@ -1,27 +1,3 @@
-<script setup lang="ts">
-import image from "~/public/logo-text.png";
-
-const onProductOpen = ref(false);
-const onSolutionOpen = ref(false);
-const onResourcesOpen = ref(false);
-const onDrawer = defineModel();
-
-const theme = useTheme();
-const mode = ref("light");
-const darkMode = () => {
-  localStorage.theme = "tw-dark";
-
-  if (theme.global.current.value.dark) {
-    theme.global.name.value = "light";
-    document.documentElement.classList.remove("tw-dark");
-  } else {
-    theme.global.name.value = "dark";
-    document.documentElement.classList.add("tw-dark");
-  }
-  mode.value = theme.global.name.value;
-};
-</script>
-
 <template>
   <div
     class="tw-fixed tw-left-0 tw-right-0 tw-top-0 tw-h-[4.25rem] tw-w-full tw-border-b tw-border-b-gray-500 tw-bg-violet-400 tw-px-4 tw-shadow dark:tw-bg-zinc-900"
@@ -351,6 +327,30 @@ const darkMode = () => {
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import image from "~/public/logo-text.png";
+
+const onProductOpen = ref(false);
+const onSolutionOpen = ref(false);
+const onResourcesOpen = ref(false);
+const onDrawer = defineModel();
+
+const theme = useTheme();
+const mode = ref("light");
+const darkMode = () => {
+  localStorage.theme = "tw-dark";
+
+  if (theme.global.current.value.dark) {
+    theme.global.name.value = "light";
+    document.documentElement.classList.remove("tw-dark");
+  } else {
+    theme.global.name.value = "dark";
+    document.documentElement.classList.add("tw-dark");
+  }
+  mode.value = theme.global.name.value;
+};
+</script>
 
 <style scoped lang="scss">
 .v-btn {

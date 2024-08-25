@@ -1,12 +1,3 @@
-<script setup lang="ts">
-interface Props {
-  svg: string;
-  title: string;
-}
-
-const props = defineProps<Props>();
-</script>
-
 <template>
   <div
     class="tw-w-full tw-rounded-lg hover:tw-border-2 hover:tw-border-purple-400"
@@ -24,4 +15,14 @@ const props = defineProps<Props>();
     </v-card>
   </div>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  svg: string;
+  title: string;
+}
+
+const props = defineProps<Props>();
+</script>
+
 <style scoped></style>

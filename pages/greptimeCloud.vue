@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import Integrations from "~/public/svg/greptimeCloud/Integrations.svg";
-import Experience from "~/public/svg/greptimeCloud/Experience.svg";
-import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg";
-import Cloud from "~/public/svg/greptimeCloud/Cloud.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-px-4 tw-py-[3.75rem]">
@@ -86,6 +77,15 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import Integrations from "~/public/svg/greptimeCloud/Integrations.svg";
+import Experience from "~/public/svg/greptimeCloud/Experience.svg";
+import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg";
+import Cloud from "~/public/svg/greptimeCloud/Cloud.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped>
 .v-btn {

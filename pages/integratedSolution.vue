@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import EdgeDatabase from "~/public/svg/integratedSolution/EdgeDatabase.svg";
-import LowerData from "~/public/svg/integratedSolution/LowerData.svg";
-import Cloud from "~/public/svg/integratedSolution/Cloud.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="lg:tw-hidden">
     <div class="tw-px-4 tw-py-[3.75rem]">
@@ -101,5 +93,13 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import EdgeDatabase from "~/public/svg/integratedSolution/EdgeDatabase.svg";
+import LowerData from "~/public/svg/integratedSolution/LowerData.svg";
+import Cloud from "~/public/svg/integratedSolution/Cloud.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

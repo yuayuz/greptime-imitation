@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import Metrics from "~/public/svg/optimized/Metrics.svg";
-import Events from "~/public/svg/optimized/Events.svg";
-import Analytics from "~/public/svg/optimized/Analytics.svg";
-import Streaming from "~/public/svg/optimized/Streaming.svg";
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="tw-flex tw-justify-between">
     <div
@@ -86,5 +77,14 @@ const { t } = useI18n();
     </p>
   </div>
 </template>
+
+<script setup lang="ts">
+import Metrics from "~/public/svg/optimized/Metrics.svg";
+import Events from "~/public/svg/optimized/Events.svg";
+import Analytics from "~/public/svg/optimized/Analytics.svg";
+import Streaming from "~/public/svg/optimized/Streaming.svg";
+
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

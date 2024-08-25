@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { t } = useI18n();
-</script>
-
 <template>
   <div class="tw-flex tw-justify-between">
     <div
@@ -62,5 +58,9 @@ const { t } = useI18n();
     </p>
   </div>
 </template>
+
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 
 <style scoped></style>

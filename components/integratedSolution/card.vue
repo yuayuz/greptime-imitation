@@ -1,14 +1,3 @@
-<script setup lang="ts">
-interface Props {
-  svg: string;
-  title: string;
-  list1: string;
-  list2: string;
-}
-
-const props = defineProps<Props>();
-</script>
-
 <template>
   <v-card
     variant="text"
@@ -30,6 +19,17 @@ const props = defineProps<Props>();
     </div>
   </v-card>
 </template>
+
+<script setup lang="ts">
+interface Props {
+  svg: string;
+  title: string;
+  list1: string;
+  list2: string;
+}
+
+const props = defineProps<Props>();
+</script>
 
 <style scoped>
 .list {

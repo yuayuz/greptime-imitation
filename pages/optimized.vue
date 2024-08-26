@@ -5,122 +5,37 @@
         {{ t("Optimized.title") }}
       </p>
       <div class="tw-space-y-6">
-        <div
-          class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
+        <optimized-card
+          :background="domain_1"
+          :img="scale_workload"
+          :component="HybridWorkloads"
         >
-          <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_1" width="400" height="400" />
-          </div>
-          <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
-            <div
-              class="tw-flex tw-h-[6.75rem] tw-w-[28.875rem] tw-items-center tw-rounded-md"
-            >
-              <div
-                class="tw-mr-auto tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-space-x-3"
-              >
-                <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
-                  <v-img
-                    :src="scale_workload"
-                    style="z-index: -1"
-                    class="tw-bg-violet-800"
-                  />
-                </div>
-                <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("Optimized.HybridWorkloadsButton") }}
-                </p>
-              </div>
-            </div>
-            <hybrid-workloads />
-          </div>
-        </div>
+          {{ t("Optimized.HybridWorkloadsButton") }}
+        </optimized-card>
 
-        <div
-          class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
+        <optimized-card
+          :background="domain_2"
+          :img="scale_capacity"
+          :component="UnlimitedCapacity"
         >
-          <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_2" width="400" height="400" />
-          </div>
-          <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
-            <div
-              class="tw-flex tw-h-[6.75rem] tw-w-[28.875rem] tw-items-center tw-rounded-md"
-            >
-              <div
-                class="tw-mr-auto tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-space-x-3"
-              >
-                <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
-                  <v-img
-                    :src="scale_capacity"
-                    style="z-index: -1"
-                    class="tw-bg-violet-800"
-                  />
-                </div>
-                <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("Optimized.UnlimitedCapacityButton") }}
-                </p>
-              </div>
-            </div>
-            <unlimited-capacity />
-          </div>
-        </div>
+          {{ t("Optimized.UnlimitedCapacityButton") }}
+        </optimized-card>
 
-        <div
-          class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
+        <optimized-card
+          :background="domain_3"
+          :img="scale_organization"
+          :component="EnterpriseReady"
         >
-          <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_3" width="400" height="400" />
-          </div>
-          <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
-            <div
-              class="tw-flex tw-h-[6.75rem] tw-w-[28.875rem] tw-items-center tw-rounded-md"
-            >
-              <div
-                class="tw-mr-auto tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-space-x-3"
-              >
-                <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
-                  <v-img
-                    :src="scale_organization"
-                    style="z-index: -1"
-                    class="tw-bg-violet-800"
-                  />
-                </div>
+          {{ t("Optimized.EnterpriseReadyButton") }}
+        </optimized-card>
 
-                <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("Optimized.EnterpriseReadyButton") }}
-                </p>
-              </div>
-            </div>
-            <enterprise-ready />
-          </div>
-        </div>
-
-        <div
-          class="tw-relative tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
+        <optimized-card
+          :background="domain_4"
+          :img="scale_deployment"
+          :component="FlexibleDeployment"
         >
-          <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
-            <v-img :src="domain_4" width="400" height="400" />
-          </div>
-          <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
-            <div
-              class="tw-flex tw-h-[6.75rem] tw-w-[28.875rem] tw-items-center tw-rounded-md"
-            >
-              <div
-                class="tw-mr-auto tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-space-x-3"
-              >
-                <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
-                  <v-img
-                    :src="scale_deployment"
-                    style="z-index: -1"
-                    class="tw-bg-violet-800"
-                  />
-                </div>
-                <p class="tw-w-full tw-text-xl tw-font-black">
-                  {{ t("Optimized.FlexibleDeploymentButton") }}
-                </p>
-              </div>
-            </div>
-            <flexible-deployment />
-          </div>
-        </div>
+          {{ t("Optimized.FlexibleDeploymentButton") }}
+        </optimized-card>
       </div>
     </div>
   </div>
@@ -131,105 +46,21 @@
     </p>
     <div class="tw-flex tw-space-x-16">
       <div class="tw-space-y-4">
-        <div
-          class="tw-h-[5.2rem] tw-w-[28.875rem] tw-rounded-md tw-border tw-py-[1.4rem] tw-pl-8 tw-pr-[5.2rem] tw-shadow-xl hover:tw-border-purple-900 hover:tw-shadow-xl hover:tw-shadow-violet-400 dark:tw-border-slate-400 dark:tw-shadow dark:tw-shadow-white"
-          :class="
-            model === 0
-              ? 'tw-scale-110 tw-border-2 tw-border-purple-900 tw-shadow-xl tw-shadow-purple-400 dark:tw-border-purple-900 dark:tw-shadow-xl dark:tw-shadow-purple-900'
-              : ''
-          "
-        >
-          <div
-            class="tw-flex tw-cursor-pointer tw-space-x-4"
-            @click="model = 0"
-          >
-            <v-img
-              :src="scale_workload"
-              style="z-index: -1"
-              class="tw-bg-violet-800"
-              width="42"
-              height="40"
-            />
-            <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("Optimized.HybridWorkloadsButton") }}
-            </p>
-          </div>
-        </div>
+        <optimized-button v-model="model" :img="scale_workload" :model="0"
+          >{{ t("Optimized.HybridWorkloadsButton") }}
+        </optimized-button>
 
-        <div
-          class="tw-h-[5.2rem] tw-w-[28.875rem] tw-rounded-md tw-border tw-py-[1.4rem] tw-pl-8 tw-pr-[5.2rem] tw-shadow-xl hover:tw-border-purple-900 hover:tw-shadow-xl hover:tw-shadow-violet-400 dark:tw-border-slate-400 dark:tw-shadow dark:tw-shadow-white"
-          :class="
-            model === 1
-              ? 'tw-scale-110 tw-border-2 tw-border-purple-900 tw-shadow-xl tw-shadow-purple-400 dark:tw-border-purple-900 dark:tw-shadow-xl dark:tw-shadow-purple-900'
-              : ''
-          "
-        >
-          <div
-            class="tw-flex tw-cursor-pointer tw-space-x-4"
-            @click="model = 1"
-          >
-            <v-img
-              :src="scale_capacity"
-              class="tw-bg-violet-800"
-              style="z-index: -1"
-              width="42"
-              height="40"
-            />
-            <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("Optimized.UnlimitedCapacityButton") }}
-            </p>
-          </div>
-        </div>
+        <optimized-button v-model="model" :img="scale_capacity" :model="1"
+          >{{ t("Optimized.UnlimitedCapacityButton") }}
+        </optimized-button>
 
-        <div
-          class="tw-h-[5.2rem] tw-w-[28.875rem] tw-rounded-md tw-border tw-py-[1.4rem] tw-pl-8 tw-pr-[5.2rem] tw-shadow-xl hover:tw-border-purple-900 hover:tw-shadow-xl hover:tw-shadow-violet-400 dark:tw-border-slate-400 dark:tw-shadow dark:tw-shadow-white"
-          :class="
-            model === 2
-              ? 'tw-scale-110 tw-border-2 tw-border-purple-900 tw-shadow-xl tw-shadow-purple-400 dark:tw-border-purple-900 dark:tw-shadow-xl dark:tw-shadow-purple-900'
-              : ''
-          "
-        >
-          <div
-            class="tw-flex tw-cursor-pointer tw-space-x-4"
-            @click="model = 2"
-          >
-            <v-img
-              :src="scale_organization"
-              class="tw-bg-violet-800"
-              style="z-index: -1"
-              width="42"
-              height="40"
-            />
-            <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("Optimized.EnterpriseReadyButton") }}
-            </p>
-          </div>
-        </div>
+        <optimized-button v-model="model" :img="scale_organization" :model="2"
+          >{{ t("Optimized.EnterpriseReadyButton") }}
+        </optimized-button>
 
-        <div
-          class="tw-h-[5.2rem] tw-w-[28.875rem] tw-rounded-md tw-border tw-py-[1.4rem] tw-pl-8 tw-pr-[5.2rem] tw-shadow-xl hover:tw-border-purple-900 hover:tw-shadow-xl hover:tw-shadow-violet-400 dark:tw-border-slate-400 dark:tw-shadow dark:tw-shadow-white"
-          :class="
-            model === 3
-              ? 'tw-scale-110 tw-border-2 tw-border-purple-900 tw-shadow-xl tw-shadow-purple-400 dark:tw-border-purple-900 dark:tw-shadow-xl dark:tw-shadow-purple-900'
-              : ''
-          "
-        >
-          <div
-            class="tw-flex tw-cursor-pointer tw-space-x-4"
-            @click="model = 3"
-          >
-            <v-img
-              :src="scale_deployment"
-              class="tw-bg-violet-800"
-              style="z-index: -1"
-              width="42"
-              height="40"
-            />
-            <p class="tw-h-full tw-w-[28.875rem] tw-text-2xl">
-              {{ t("Optimized.FlexibleDeploymentButton") }}
-            </p>
-          </div>
-        </div>
+        <optimized-button v-model="model" :img="scale_deployment" :model="3"
+          >{{ t("Optimized.FlexibleDeploymentButton") }}
+        </optimized-button>
       </div>
 
       <v-carousel
@@ -240,46 +71,17 @@
         v-model="model"
         show-arrows="hover"
       >
-        <v-carousel-item>
-          <template v-slot:default>
-            <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_1" width="400" height="400" />
-            </div>
-            <div class="tw-space-y-12 tw-p-8">
-              <hybrid-workloads />
-            </div>
-          </template>
-        </v-carousel-item>
-        <v-carousel-item>
-          <template v-slot:default>
-            <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_2" width="400" height="400" />
-            </div>
-            <div class="tw-space-y-12 tw-p-8">
-              <unlimited-capacity />
-            </div>
-          </template>
-        </v-carousel-item>
-        <v-carousel-item>
-          <template v-slot:default>
-            <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_3" width="400" height="400" />
-            </div>
-            <div class="tw-space-y-12 tw-p-8">
-              <enterprise-ready />
-            </div>
-          </template>
-        </v-carousel-item>
-        <v-carousel-item>
-          <template v-slot:default>
-            <div class="tw-absolute tw--right-8 tw--top-8" style="z-index: -1">
-              <v-img :src="domain_4" width="400" height="400" />
-            </div>
-            <div class="tw-space-y-12 tw-p-8">
-              <flexible-deployment />
-            </div>
-          </template>
-        </v-carousel-item>
+        <optimized-carousel-item :img="domain_1" :component="HybridWorkloads" />
+
+        <optimized-carousel-item
+          :img="domain_2"
+          :component="UnlimitedCapacity"
+        />
+        <optimized-carousel-item :img="domain_3" :component="EnterpriseReady" />
+        <optimized-carousel-item
+          :img="domain_4"
+          :component="FlexibleDeployment"
+        />
       </v-carousel>
     </div>
   </div>

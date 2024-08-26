@@ -2,70 +2,19 @@
   <div class="tw-flex tw-justify-between">
     <div
       class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
+      v-for="n in 4"
+      :key="n"
     >
       <v-card
-        color="deep-purple-darken-3"
+        :color="n === 4 ? 'deep-purple-accent-3' : 'deep-purple-darken-3'"
         height="129"
         class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
           <div class="tw-flex tw-justify-center">
-            <img :src="Metrics" alt="Metrics" />
+            <img :src="svg[n - 1].src" :alt="svg[n - 1].name" />
           </div>
-          <div>{{ t("Optimized.HybridWorkloadsWindow.Metrics") }}</div>
-        </div>
-      </v-card>
-    </div>
-
-    <div
-      class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
-    >
-      <v-card
-        color="deep-purple-darken-3"
-        height="129"
-        class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
-      >
-        <div class="tw-justify-center tw-text-center">
-          <div class="tw-flex tw-justify-center">
-            <img :src="Events" alt="Events" />
-          </div>
-          <div>
-            {{ t("Optimized.HybridWorkloadsWindow.Events") }}
-          </div>
-        </div>
-      </v-card>
-    </div>
-
-    <div
-      class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
-    >
-      <v-card
-        color="deep-purple-darken-3"
-        height="129"
-        class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
-      >
-        <div class="tw-justify-center tw-text-center">
-          <div class="tw-flex tw-justify-center">
-            <img :src="Analytics" alt="Analytics" />
-          </div>
-          <div>{{ t("Optimized.HybridWorkloadsWindow.Analytics") }}</div>
-        </div>
-      </v-card>
-    </div>
-
-    <div
-      class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
-    >
-      <v-card
-        color="deep-purple-accent-3"
-        height="129"
-        class="tw-flex tw-w-full tw-content-center tw-rounded-lg"
-      >
-        <div class="tw-justify-center tw-text-center">
-          <div class="tw-flex tw-justify-center">
-            <img :src="Streaming" alt="Streaming" />
-          </div>
-          <div>{{ t("Optimized.HybridWorkloadsWindow.Streaming") }}</div>
+          <div>{{ t(message[n - 1]) }}</div>
         </div>
       </v-card>
     </div>
@@ -85,6 +34,21 @@ import Analytics from "~/public/svg/optimized/Analytics.svg";
 import Streaming from "~/public/svg/optimized/Streaming.svg";
 
 const { t } = useI18n();
+const svg = [
+  { src: Metrics, name: "Metrics" },
+  { src: Events, name: "Events" },
+  {
+    src: Analytics,
+    name: "Analytics",
+  },
+  { src: Streaming, name: "Streaming" },
+];
+const message = [
+  "Optimized.HybridWorkloadsWindow.Metrics",
+  "Optimized.HybridWorkloadsWindow.Events",
+  "Optimized.HybridWorkloadsWindow.Analytics",
+  "Optimized.HybridWorkloadsWindow.Streaming",
+];
 </script>
 
 <style scoped></style>

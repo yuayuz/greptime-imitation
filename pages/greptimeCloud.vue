@@ -6,25 +6,19 @@
         {{ t("GreptimeCloud.Subheader") }}
       </p>
       <div class="tw-mb-8 tw-flex tw-w-full tw-justify-between tw-space-x-5">
-        <greptimeCloud-card
-          :svg="Integrations"
-          :title="t('GreptimeCloud.Integrations.Title')"
-          >{{ t("GreptimeCloud.Integrations.Message") }}
+        <greptimeCloud-card :svg="svg[0]" :title="title[0]"
+          >{{ t(message[0]) }}
         </greptimeCloud-card>
-        <greptimeCloud-card
-          :svg="Experience"
-          :title="t('GreptimeCloud.Experience.Title')"
-          >{{ t("GreptimeCloud.Experience.Message") }}
+        <greptimeCloud-card :svg="svg[1]" :title="title[1]"
+          >{{ t(message[1]) }}
         </greptimeCloud-card>
       </div>
       <div class="tw-mb-8 tw-flex tw-w-full tw-justify-between tw-space-x-5">
-        <greptimeCloud-card
-          :svg="ServerlessScaling"
-          :title="t('GreptimeCloud.ServerlessScaling.Title')"
-          >{{ t("GreptimeCloud.ServerlessScaling.Message") }}
+        <greptimeCloud-card :svg="svg[2]" :title="title[2]"
+          >{{ t(message[2]) }}
         </greptimeCloud-card>
-        <greptimeCloud-card :svg="Cloud" :title="t('GreptimeCloud.Cloud.Title')"
-          >{{ t("GreptimeCloud.Cloud.Message") }}
+        <greptimeCloud-card :svg="svg[3]" :title="title[3]"
+          >{{ t(message[3]) }}
         </greptimeCloud-card>
       </div>
       <div class="tw-flex tw-justify-center tw-space-x-6">
@@ -46,24 +40,14 @@
       {{ t("GreptimeCloud.Subheader") }}
     </p>
     <div class="tw-mb-8 tw-flex tw-w-full tw-justify-between tw-space-x-5">
-      <greptimeCloud-card
-        :svg="Integrations"
-        :title="t('GreptimeCloud.Integrations.Title')"
-        >{{ t("GreptimeCloud.Integrations.Message") }}
-      </greptimeCloud-card>
-      <greptimeCloud-card
-        :svg="Experience"
-        :title="t('GreptimeCloud.Experience.Title')"
-        >{{ t("GreptimeCloud.Experience.Message") }}
-      </greptimeCloud-card>
-      <greptimeCloud-card
-        :svg="ServerlessScaling"
-        :title="t('GreptimeCloud.ServerlessScaling.Title')"
-        >{{ t("GreptimeCloud.ServerlessScaling.Message") }}
-      </greptimeCloud-card>
-      <greptimeCloud-card :svg="Cloud" :title="t('GreptimeCloud.Cloud.Title')"
-        >{{ t("GreptimeCloud.Cloud.Message") }}
-      </greptimeCloud-card>
+      <greptime-cloud-card
+        v-for="n in 4"
+        :key="n"
+        :svg="svg[n - 1]"
+        :title="title[n - 1]"
+      >
+        {{ t(message[n - 1]) }}
+      </greptime-cloud-card>
     </div>
     <div class="tw-flex tw-justify-center tw-space-x-6">
       <v-btn
@@ -83,8 +67,22 @@ import Integrations from "~/public/svg/greptimeCloud/Integrations.svg";
 import Experience from "~/public/svg/greptimeCloud/Experience.svg";
 import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg";
 import Cloud from "~/public/svg/greptimeCloud/Cloud.svg";
+import { sv } from "vuetify/locale";
 
 const { t } = useI18n();
+const svg = [Integrations, Experience, ServerlessScaling, Cloud];
+const title = [
+  "GreptimeCloud.Integrations.Title",
+  "GreptimeCloud.Experience.Title",
+  "GreptimeCloud.ServerlessScaling.Title",
+  "GreptimeCloud.Cloud.Title",
+];
+const message = [
+  "GreptimeCloud.Integrations.Message",
+  "GreptimeCloud.Experience.Message",
+  "GreptimeCloud.ServerlessScaling.Message",
+  "GreptimeCloud.Cloud.Message",
+];
 </script>
 
 <style scoped>

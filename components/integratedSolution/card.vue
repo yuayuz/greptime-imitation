@@ -5,15 +5,15 @@
   >
     <div class="tw-mb-4 tw-flex tw-items-center tw-space-x-3">
       <img :src="props.svg" :alt="props.title" />
-      <div class="tw-text-xl tw-font-black">{{ props.title }}</div>
+      <div class="tw-text-xl tw-font-black">{{ t(props.title) }}</div>
     </div>
     <div>
       <ul class="list tw-list-inside">
         <li class="tw-text-base">
-          {{ props.list1 }}
+          {{ t(props.list1) }}
         </li>
         <li class="tw-text-base">
-          {{ props.list2 }}
+          {{ t(props.list2) }}
         </li>
       </ul>
     </div>
@@ -29,6 +29,7 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+const { t } = useI18n();
 </script>
 
 <style scoped>

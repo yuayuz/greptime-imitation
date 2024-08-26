@@ -32,83 +32,40 @@
         <div class="tw-flex">
           <div class="tw-w-[12.3rem]">
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Products.Title") }}</div>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Products.Enterprise") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Products.Cloud") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Products.OSS") }}
+            <p v-for="n in 3" :key="n" class="tw-text-sm tw-text-zinc-500">
+              {{ t(products[n - 1]) }}
             </p>
           </div>
           <div class="tw-w-[12.3rem]">
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Resources.Title") }}</div>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Resources.Documentation") }}
-            </p>
             <p
-              :hidden="locale === 'zhHans'"
+              v-for="n in 6"
+              :key="n"
               class="tw-text-sm tw-text-zinc-500"
+              :hidden="locale === 'zhHans' && n === 2"
             >
-              {{ t("Footer.Resources.Blog") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Resources.GreptimePlay") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Resources.Download") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Resources.DockerRepository") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Resources.ServiceStatus") }}
+              {{ t(resources[n - 1]) }}
             </p>
           </div>
           <div class="tw-w-[12.3rem]">
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Community.Title") }}</div>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Community.OpenSource") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Community.Roadmap") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Community.ContributeGuide") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Community.SlackCommunity") }}
+            <p v-for="n in 4" :key="n" class="tw-text-sm tw-text-zinc-500">
+              {{ t(community[n - 1]) }}
             </p>
           </div>
           <div class="tw-w-[12.3rem]">
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Company.Title") }}</div>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Company.AboutGreptime") }}
-            </p>
             <p
-              :hidden="locale === 'zhHans'"
+              v-for="n in 6"
+              :key="n"
               class="tw-text-sm tw-text-zinc-500"
+              :hidden="
+                (locale === 'zhHans' && n === 2) ||
+                (locale === 'zhHans' && n === 5) ||
+                (locale === 'zhHans' && n === 6)
+              "
             >
-              {{ t("Footer.Company.Careers") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Company.Brand") }}
-            </p>
-            <p class="tw-text-sm tw-text-zinc-500">
-              {{ t("Footer.Company.Contact") }}
-            </p>
-            <p
-              :hidden="locale === 'zhHans'"
-              class="tw-text-sm tw-text-zinc-500"
-            >
-              {{ t("Footer.Company.Privacy") }}
-            </p>
-            <p
-              :hidden="locale === 'zhHans'"
-              class="tw-text-sm tw-text-zinc-500"
-            >
-              {{ t("Footer.Company.Terms") }}
+              {{ t(company[n - 1]) }}
             </p>
           </div>
         </div>
@@ -123,12 +80,13 @@
             {{ t("Footer.Subscribe.Button") }}
           </v-btn>
           <div class="tw-mt-5 tw-grid tw-w-[18rem] tw-grid-cols-6">
-            <v-img :src="github" width="28" height="28" />
-            <v-img :src="youtube" width="28" height="28" />
-            <v-img :src="twitter" width="28" height="28" />
-            <v-img :src="slack" width="28" height="28" />
-            <v-img :src="linkedin" width="28" height="28" />
-            <v-img :src="rss" width="28" height="28" />
+            <v-img
+              v-for="n in 6"
+              :key="n"
+              :src="image[n - 1]"
+              width="28"
+              height="28"
+            />
           </div>
         </div>
       </div>
@@ -171,71 +129,40 @@
       <div class="tw-grid tw-grid-cols-4">
         <div class="tw-w-[12.3rem]">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Products.Title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Products.Enterprise") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Products.Cloud") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Products.OSS") }}
+          <p v-for="n in 3" :key="n" class="tw-text-sm tw-text-zinc-500">
+            {{ t(products[n - 1]) }}
           </p>
         </div>
         <div class="tw-w-[12.3rem]">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Resources.Title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Resources.Documentation") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Resources.Blog") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("Footer.Resources.GreptimePlay") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Resources.Download") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Resources.DockerRepository") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Resources.ServiceStatus") }}
+          <p
+            v-for="n in 6"
+            :key="n"
+            class="tw-text-sm tw-text-zinc-500"
+            :hidden="locale === 'zhHans' && n === 2"
+          >
+            {{ t(resources[n - 1]) }}
           </p>
         </div>
         <div class="tw-w-[12.3rem]">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Community.Title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Community.OpenSource") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Community.Roadmap") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Community.ContributeGuide") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Community.SlackCommunity") }}
+          <p v-for="n in 4" :key="n" class="tw-text-sm tw-text-zinc-500">
+            {{ t(community[n - 1]) }}
           </p>
         </div>
         <div class="tw-w-[12.3rem]">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Company.Title") }}</div>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Company.AboutGreptime") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("Footer.Company.Careers") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Company.Brand") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500">
-            {{ t("Footer.Company.Contact") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("Footer.Company.Privacy") }}
-          </p>
-          <p class="tw-text-sm tw-text-zinc-500" :hidden="locale === 'zhHans'">
-            {{ t("Footer.Company.Terms") }}
+          <p
+            v-for="n in 6"
+            :key="n"
+            class="tw-text-sm tw-text-zinc-500"
+            :hidden="
+              (locale === 'zhHans' && n === 2) ||
+              (locale === 'zhHans' && n === 5) ||
+              (locale === 'zhHans' && n === 6)
+            "
+          >
+            {{ t(company[n - 1]) }}
           </p>
         </div>
       </div>
@@ -250,12 +177,13 @@
           {{ t("Footer.Subscribe.Button") }}
         </v-btn>
         <div class="tw-mt-5 tw-grid tw-grid-cols-6">
-          <v-img :src="github" width="28" height="28" />
-          <v-img :src="youtube" width="28" height="28" />
-          <v-img :src="twitter" width="28" height="28" />
-          <v-img :src="slack" width="28" height="28" />
-          <v-img :src="linkedin" width="28" height="28" />
-          <v-img :src="rss" width="28" height="28" />
+          <v-img
+            v-for="n in 6"
+            :key="n"
+            :src="image[n - 1]"
+            width="28"
+            height="28"
+          />
         </div>
       </div>
     </div>
@@ -279,6 +207,35 @@ import linkedin from "/public/linkedin.png";
 import rss from "/public/rss.png";
 import logo from "/public/logo-text.png";
 import language from "~/public/svg/footer/language.svg";
+
+const products = [
+  "Footer.Products.Enterprise",
+  "Footer.Products.Cloud",
+  "Footer.Products.OSS",
+];
+const resources = [
+  "Footer.Resources.Documentation",
+  "Footer.Resources.Blog",
+  "Footer.Resources.GreptimePlay",
+  "Footer.Resources.Download",
+  "Footer.Resources.DockerRepository",
+  "Footer.Resources.ServiceStatus",
+];
+const community = [
+  "Footer.Community.OpenSource",
+  "Footer.Community.Roadmap",
+  "Footer.Community.ContributeGuide",
+  "Footer.Community.SlackCommunity",
+];
+const company = [
+  "Footer.Company.AboutGreptime",
+  "Footer.Company.Careers",
+  "Footer.Company.Brand",
+  "Footer.Company.Contact",
+  "Footer.Company.Privacy",
+  "Footer.Company.Terms",
+];
+const image = [github, youtube, twitter, slack, linkedin, rss];
 </script>
 
 <style scoped>

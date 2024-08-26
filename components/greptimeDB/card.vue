@@ -5,9 +5,11 @@
     <v-card height="298">
       <div class="tw-mx-auto tw-w-full tw-max-w-[17.4rem] tw-space-y-3 tw-py-8">
         <div class="tw-flex tw-justify-center">
-          <img :src="props.svg" :alt="props.title" />
+          <img :src="props.svg" :alt="t(props.title)" />
         </div>
-        <p class="tw-text-center tw-text-xl tw-font-bold">{{ props.title }}</p>
+        <p class="tw-text-center tw-text-xl tw-font-bold">
+          {{ t(props.title) }}
+        </p>
         <div class="tw-text-center">
           <slot />
         </div>
@@ -23,6 +25,7 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+const { t } = useI18n();
 </script>
 
 <style scoped></style>

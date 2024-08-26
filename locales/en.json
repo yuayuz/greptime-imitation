@@ -32,7 +32,7 @@
       "Fully-managedCloud": "Fully-managed cloud"
     },
     "FlexibleDeploymentWindow": {
-      "message": "Written in Rust, GreptimeDB can be deployed on ARM architecture-compatible Android/Linux systems as well as cloud environments. Providing identical APIs and control planes, and running the application at the edge or on the cloud without modification. Extremely easy and efficient data synchronization.",
+      "Message": "Written in Rust, GreptimeDB can be deployed on ARM architecture-compatible Android/Linux systems as well as cloud environments. Providing identical APIs and control planes, and running the application at the edge or on the cloud without modification. Extremely easy and efficient data synchronization.",
       "Edge": "At Edge",
       "Cloud": "On the Cloud",
       "Network": "Network resilience",

@@ -12,25 +12,19 @@
       >
         <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
           <enterprise-card
-            :svg="EnterpriseReady"
+            :svg="svg[0]"
             class="tw-border-r"
-            :title="t('Enterprise.EnterpriseReady')"
+            :title="title[0]"
           />
-          <enterprise-card
-            :svg="AdvancedFeatures"
-            :title="t('Enterprise.AdvancedFeatures')"
-          />
+          <enterprise-card :svg="svg[1]" :title="title[1]" />
         </div>
         <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
           <enterprise-card
-            :svg="TechnicalServices"
+            :svg="svg[2]"
             class="tw-border-r"
-            :title="t('Enterprise.TechnicalServices')"
+            :title="title[2]"
           />
-          <enterprise-card
-            :svg="DeploymentOptions"
-            :title="t('Enterprise.DeploymentOptions')"
-          />
+          <enterprise-card :svg="svg[3]" :title="title[3]" />
         </div>
       </div>
       <div class="tw-flex tw-w-full tw-justify-center">
@@ -59,23 +53,11 @@
     >
       <div class="tw-grid tw-grid-cols-4 tw-gap-8 tw-py-10">
         <enterprise-card
-          :svg="EnterpriseReady"
+          v-for="n in 4"
+          :key="n"
+          :svg="svg[n - 1]"
           class="tw-border-r"
-          :title="t('Enterprise.TechnicalServices')"
-        />
-        <enterprise-card
-          :svg="AdvancedFeatures"
-          class="tw-border-r"
-          :title="t('Enterprise.AdvancedFeatures')"
-        />
-        <enterprise-card
-          :svg="TechnicalServices"
-          class="tw-border-r"
-          :title="t('Enterprise.TechnicalServices')"
-        />
-        <enterprise-card
-          :svg="DeploymentOptions"
-          :title="t('Enterprise.DeploymentOptions')"
+          :title="title[n - 1]"
         />
       </div>
     </div>
@@ -98,8 +80,21 @@ import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg";
 import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg";
 import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg";
 import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg";
+import { sv } from "vuetify/locale";
 
 const { t } = useI18n();
+const svg = [
+  EnterpriseReady,
+  AdvancedFeatures,
+  TechnicalServices,
+  DeploymentOptions,
+];
+const title = [
+  "Enterprise.TechnicalServices",
+  "Enterprise.AdvancedFeatures",
+  "Enterprise.TechnicalServices",
+  "Enterprise.DeploymentOptions",
+];
 </script>
 
 <style scoped>

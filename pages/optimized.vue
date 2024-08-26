@@ -6,35 +6,13 @@
       </p>
       <div class="tw-space-y-6">
         <optimized-card
-          :background="domain_1"
-          :img="scale_workload"
-          :component="HybridWorkloads"
+          v-for="n in 4"
+          :key="n"
+          :background="background[n - 1]"
+          :img="img[n - 1]"
+          :component="component[n - 1]"
         >
-          {{ t("Optimized.HybridWorkloadsButton") }}
-        </optimized-card>
-
-        <optimized-card
-          :background="domain_2"
-          :img="scale_capacity"
-          :component="UnlimitedCapacity"
-        >
-          {{ t("Optimized.UnlimitedCapacityButton") }}
-        </optimized-card>
-
-        <optimized-card
-          :background="domain_3"
-          :img="scale_organization"
-          :component="EnterpriseReady"
-        >
-          {{ t("Optimized.EnterpriseReadyButton") }}
-        </optimized-card>
-
-        <optimized-card
-          :background="domain_4"
-          :img="scale_deployment"
-          :component="FlexibleDeployment"
-        >
-          {{ t("Optimized.FlexibleDeploymentButton") }}
+          {{ t(title[n - 1]) }}
         </optimized-card>
       </div>
     </div>
@@ -46,20 +24,13 @@
     </p>
     <div class="tw-flex tw-space-x-16">
       <div class="tw-space-y-4">
-        <optimized-button v-model="model" :img="scale_workload" :model="0"
-          >{{ t("Optimized.HybridWorkloadsButton") }}
-        </optimized-button>
-
-        <optimized-button v-model="model" :img="scale_capacity" :model="1"
-          >{{ t("Optimized.UnlimitedCapacityButton") }}
-        </optimized-button>
-
-        <optimized-button v-model="model" :img="scale_organization" :model="2"
-          >{{ t("Optimized.EnterpriseReadyButton") }}
-        </optimized-button>
-
-        <optimized-button v-model="model" :img="scale_deployment" :model="3"
-          >{{ t("Optimized.FlexibleDeploymentButton") }}
+        <optimized-button
+          v-for="n in 4"
+          :key="n"
+          v-model="model"
+          :img="img[n - 1]"
+          :model="n - 1"
+          >{{ t(title[n - 1]) }}
         </optimized-button>
       </div>
 
@@ -71,16 +42,11 @@
         v-model="model"
         show-arrows="hover"
       >
-        <optimized-carousel-item :img="domain_1" :component="HybridWorkloads" />
-
         <optimized-carousel-item
-          :img="domain_2"
-          :component="UnlimitedCapacity"
-        />
-        <optimized-carousel-item :img="domain_3" :component="EnterpriseReady" />
-        <optimized-carousel-item
-          :img="domain_4"
-          :component="FlexibleDeployment"
+          v-for="n in 4"
+          :key="n"
+          :img="background[n - 1]"
+          :component="component[n - 1]"
         />
       </v-carousel>
     </div>
@@ -103,6 +69,25 @@ import scale_deployment from "/public/scale_deployment.png";
 
 const model = ref(0);
 const { t } = useI18n();
+const background = [domain_1, domain_2, domain_3, domain_4];
+const img = [
+  scale_workload,
+  scale_capacity,
+  scale_organization,
+  scale_deployment,
+];
+const title = [
+  "Optimized.HybridWorkloadsButton",
+  "Optimized.UnlimitedCapacityButton",
+  "Optimized.EnterpriseReadyButton",
+  "Optimized.FlexibleDeploymentButton",
+];
+const component = [
+  HybridWorkloads,
+  UnlimitedCapacity,
+  EnterpriseReady,
+  FlexibleDeployment,
+];
 </script>
 
 <style scoped></style>

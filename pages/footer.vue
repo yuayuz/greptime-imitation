@@ -1,8 +1,8 @@
 <template>
   <div class="lg:tw-hidden">
-    <div class="tw-px-4 tw-py-[3.75rem]">
+    <div class="tw-px-4 tw-py-[4rem]">
       <div class="tw-space-y-16">
-        <div class="tw-w-[8.5rem]">
+        <div class="tw-w-1/5">
           <v-img :src="logo" class="tw-mb-5" />
           <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
           <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
@@ -29,14 +29,14 @@
             </v-list>
           </v-menu>
         </div>
-        <div class="tw-flex">
-          <div class="tw-w-[12.3rem]">
+        <div class="tw-flex tw-w-full">
+          <div>
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Products.Title") }}</div>
             <p v-for="n in 3" :key="n" class="tw-text-sm tw-text-zinc-500">
               {{ t(products[n - 1]) }}
             </p>
           </div>
-          <div class="tw-w-[12.3rem]">
+          <div>
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Resources.Title") }}</div>
             <p
               v-for="n in 6"
@@ -47,13 +47,13 @@
               {{ t(resources[n - 1]) }}
             </p>
           </div>
-          <div class="tw-w-[12.3rem]">
+          <div>
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Community.Title") }}</div>
             <p v-for="n in 4" :key="n" class="tw-text-sm tw-text-zinc-500">
               {{ t(community[n - 1]) }}
             </p>
           </div>
-          <div class="tw-w-[12.3rem]">
+          <div>
             <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Company.Title") }}</div>
             <p
               v-for="n in 6"
@@ -69,17 +69,17 @@
             </p>
           </div>
         </div>
-        <div class="tw-w-[26.25rem]">
+        <div class="tw-w-1/2">
           <div class="tw-mb-5 tw-mt-2 tw-text-xl tw-font-black">
             {{ t("Footer.Subscribe.Title") }}
           </div>
           <v-text-field
             :placeholder="t('Footer.Subscribe.Message')"
           ></v-text-field>
-          <v-btn width="420">
+          <v-btn class="tw-w-full">
             {{ t("Footer.Subscribe.Button") }}
           </v-btn>
-          <div class="tw-mt-5 tw-grid tw-w-[18rem] tw-grid-cols-6">
+          <div class="tw-mt-5 tw-grid tw-grid-cols-6">
             <v-img
               v-for="n in 6"
               :key="n"
@@ -97,9 +97,9 @@
       </div>
     </div>
   </div>
-  <div class="tw-hidden tw-w-full tw-border-t tw-py-[3.75rem] lg:tw-block">
+  <div class="tw-hidden tw-w-full tw-border-t tw-py-[4rem] lg:tw-block">
     <div class="tw-flex tw-justify-between">
-      <div class="tw-w-[8.5rem]">
+      <div>
         <v-img :src="logo" class="tw-mb-5" />
         <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
         <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
@@ -126,14 +126,14 @@
           </v-list>
         </v-menu>
       </div>
-      <div class="tw-grid tw-grid-cols-4">
-        <div class="tw-w-[12.3rem]">
+      <div class="tw-grid tw-w-2/3 tw-grid-cols-4">
+        <div class="tw-mx-auto">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Products.Title") }}</div>
           <p v-for="n in 3" :key="n" class="tw-text-sm tw-text-zinc-500">
             {{ t(products[n - 1]) }}
           </p>
         </div>
-        <div class="tw-w-[12.3rem]">
+        <div class="tw-mx-auto">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Resources.Title") }}</div>
           <p
             v-for="n in 6"
@@ -144,13 +144,13 @@
             {{ t(resources[n - 1]) }}
           </p>
         </div>
-        <div class="tw-w-[12.3rem]">
+        <div class="tw-mx-auto">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Community.Title") }}</div>
           <p v-for="n in 4" :key="n" class="tw-text-sm tw-text-zinc-500">
             {{ t(community[n - 1]) }}
           </p>
         </div>
-        <div class="tw-w-[12.3rem]">
+        <div class="tw-mx-auto">
           <div class="tw-mb-5 tw-mt-2">{{ t("Footer.Company.Title") }}</div>
           <p
             v-for="n in 6"
@@ -166,14 +166,14 @@
           </p>
         </div>
       </div>
-      <div class="tw-w-[18rem]">
+      <div>
         <div class="tw-mb-5 tw-mt-2 tw-text-xl tw-font-black">
           {{ t("Footer.Subscribe.Title") }}
         </div>
         <v-text-field
           :placeholder="t('Footer.Subscribe.Message')"
         ></v-text-field>
-        <v-btn width="288">
+        <v-btn class="tw-w-full">
           {{ t("Footer.Subscribe.Button") }}
         </v-btn>
         <div class="tw-mt-5 tw-grid tw-grid-cols-6">

@@ -22,8 +22,8 @@
     <p class="tw-mb-16 tw-text-center tw-text-3xl tw-font-black">
       {{ t("Optimized.title") }}
     </p>
-    <div class="tw-flex tw-space-x-16">
-      <div class="tw-space-y-4">
+    <div class="tw-flex tw-w-full tw-space-x-16">
+      <div class="tw-w-2/5 tw-space-y-4">
         <optimized-button
           v-for="n in 4"
           :key="n"
@@ -36,7 +36,7 @@
 
       <v-carousel
         height="370.75"
-        class="tw-w-full tw-border tw-shadow-violet-400 dark:tw-border-white"
+        class="tw-w-3/5 tw-border tw-shadow-violet-400 dark:tw-border-white"
         :cycle="true"
         hide-delimiters
         v-model="model"

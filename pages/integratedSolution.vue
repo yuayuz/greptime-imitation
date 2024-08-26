@@ -1,6 +1,6 @@
 <template>
   <div class="lg:tw-hidden">
-    <div class="tw-px-4 tw-py-[3.75rem]">
+    <div class="tw-px-4 tw-py-[4rem]">
       <p class="tw-text-center tw-text-3xl tw-font-black">
         {{ t("IntegratedSolution.Title") }}
       </p>
@@ -29,9 +29,7 @@
           :list2="integratedSolutionCardMessage[2].list2"
         ></integratedSolution-card>
       </div>
-      <div
-        class="tw-mx-auto tw-mt-5 tw-flex tw-max-w-[51rem] tw-justify-center tw-space-x-6"
-      >
+      <div class="tw-mx-auto tw-mt-5 tw-flex tw-justify-center tw-space-x-6">
         <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-10">
           <integrated-solution-comment
             v-for="n in 2"
@@ -45,7 +43,7 @@
     </div>
   </div>
 
-  <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
+  <div class="tw-hidden tw-w-full tw-py-[6rem] lg:tw-block">
     <p class="tw-text-center tw-text-3xl tw-font-black">
       {{ t("IntegratedSolution.Title") }}
     </p>

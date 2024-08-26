@@ -1,14 +1,14 @@
 <template>
   <div class="tw-flex tw-justify-between">
     <div
-      class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
+      class="tw-w-1/5 tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
       v-for="n in 4"
       :key="n"
     >
       <v-card
         :color="n === 4 ? 'deep-purple-accent-3' : 'deep-purple-darken-3'"
         height="129"
-        class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
+        class="tw-flex tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-text-center">
           <div class="tw-flex tw-justify-center">

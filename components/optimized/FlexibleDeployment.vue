@@ -1,14 +1,10 @@
 <template>
   <div class="tw-flex tw-justify-evenly">
-    <div
-      class="tw-w-full tw-max-w-[10.25rem] tw-rounded-lg"
-      v-for="n in 4"
-      :key="n"
-    >
+    <div class="tw-w-full tw-rounded-lg" v-for="n in 4" :key="n">
       <v-card
         variant="text"
         height="129"
-        class="tw-flex tw-max-w-[10.25rem] tw-content-center tw-rounded-lg"
+        class="tw-flex tw-content-center tw-rounded-lg"
       >
         <div class="tw-justify-center tw-space-y-3 tw-text-center">
           <div

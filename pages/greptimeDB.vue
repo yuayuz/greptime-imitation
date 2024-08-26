@@ -1,11 +1,11 @@
 <template>
   <div class="lg:tw-hidden">
-    <div class="tw-px-4 tw-py-[3.75rem]">
+    <div class="tw-px-4 tw-py-[4rem]">
       <p class="tw-text-center tw-text-3xl tw-font-black">GreptimeDB</p>
       <p class="tw-mb-16 tw-text-center tw-text-lg">
         {{ t("GreptimeDB.Subheader") }}
       </p>
-      <div class="tw-mb-8 tw-flex tw-w-full tw-justify-between tw-space-x-5">
+      <div class="tw-mb-8 tw-flex tw-w-full tw-space-x-5">
         <greptimeDB-card :svg="svg[0]" :title="title[0]"
           >{{ t(message[0]) }}
         </greptimeDB-card>
@@ -31,12 +31,12 @@
       </div>
     </div>
   </div>
-  <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
+  <div class="tw-hidden tw-w-full tw-py-[6rem] lg:tw-block">
     <p class="tw-text-center tw-text-3xl tw-font-black">GreptimeDB</p>
     <p class="tw-mb-16 tw-text-center tw-text-lg">
       {{ t("GreptimeDB.Subheader") }}
     </p>
-    <div class="tw-mb-8 tw-flex tw-w-full tw-justify-between tw-space-x-5">
+    <div class="tw-mb-8 tw-flex tw-w-full tw-space-x-3">
       <greptime-d-b-card
         v-for="n in 4"
         :key="n"

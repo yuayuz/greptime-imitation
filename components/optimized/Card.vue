@@ -5,14 +5,12 @@
     <div class="tw-absolute tw-right-0 tw-top-0" style="z-index: -1">
       <v-img :src="props.background" width="400" height="400" />
     </div>
-    <div class="tw-mx-auto tw-my-8 tw-max-w-[50.8rem] tw-space-y-6">
-      <div
-        class="tw-flex tw-h-[6.75rem] tw-w-[28.875rem] tw-items-center tw-rounded-md"
-      >
+    <div class="tw-mx-auto tw-my-8 tw-space-y-6">
+      <div class="tw-flex tw-h-[7rem] tw-items-center tw-rounded-md">
         <div
           class="tw-mr-auto tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-space-x-3"
         >
-          <div class="tw-h-[6.75rem] tw-w-[6.75rem]">
+          <div class="tw-aspect-square tw-h-[7rem]">
             <v-img
               :src="props.img"
               style="z-index: -1"

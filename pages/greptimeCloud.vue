@@ -1,6 +1,6 @@
 <template>
   <div class="lg:tw-hidden">
-    <div class="tw-px-4 tw-py-[3.75rem]">
+    <div class="tw-px-4 tw-py-[4rem]">
       <p class="tw-text-center tw-text-3xl tw-font-black">GreptimeCloud</p>
       <p class="tw-mb-16 tw-text-center tw-text-lg">
         {{ t("GreptimeCloud.Subheader") }}
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
+  <div class="tw-hidden tw-w-full tw-py-[6rem] lg:tw-block">
     <p class="tw-text-center tw-text-3xl tw-font-black">GreptimeCloud</p>
     <p class="tw-mb-16 tw-text-center tw-text-lg">
       {{ t("GreptimeCloud.Subheader") }}

@@ -1,22 +1,22 @@
 <template>
   <div class="tw-flex tw-justify-between">
-    <div
-      class="tw-w-full tw-max-w-[14rem] tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
-      v-for="n in 3"
-      :key="n"
-    >
-      <v-card
-        color="deep-purple-accent-4"
-        height="129"
-        class="tw-flex tw-content-center tw-rounded-lg"
+    <div class="tw-w-full" v-for="n in 3" :key="n">
+      <div
+        class="tw-mx-auto tw-w-4/5 tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
       >
-        <div class="tw-justify-center tw-space-y-1 tw-text-center">
-          <div class="tw-text-4xl tw-font-bold">{{ title[n - 1] }}</div>
-          <div class="tw-text-sm">
-            {{ t(message[n - 1]) }}
+        <v-card
+          color="deep-purple-accent-4"
+          height="129"
+          class="tw-flex tw-w-full tw-content-center tw-rounded-lg"
+        >
+          <div class="tw-justify-center tw-space-y-1 tw-text-center">
+            <div class="tw-text-4xl tw-font-bold">{{ title[n - 1] }}</div>
+            <div class="tw-text-sm">
+              {{ t(message[n - 1]) }}
+            </div>
           </div>
-        </div>
-      </v-card>
+        </v-card>
+      </div>
     </div>
   </div>
 

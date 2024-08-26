@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-clip-padding tw-relative tw-w-full tw-rounded-lg tw-border tw-bg-gray-50 lg:tw-max-w-[30rem] dark:tw-bg-stone-900"
+    class="bg-clip-padding tw-relative tw-rounded-lg tw-border tw-bg-gray-50 dark:tw-bg-stone-900"
   >
     <div
       class="tw-rounded-t-lg tw-border-b-violet-400 tw-bg-violet-400 tw-py-4 dark:tw-bg-black"
@@ -45,7 +45,7 @@
         icon="mdi-arrow-right"
       ></v-icon>
       <div
-        class="tw-cursor-pointer tw-text-sm group-hover:tw-text-purple-700 group-hover:tw-underline-offset-1"
+        class="tw-cursor-pointer tw-pt-0.5 tw-text-sm group-hover:tw-text-purple-700 group-hover:tw-underline-offset-1"
       >
         Learn more about this query
       </div>

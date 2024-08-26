@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-fixed tw-left-0 tw-right-0 tw-top-0 tw-h-[4.25rem] tw-w-full tw-border-b tw-border-b-gray-500 tw-bg-violet-400 tw-px-4 tw-shadow dark:tw-bg-zinc-900"
+    class="tw-fixed tw-left-0 tw-right-0 tw-top-0 tw-h-[5rem] tw-w-full tw-border-b tw-border-b-gray-500 tw-bg-violet-400 tw-px-4 tw-shadow dark:tw-bg-zinc-900"
     style="z-index: 1"
   >
     <div class="tw-mx-auto tw-flex tw-h-full tw-max-w-[86rem] tw-items-center">

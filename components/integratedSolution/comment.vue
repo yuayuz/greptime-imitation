@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-w-full tw-max-w-[24.75rem] tw-space-y-4">
+  <div class="tw-w-full tw-space-y-4">
     <div class="tw-h-[10.5rem]">
       <span class="tw-aspect-square tw-w-7 tw-text-5xl tw-text-purple-900">
         "

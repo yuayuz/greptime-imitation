@@ -1,6 +1,6 @@
 <template>
   <div class="lg:tw-hidden">
-    <div class="tw-px-4 tw-py-[3.75rem]">
+    <div class="tw-px-4 tw-py-[4rem]">
       <p class="tw-text-center tw-text-3xl tw-font-black">
         {{ t("Enterprise.Title") }}
       </p>
@@ -8,7 +8,7 @@
         {{ t("Enterprise.Subheader") }}
       </p>
       <div
-        class="tw-mx-auto tw-mb-8 tw-max-w-[82.5rem] tw-rounded-md tw-border tw-bg-white tw-shadow"
+        class="tw-mx-auto tw-mb-8 tw-rounded-md tw-border tw-bg-white tw-shadow"
       >
         <div class="tw-grid tw-grid-cols-2 tw-gap-8 tw-py-10">
           <enterprise-card
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div class="tw-hidden tw-w-full tw-py-[6.25rem] lg:tw-block">
+  <div class="tw-hidden tw-w-full tw-py-[6rem] lg:tw-block">
     <p class="tw-text-center tw-text-3xl tw-font-black">
       {{ t("Enterprise.Title") }}
     </p>
@@ -49,7 +49,7 @@
       {{ t("Enterprise.Subheader") }}
     </p>
     <div
-      class="tw-mx-auto tw-mb-8 tw-max-w-[82.5rem] tw-rounded-md tw-border tw-bg-white tw-shadow"
+      class="tw-mx-auto tw-mb-8 tw-rounded-md tw-border tw-bg-white tw-shadow"
     >
       <div class="tw-grid tw-grid-cols-4 tw-gap-8 tw-py-10">
         <enterprise-card

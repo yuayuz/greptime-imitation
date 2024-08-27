@@ -8,7 +8,9 @@
 </template>
 
 <script setup lang="ts">
-const hidden = ref();
+import { ref } from "vue"
+
+const hidden = ref()
 </script>
 
 <style scoped></style>

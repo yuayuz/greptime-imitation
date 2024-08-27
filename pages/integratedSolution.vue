@@ -77,11 +77,13 @@
 </template>
 
 <script setup lang="ts">
-import EdgeDatabase from "~/public/svg/integratedSolution/EdgeDatabase.svg";
-import LowerData from "~/public/svg/integratedSolution/LowerData.svg";
-import Cloud from "~/public/svg/integratedSolution/Cloud.svg";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
+import Cloud from "~/public/svg/integratedSolution/Cloud.svg"
+import EdgeDatabase from "~/public/svg/integratedSolution/EdgeDatabase.svg"
+import LowerData from "~/public/svg/integratedSolution/LowerData.svg"
+
+const { t } = useI18n()
 const integratedSolutionCardMessage = [
   {
     svg: EdgeDatabase,
@@ -101,7 +103,7 @@ const integratedSolutionCardMessage = [
     list1: "IntegratedSolution.Collaboration.Message1",
     list2: "IntegratedSolution.Collaboration.Message2",
   },
-];
+]
 const integratedSolutionCommentMessage = [
   {
     comment: "IntegratedSolution.Comment1.Message",
@@ -113,7 +115,7 @@ const integratedSolutionCommentMessage = [
     unit: "IntegratedSolution.Comment2.Unit",
     author: "IntegratedSolution.Comment2.Author",
   },
-];
+]
 </script>
 
 <style scoped></style>

@@ -13,11 +13,11 @@
 
 <script setup lang="ts">
 interface Props {
-  img: string;
-  component: object;
+  img: string
+  component: object
 }
 
-const props = defineProps<Props>();
+const props = defineProps<Props>()
 </script>
 
 <style scoped></style>

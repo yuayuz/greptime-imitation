@@ -28,12 +28,14 @@
 </template>
 
 <script setup lang="ts">
-import Metrics from "~/public/svg/optimized/Metrics.svg";
-import Events from "~/public/svg/optimized/Events.svg";
-import Analytics from "~/public/svg/optimized/Analytics.svg";
-import Streaming from "~/public/svg/optimized/Streaming.svg";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
+import Analytics from "~/public/svg/optimized/Analytics.svg"
+import Events from "~/public/svg/optimized/Events.svg"
+import Metrics from "~/public/svg/optimized/Metrics.svg"
+import Streaming from "~/public/svg/optimized/Streaming.svg"
+
+const { t } = useI18n()
 const svg = [
   { src: Metrics, name: "Metrics" },
   { src: Events, name: "Events" },
@@ -42,13 +44,13 @@ const svg = [
     name: "Analytics",
   },
   { src: Streaming, name: "Streaming" },
-];
+]
 const message = [
   "Optimized.HybridWorkloadsWindow.Metrics",
   "Optimized.HybridWorkloadsWindow.Events",
   "Optimized.HybridWorkloadsWindow.Analytics",
   "Optimized.HybridWorkloadsWindow.Streaming",
-];
+]
 </script>
 
 <style scoped></style>

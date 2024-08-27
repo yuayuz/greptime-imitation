@@ -54,40 +54,43 @@
 </template>
 
 <script setup lang="ts">
-import UnlimitedCapacity from "~/components/optimized/UnlimitedCapacity.vue";
-import HybridWorkloads from "~/components/optimized/HybridWorkloads.vue";
-import EnterpriseReady from "~/components/optimized/EnterpriseReady.vue";
-import FlexibleDeployment from "~/components/optimized/FlexibleDeployment.vue";
-import domain_1 from "/public/domain-1.png";
-import domain_2 from "/public/domain-2.png";
-import domain_3 from "/public/domain-3.png";
-import domain_4 from "/public/domain-4.png";
-import scale_workload from "/public/scale_workload.png";
-import scale_capacity from "/public/scale_capacity.png";
-import scale_organization from "/public/scale_organization.png";
-import scale_deployment from "/public/scale_deployment.png";
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
-const model = ref(0);
-const { t } = useI18n();
-const background = [domain_1, domain_2, domain_3, domain_4];
+import domain_1 from "/public/domain-1.png"
+import domain_2 from "/public/domain-2.png"
+import domain_3 from "/public/domain-3.png"
+import domain_4 from "/public/domain-4.png"
+import scale_capacity from "/public/scale_capacity.png"
+import scale_deployment from "/public/scale_deployment.png"
+import scale_organization from "/public/scale_organization.png"
+import scale_workload from "/public/scale_workload.png"
+import EnterpriseReady from "~/components/optimized/EnterpriseReady.vue"
+import FlexibleDeployment from "~/components/optimized/FlexibleDeployment.vue"
+import HybridWorkloads from "~/components/optimized/HybridWorkloads.vue"
+import UnlimitedCapacity from "~/components/optimized/UnlimitedCapacity.vue"
+
+const model = ref(0)
+const { t } = useI18n()
+const background = [domain_1, domain_2, domain_3, domain_4]
 const img = [
   scale_workload,
   scale_capacity,
   scale_organization,
   scale_deployment,
-];
+]
 const title = [
   "Optimized.HybridWorkloadsButton",
   "Optimized.UnlimitedCapacityButton",
   "Optimized.EnterpriseReadyButton",
   "Optimized.FlexibleDeploymentButton",
-];
+]
 const component = [
   HybridWorkloads,
   UnlimitedCapacity,
   EnterpriseReady,
   FlexibleDeployment,
-];
+]
 </script>
 
 <style scoped></style>

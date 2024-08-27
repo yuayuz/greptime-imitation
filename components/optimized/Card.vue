@@ -29,12 +29,12 @@
 
 <script setup lang="ts">
 interface Props {
-  background: string;
-  img: string;
-  component: object;
+  background: string
+  img: string
+  component: object
 }
 
-const props = defineProps<Props>();
+const props = defineProps<Props>()
 </script>
 
 <style scoped></style>

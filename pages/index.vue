@@ -3,7 +3,7 @@
     <home />
     <optimized />
     <greptime-d-b />
-    <enterprise />
+    <Enterprise />
     <greptime-cloud />
     <integrated-solution />
     <index-footer />
@@ -11,17 +11,18 @@
 </template>
 
 <script setup lang="ts">
-import Home from "~/pages/home.vue";
-import Optimized from "~/pages/optimized.vue";
-import GreptimeDB from "~/pages/greptimeDB.vue";
-import enterprise from "~/pages/enterprise.vue";
-import GreptimeCloud from "~/pages/greptimeCloud.vue";
-import IntegratedSolution from "~/pages/integratedSolution.vue";
-import IndexFooter from "~/pages/footer.vue";
+import { definePageMeta } from "#imports"
+import Enterprise from "~/pages/enterprise.vue"
+import IndexFooter from "~/pages/footer.vue"
+import GreptimeCloud from "~/pages/greptimeCloud.vue"
+import GreptimeDB from "~/pages/greptimeDB.vue"
+import Home from "~/pages/home.vue"
+import IntegratedSolution from "~/pages/integratedSolution.vue"
+import Optimized from "~/pages/optimized.vue"
 
 definePageMeta({
   layout: "nav-bar-layout",
-});
+})
 </script>
 
 <style scoped></style>

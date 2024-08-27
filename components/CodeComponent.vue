@@ -54,9 +54,11 @@
 </template>
 
 <script setup lang="ts">
-import sqlTitle from "/public/sql-title.png";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
+import sqlTitle from "/public/sql-title.png"
+
+const { t } = useI18n()
 </script>
 
 <style scoped></style>

@@ -28,24 +28,26 @@
 </template>
 
 <script setup lang="ts">
-import AtEdge from "~/public/svg/optimized/AtEdge.svg";
-import OnTheCloud from "~/public/svg/optimized/OnTheCloud.svg";
-import NetworkResilience from "~/public/svg/optimized/NetworkResilience.svg";
-import TrafficCosts from "~/public/svg/optimized/TrafficCosts.svg";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
+import AtEdge from "~/public/svg/optimized/AtEdge.svg"
+import NetworkResilience from "~/public/svg/optimized/NetworkResilience.svg"
+import OnTheCloud from "~/public/svg/optimized/OnTheCloud.svg"
+import TrafficCosts from "~/public/svg/optimized/TrafficCosts.svg"
+
+const { t } = useI18n()
 const svg = [
   { src: AtEdge, name: "AtEdge" },
   { src: OnTheCloud, name: "OnTheCloud" },
   { src: NetworkResilience, name: "NetworkResilience" },
   { src: TrafficCosts, name: "TrafficCosts" },
-];
+]
 const message = [
   "Optimized.FlexibleDeploymentWindow.Edge",
   "Optimized.FlexibleDeploymentWindow.Cloud",
   "Optimized.FlexibleDeploymentWindow.Network",
   "Optimized.FlexibleDeploymentWindow.TrafficCosts",
-];
+]
 </script>
 
 <style scoped></style>

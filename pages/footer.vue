@@ -196,23 +196,26 @@
 </template>
 
 <script setup lang="ts">
-const onLanguageOpen = ref(false);
-const onLanguageOpenLg = ref(false);
-const { locale, setLocale, t } = useI18n();
-import github from "/public/github.png";
-import youtube from "/public/youtube.png";
-import twitter from "/public/twitter.png";
-import slack from "/public/slack.png";
-import linkedin from "/public/linkedin.png";
-import rss from "/public/rss.png";
-import logo from "/public/logo-text.png";
-import language from "~/public/svg/footer/language.svg";
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
+import github from "/public/github.png"
+import linkedin from "/public/linkedin.png"
+import logo from "/public/logo-text.png"
+import rss from "/public/rss.png"
+import slack from "/public/slack.png"
+import twitter from "/public/twitter.png"
+import youtube from "/public/youtube.png"
+import language from "~/public/svg/footer/language.svg"
+
+const onLanguageOpen = ref(false)
+const onLanguageOpenLg = ref(false)
+const { locale, setLocale, t } = useI18n()
 const products = [
   "Footer.Products.Enterprise",
   "Footer.Products.Cloud",
   "Footer.Products.OSS",
-];
+]
 const resources = [
   "Footer.Resources.Documentation",
   "Footer.Resources.Blog",
@@ -220,13 +223,13 @@ const resources = [
   "Footer.Resources.Download",
   "Footer.Resources.DockerRepository",
   "Footer.Resources.ServiceStatus",
-];
+]
 const community = [
   "Footer.Community.OpenSource",
   "Footer.Community.Roadmap",
   "Footer.Community.ContributeGuide",
   "Footer.Community.SlackCommunity",
-];
+]
 const company = [
   "Footer.Company.AboutGreptime",
   "Footer.Company.Careers",
@@ -234,8 +237,8 @@ const company = [
   "Footer.Company.Contact",
   "Footer.Company.Privacy",
   "Footer.Company.Terms",
-];
-const image = [github, youtube, twitter, slack, linkedin, rss];
+]
+const image = [github, youtube, twitter, slack, linkedin, rss]
 </script>
 
 <style scoped>

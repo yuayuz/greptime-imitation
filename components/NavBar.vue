@@ -253,27 +253,30 @@
 </template>
 
 <script setup lang="ts">
-import image from "~/public/logo-text.png";
+import { ref } from "vue"
+import { useTheme } from "vuetify"
 
-const onProductOpen = ref(false);
-const onSolutionOpen = ref(false);
-const onResourcesOpen = ref(false);
-const onDrawer = defineModel();
+import image from "~/public/logo-text.png"
 
-const theme = useTheme();
-const mode = ref("light");
+const onProductOpen = ref(false)
+const onSolutionOpen = ref(false)
+const onResourcesOpen = ref(false)
+const onDrawer = defineModel()
+
+const theme = useTheme()
+const mode = ref("light")
 const darkMode = () => {
-  localStorage.theme = "tw-dark";
+  localStorage.theme = "tw-dark"
 
   if (theme.global.current.value.dark) {
-    theme.global.name.value = "light";
-    document.documentElement.classList.remove("tw-dark");
+    theme.global.name.value = "light"
+    document.documentElement.classList.remove("tw-dark")
   } else {
-    theme.global.name.value = "dark";
-    document.documentElement.classList.add("tw-dark");
+    theme.global.name.value = "dark"
+    document.documentElement.classList.add("tw-dark")
   }
-  mode.value = theme.global.name.value;
-};
+  mode.value = theme.global.name.value
+}
 </script>
 
 <style scoped lang="scss">

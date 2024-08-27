@@ -63,26 +63,27 @@
 </template>
 
 <script setup lang="ts">
-import Integrations from "~/public/svg/greptimeCloud/Integrations.svg";
-import Experience from "~/public/svg/greptimeCloud/Experience.svg";
-import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg";
-import Cloud from "~/public/svg/greptimeCloud/Cloud.svg";
-import { sv } from "vuetify/locale";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
-const svg = [Integrations, Experience, ServerlessScaling, Cloud];
+import Cloud from "~/public/svg/greptimeCloud/Cloud.svg"
+import Experience from "~/public/svg/greptimeCloud/Experience.svg"
+import Integrations from "~/public/svg/greptimeCloud/Integrations.svg"
+import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg"
+
+const { t } = useI18n()
+const svg = [Integrations, Experience, ServerlessScaling, Cloud]
 const title = [
   "GreptimeCloud.Integrations.Title",
   "GreptimeCloud.Experience.Title",
   "GreptimeCloud.ServerlessScaling.Title",
   "GreptimeCloud.Cloud.Title",
-];
+]
 const message = [
   "GreptimeCloud.Integrations.Message",
   "GreptimeCloud.Experience.Message",
   "GreptimeCloud.ServerlessScaling.Message",
   "GreptimeCloud.Cloud.Message",
-];
+]
 </script>
 
 <style scoped>

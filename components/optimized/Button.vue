@@ -28,15 +28,17 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n"
+
 interface Props {
-  model: number;
-  img: string;
+  model: number
+  img: string
 }
 
-const model = defineModel<number>();
-model.value = 0;
-const props = defineProps<Props>();
-const { t } = useI18n();
+const model = defineModel<number>()
+model.value = 0
+const props = defineProps<Props>()
+const { t } = useI18n()
 </script>
 
 <style scoped></style>

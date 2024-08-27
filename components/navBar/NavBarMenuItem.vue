@@ -8,16 +8,19 @@
       >
         <slot />
       </p>
-      <v-icon style="z-index: -1" :icon="show ? 'mdi-chevron-right' : ''" />
+      <v-icon
+        style="z-index: -1"
+        :icon="props.show ? 'mdi-chevron-right' : ''"
+      />
     </div>
   </li>
 </template>
 
 <script setup lang="ts">
 interface Props {
-  show: boolean;
+  show: boolean
 }
-const props = defineProps<Props>();
+const props = defineProps<Props>()
 </script>
 
 <style scoped></style>

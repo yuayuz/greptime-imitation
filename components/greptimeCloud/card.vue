@@ -19,13 +19,15 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n"
+
 interface Props {
-  svg: string;
-  title: string;
+  svg: string
+  title: string
 }
 
-const props = defineProps<Props>();
-const { t } = useI18n();
+const props = defineProps<Props>()
+const { t } = useI18n()
 </script>
 
 <style scoped></style>

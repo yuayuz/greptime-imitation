@@ -76,25 +76,26 @@
 </template>
 
 <script setup lang="ts">
-import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg";
-import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg";
-import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg";
-import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg";
-import { sv } from "vuetify/locale";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
+import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg"
+import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg"
+import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg"
+import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg"
+
+const { t } = useI18n()
 const svg = [
   EnterpriseReady,
   AdvancedFeatures,
   TechnicalServices,
   DeploymentOptions,
-];
+]
 const title = [
   "Enterprise.TechnicalServices",
   "Enterprise.AdvancedFeatures",
   "Enterprise.TechnicalServices",
   "Enterprise.DeploymentOptions",
-];
+]
 </script>
 
 <style scoped>

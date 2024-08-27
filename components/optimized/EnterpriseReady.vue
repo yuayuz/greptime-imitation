@@ -13,14 +13,16 @@
 </template>
 
 <script setup lang="ts">
-import EnterpriseReadySvg from "~/public/svg/optimized/EnterpriseReadySvg.svg";
+import { useI18n } from "vue-i18n"
 
-const { t } = useI18n();
+import EnterpriseReadySvg from "~/public/svg/optimized/EnterpriseReadySvg.svg"
+
+const { t } = useI18n()
 const list = [
   "Optimized.EnterpriseReadyWindow.EnterpriseFunctionalities",
   "Optimized.EnterpriseReadyWindow.TechnicalServices",
   "Optimized.EnterpriseReadyWindow.Fully-managedCloud",
-];
+]
 </script>
 
 <style scoped></style>

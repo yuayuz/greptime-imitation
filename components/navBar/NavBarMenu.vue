@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-const onDrawer = defineModel();
+const onDrawer = defineModel()
 </script>
 
 <style scoped></style>

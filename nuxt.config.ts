@@ -10,12 +10,7 @@ export default defineNuxtConfig({
   },
   modules: ["vuetify-nuxt-module", "@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   imports: {
-    presets: [
-      {
-        from: "vue-i18n",
-        imports: ["useI18n"],
-      },
-    ],
+    autoImport: false,
   },
   i18n: {
     vueI18n: "./i18n.config.ts",
@@ -23,4 +18,4 @@ export default defineNuxtConfig({
     langDir: "locales/",
     defaultLocale: "en",
   },
-});
+})

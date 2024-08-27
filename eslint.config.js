@@ -1,8 +1,9 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import pluginVue from "eslint-plugin-vue";
-import eslintConfigPrettier from "eslint-config-prettier";
+import pluginJs from "@eslint/js"
+import eslintConfigPrettier from "eslint-config-prettier"
+import simpleImportSort from "eslint-plugin-simple-import-sort"
+import pluginVue from "eslint-plugin-vue"
+import globals from "globals"
+import tseslint from "typescript-eslint"
 
 export default [
   { files: ["**/*.{js,mjs,cjs,ts,vue,svg}"] },
@@ -15,4 +16,13 @@ export default [
     languageOptions: { parserOptions: { parser: tseslint.parser } },
   },
   eslintConfigPrettier,
-];
+  {
+    plugins: {
+      "simple-import-sort": simpleImportSort,
+    },
+    rules: {
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error",
+    },
+  },
+]

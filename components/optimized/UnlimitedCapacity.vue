@@ -28,13 +28,15 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
-const title = ["50x", "1000+", "Cross-Cloud"];
+import { useI18n } from "vue-i18n"
+
+const { t } = useI18n()
+const title = ["50x", "1000+", "Cross-Cloud"]
 const message = [
   "Optimized.UnlimitedCapacityWindow.CostEfficiency",
   "Optimized.UnlimitedCapacityWindow.Nodes",
   "Optimized.UnlimitedCapacityWindow.Vendors",
-];
+]
 </script>
 
 <style scoped></style>

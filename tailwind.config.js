@@ -7,4 +7,4 @@ export default {
   plugins: [],
   prefix: "tw-",
   darkMode: "selector",
-};
+}

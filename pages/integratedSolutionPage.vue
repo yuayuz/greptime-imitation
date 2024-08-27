@@ -48,7 +48,7 @@
       {{ t("IntegratedSolution.Title") }}
     </p>
     <p class="tw-mb-16 tw-text-center tw-text-lg">
-      {{ t("IntegratedSolution.Header") }}
+      {{ t("IntegratedSolution.Subheader") }}
     </p>
     <div class="tw-grid tw-w-full tw-grid-cols-3">
       <integrated-solution-card

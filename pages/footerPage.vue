@@ -7,27 +7,7 @@
           <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
           <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
           <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
-          <v-menu v-model="onLanguageOpen" open-on-hover>
-            <template v-slot:activator="{ props }">
-              <v-btn v-bind="props" class="tw-mt-5">
-                <template v-slot:prepend>
-                  <img :src="language" alt="language" />
-                </template>
-                {{ locale === "EN" ? "English" : "简体中文" }}
-                <template v-slot:append>
-                  <v-icon
-                    :icon="
-                      onLanguageOpen ? ' mdi-chevron-up' : ' mdi-chevron-down'
-                    "
-                  ></v-icon>
-                </template>
-              </v-btn>
-            </template>
-            <v-list>
-              <v-list-item @click="setLocale('en')">English</v-list-item>
-              <v-list-item @click="setLocale('zhHans')">简体中文</v-list-item>
-            </v-list>
-          </v-menu>
+          <footer-i18n-menu :svg="language" />
         </div>
         <div class="tw-flex tw-w-full">
           <div>
@@ -104,27 +84,7 @@
         <p class="tw-text-sm tw-text-zinc-500">Greptime #30</p>
         <p class="tw-text-sm tw-text-zinc-500">440 N. Wolfe Road</p>
         <p class="tw-text-sm tw-text-zinc-500">Sunnyvale, CA 94085</p>
-        <v-menu v-model="onLanguageOpenLg" open-on-hover>
-          <template v-slot:activator="{ props }">
-            <v-btn v-bind="props" class="tw-mt-5">
-              <template v-slot:prepend>
-                <img :src="language" alt="language" />
-              </template>
-              {{ locale === "en" ? "English" : "简体中文" }}
-              <template v-slot:append>
-                <v-icon
-                  :icon="
-                    onLanguageOpen ? ' mdi-chevron-up' : ' mdi-chevron-down'
-                  "
-                ></v-icon>
-              </template>
-            </v-btn>
-          </template>
-          <v-list>
-            <v-list-item @click="setLocale('en')">English</v-list-item>
-            <v-list-item @click="setLocale('zhHans')">简体中文</v-list-item>
-          </v-list>
-        </v-menu>
+        <footer-i18n-menu :svg="language" />
       </div>
       <div class="tw-grid tw-w-2/3 tw-grid-cols-4">
         <div class="tw-mx-auto">
@@ -196,7 +156,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
 import { useI18n } from "vue-i18n"
 
 import github from "/public/github.png"
@@ -208,9 +167,7 @@ import twitter from "/public/twitter.png"
 import youtube from "/public/youtube.png"
 import language from "~/public/svg/footer/language.svg"
 
-const onLanguageOpen = ref(false)
-const onLanguageOpenLg = ref(false)
-const { locale, setLocale, t } = useI18n()
+const { locale, t } = useI18n()
 const products = [
   "Footer.Products.Enterprise",
   "Footer.Products.Cloud",

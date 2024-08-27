@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify"
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: {
@@ -8,7 +10,20 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  modules: ["vuetify-nuxt-module", "@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  build: {
+    transpile: ["vuetify"],
+  },
+  modules: [
+    (_options, nuxt) => {
+      nuxt.hooks.hook("vite:extendConfig", (config) => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }))
+      })
+    },
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+  ],
   imports: {
     autoImport: false,
   },
@@ -17,5 +32,13 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: "locales/",
     defaultLocale: "en",
+  },
+
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
+    },
   },
 })

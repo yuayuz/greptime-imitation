@@ -79,7 +79,7 @@
       "Message": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available."
     },
     "ServerlessScaling": {
-      "Title": "Be up and running in seconds. No configuration required. Query consoles, dashboards and database interfaces are all built-in and instantly available.",
+      "Title": "Serverless Scaling",
       "Message": "You can start from small, and scale seamlessly with the Serverless (pay-as-you-go) or Dedicated Plan."
     },
     "Cloud": {

@@ -1,24 +1,24 @@
 <template>
   <div class="tw-mx-auto 2xl:tw-w-[82.5rem]">
-    <home />
-    <optimized />
-    <greptime-d-b />
-    <Enterprise />
-    <greptime-cloud />
-    <integrated-solution />
-    <index-footer />
+    <home-page />
+    <optimized-page />
+    <greptime-d-b-page />
+    <enterprise-page />
+    <greptime-cloud-page />
+    <integrated-solution-page />
+    <index-footer-page />
   </div>
 </template>
 
 <script setup lang="ts">
 import { definePageMeta } from "#imports"
-import Enterprise from "~/pages/enterprise.vue"
-import IndexFooter from "~/pages/footer.vue"
-import GreptimeCloud from "~/pages/greptimeCloud.vue"
-import GreptimeDB from "~/pages/greptimeDB.vue"
-import Home from "~/pages/home.vue"
-import IntegratedSolution from "~/pages/integratedSolution.vue"
-import Optimized from "~/pages/optimized.vue"
+import EnterprisePage from "~/pages/enterprisePage.vue"
+import IndexFooterPage from "~/pages/footerPage.vue"
+import GreptimeCloudPage from "~/pages/greptimeCloudPage.vue"
+import GreptimeDBPage from "~/pages/greptimeDBPage.vue"
+import HomePage from "~/pages/homePage.vue"
+import IntegratedSolutionPage from "~/pages/integratedSolutionPage.vue"
+import OptimizedPage from "~/pages/optimizedPage.vue"
 
 definePageMeta({
   layout: "nav-bar-layout",

@@ -1,32 +1,14 @@
-<svg
-        preserveAspectRatio="xMidYMid meet"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        viewBox="0 0 22 23"
->
-    <!--?lit$8907382862$-->
-    <g>
-        <g fill="none" fill-rule="evenodd" color="white">
-            <path d="M-1 0h24v24H-1z"/>
-            <g
-                    stroke="currentColor"
-                    stroke-width="1.4"
-                    transform="translate(1 1.5)"
-            >
-                <path
-                        d="M4.375 12.003C1.959 12.003 0 10.195 0 7.963c0-2.23 1.959-4.039 4.375-4.039l.17.003C5.154 1.671 7.365 0 10 0s4.844 1.671 5.457 3.927l.168-.003c2.416 0 4.375 1.809 4.375 4.04 0 2.23-1.959 4.04-4.375 4.04H4.375Z"
-                        stroke-linecap="round"
-                />
-                <circle cx="10" cy="18.795" r="1.8"/>
-                <circle cx="16.5" cy="16" r="1.8"/>
-                <circle cx="3.5" cy="16" r="1.8"/>
-                <path
-                        d="M10.01 16.839v-4.836M6.877 8.792h5.883m-.25 3.211v2.241a2 2 0 0 0 2 2h.15m-7.126-3.338v1.338a2 2 0 0 1-2 2h-.15 0"
-                        stroke-linecap="round"
-                />
-            </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 22 23">
+    <g fill="none" fill-rule="evenodd" color="#fff">
+        <path d="M-1 0h24v24H-1z"/>
+        <g stroke="currentColor" stroke-width="1.4" transform="translate(1 1.5)">
+            <path d="M4.38 12C1.96 12 0 10.2 0 7.96c0-2.23 1.96-4.04 4.38-4.04h.17C5.14 1.68 7.37 0 10 0s4.84 1.67 5.46 3.93h.16c2.42 0 4.38 1.8 4.38 4.03C20 10.2 18.04 12 15.62 12H4.38Z"
+                  stroke-linecap="round"/>
+            <circle cx="10" cy="18.8" r="1.8"/>
+            <circle cx="16.5" cy="16" r="1.8"/>
+            <circle cx="3.5" cy="16" r="1.8"/>
+            <path d="M10.01 16.84V12M6.88 8.8h5.88m-.25 3.2v2.24a2 2 0 0 0 2 2h.15m-7.13-3.33v1.33a2 2 0 0 1-2 2h-.15 0"
+                  stroke-linecap="round"/>
         </g>
     </g>
 </svg>

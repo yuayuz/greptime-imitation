@@ -267,13 +267,18 @@ const theme = useTheme()
 const mode = ref("light")
 const darkMode = () => {
   localStorage.theme = "tw-dark"
-
   if (theme.global.current.value.dark) {
     theme.global.name.value = "light"
     document.documentElement.classList.remove("tw-dark")
-  } else {
+    localStorage.theme = "tw-light"
+  } else if (
+    localStorage.theme === "tw-dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
     theme.global.name.value = "dark"
     document.documentElement.classList.add("tw-dark")
+    localStorage.theme = "tw-dark"
   }
   mode.value = theme.global.name.value
 }

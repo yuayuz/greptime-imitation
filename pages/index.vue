@@ -12,13 +12,13 @@
 
 <script setup lang="ts">
 import { definePageMeta } from "#imports"
-import EnterprisePage from "~/pages/enterprisePage.vue"
-import IndexFooterPage from "~/pages/footerPage.vue"
-import GreptimeCloudPage from "~/pages/greptimeCloudPage.vue"
-import GreptimeDBPage from "~/pages/greptimeDBPage.vue"
-import HomePage from "~/pages/homePage.vue"
-import IntegratedSolutionPage from "~/pages/integratedSolutionPage.vue"
-import OptimizedPage from "~/pages/optimizedPage.vue"
+import EnterprisePage from "~/pages/EnterprisePage.vue"
+import IndexFooterPage from "~/pages/FooterPage.vue"
+import GreptimeCloudPage from "~/pages/GreptimeCloudPage.vue"
+import GreptimeDBPage from "~/pages/GreptimeDBPage.vue"
+import HomePage from "~/pages/HomePage.vue"
+import IntegratedSolutionPage from "~/pages/IntegratedSolutionPage.vue"
+import OptimizedPage from "~/pages/OptimizedPage.vue"
 
 definePageMeta({
   layout: "nav-bar-layout",

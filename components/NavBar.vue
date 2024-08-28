@@ -284,7 +284,5 @@ const darkMode = () => {
 </script>
 
 <style scoped lang="scss">
-.v-btn {
-  text-transform: none !important;
-}
+@import "@/stylus/button.css";
 </style>

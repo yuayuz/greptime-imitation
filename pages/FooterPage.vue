@@ -199,7 +199,5 @@ const image = [github, youtube, twitter, slack, linkedin, rss]
 </script>
 
 <style scoped>
-.v-btn {
-  text-transform: none !important;
-}
+@import "@/stylus/button.css";
 </style>

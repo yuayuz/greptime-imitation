@@ -82,7 +82,5 @@ const message = [
 </script>
 
 <style scoped>
-.v-btn {
-  text-transform: none !important;
-}
+@import "@/stylus/button.css";
 </style>

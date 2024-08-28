@@ -34,11 +34,5 @@ const { t } = useI18n()
 </script>
 
 <style scoped>
-.list {
-  list-style-type: disc;
-
-  ::marker {
-    color: #7afbe6;
-  }
-}
+@import "@/stylus/list.css";
 </style>

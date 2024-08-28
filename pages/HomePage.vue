@@ -76,7 +76,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
 
-import homeImage from "/public/home-bg0.png"
+import homeImage from "/public/home_bg0.png"
 
 const { t } = useI18n()
 </script>

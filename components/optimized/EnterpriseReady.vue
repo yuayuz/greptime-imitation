@@ -13,9 +13,8 @@
 </template>
 
 <script setup lang="ts">
+import EnterpriseReadySvg from "public/svg/optimized/svg_check.svg"
 import { useI18n } from "vue-i18n"
-
-import EnterpriseReadySvg from "~/public/svg/optimized/EnterpriseReadySvg.svg"
 
 const { t } = useI18n()
 const list = [

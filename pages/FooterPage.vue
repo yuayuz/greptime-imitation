@@ -156,16 +156,16 @@
 </template>
 
 <script setup lang="ts">
+import language from "public/svg/footer/svg_language.svg"
 import { useI18n } from "vue-i18n"
 
 import github from "/public/github.png"
 import linkedin from "/public/linkedin.png"
-import logo from "/public/logo-text.png"
+import logo from "/public/logo_text.png"
 import rss from "/public/rss.png"
 import slack from "/public/slack.png"
 import twitter from "/public/twitter.png"
 import youtube from "/public/youtube.png"
-import language from "~/public/svg/footer/language.svg"
 
 const { locale, t } = useI18n()
 const products = [

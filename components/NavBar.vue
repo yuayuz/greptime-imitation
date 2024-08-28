@@ -253,10 +253,9 @@
 </template>
 
 <script setup lang="ts">
+import image from "public/logo_text.png"
 import { ref } from "vue"
 import { useTheme } from "vuetify"
-
-import image from "~/public/logo-text.png"
 
 const onProductOpen = ref(false)
 const onSolutionOpen = ref(false)

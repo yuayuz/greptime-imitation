@@ -76,12 +76,11 @@
 </template>
 
 <script setup lang="ts">
+import AdvancedFeatures from "public/svg/enterprise/svg_features.svg"
+import DeploymentOptions from "public/svg/enterprise/svg_options.svg"
+import EnterpriseReady from "public/svg/enterprise/svg_ready.svg"
+import TechnicalServices from "public/svg/enterprise/svg_services.svg"
 import { useI18n } from "vue-i18n"
-
-import AdvancedFeatures from "~/public/svg/enterprise/AdvancedFeatures.svg"
-import DeploymentOptions from "~/public/svg/enterprise/DeploymentOptions.svg"
-import EnterpriseReady from "~/public/svg/enterprise/EnterpriseReady.svg"
-import TechnicalServices from "~/public/svg/enterprise/TechnicalServices.svg"
 
 const { t } = useI18n()
 const svg = [

@@ -77,11 +77,10 @@
 </template>
 
 <script setup lang="ts">
+import Cloud from "public/svg/integratedSolution/svg_cloud.svg"
+import LowerData from "public/svg/integratedSolution/svg_data.svg"
+import EdgeDatabase from "public/svg/integratedSolution/svg_database.svg"
 import { useI18n } from "vue-i18n"
-
-import Cloud from "~/public/svg/integratedSolution/Cloud.svg"
-import EdgeDatabase from "~/public/svg/integratedSolution/EdgeDatabase.svg"
-import LowerData from "~/public/svg/integratedSolution/LowerData.svg"
 
 const { t } = useI18n()
 const integratedSolutionCardMessage = [

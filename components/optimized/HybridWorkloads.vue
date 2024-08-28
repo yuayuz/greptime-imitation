@@ -28,12 +28,11 @@
 </template>
 
 <script setup lang="ts">
+import Analytics from "public/svg/optimized/svg_analytics.svg"
+import Events from "public/svg/optimized/svg_events.svg"
+import Metrics from "public/svg/optimized/svg_metrics.svg"
+import Streaming from "public/svg/optimized/svg_streaming.svg"
 import { useI18n } from "vue-i18n"
-
-import Analytics from "~/public/svg/optimized/Analytics.svg"
-import Events from "~/public/svg/optimized/Events.svg"
-import Metrics from "~/public/svg/optimized/Metrics.svg"
-import Streaming from "~/public/svg/optimized/Streaming.svg"
 
 const { t } = useI18n()
 const svg = [

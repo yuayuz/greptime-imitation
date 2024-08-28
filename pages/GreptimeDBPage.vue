@@ -59,12 +59,11 @@
 </template>
 
 <script setup lang="ts">
+import UnifiedAnalysis from "public/svg/greptimeDB/svg_analysis.svg"
+import Compatibility from "public/svg/greptimeDB/svg_compatibility.svg"
+import CostEffective from "public/svg/greptimeDB/svg_cost.svg"
+import ScalingHorizontally from "public/svg/greptimeDB/svg_scaling.svg"
 import { useI18n } from "vue-i18n"
-
-import Compatibility from "~/public/svg/greptimeDB/Compatibility.svg"
-import CostEffective from "~/public/svg/greptimeDB/CostEffective.svg"
-import ScalingHorizontally from "~/public/svg/greptimeDB/ScalingHorizontally.svg"
-import UnifiedAnalysis from "~/public/svg/greptimeDB/UnifiedAnalysis.svg"
 
 const { t } = useI18n()
 const svg = [ScalingHorizontally, UnifiedAnalysis, CostEffective, Compatibility]

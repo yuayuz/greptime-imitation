@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import user_avatar from "public/user-avatar.png"
+import user_avatar from "public/user_avatar.png"
 import { useI18n } from "vue-i18n"
 
 interface Props {

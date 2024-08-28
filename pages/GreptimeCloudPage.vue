@@ -63,12 +63,11 @@
 </template>
 
 <script setup lang="ts">
+import Cloud from "public/svg/greptimeCloud/svg_cloud.svg"
+import Experience from "public/svg/greptimeCloud/svg_experience.svg"
+import Integrations from "public/svg/greptimeCloud/svg_Integrations.svg"
+import ServerlessScaling from "public/svg/greptimeCloud/svg_scaling.svg"
 import { useI18n } from "vue-i18n"
-
-import Cloud from "~/public/svg/greptimeCloud/Cloud.svg"
-import Experience from "~/public/svg/greptimeCloud/Experience.svg"
-import Integrations from "~/public/svg/greptimeCloud/Integrations.svg"
-import ServerlessScaling from "~/public/svg/greptimeCloud/ServerlessScaling.svg"
 
 const { t } = useI18n()
 const svg = [Integrations, Experience, ServerlessScaling, Cloud]

@@ -56,7 +56,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
 
-import sqlTitle from "/public/sql-title.png"
+import sqlTitle from "/public/sql_title.png"
 
 const { t } = useI18n()
 </script>

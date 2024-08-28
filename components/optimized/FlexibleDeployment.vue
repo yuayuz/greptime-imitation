@@ -28,12 +28,11 @@
 </template>
 
 <script setup lang="ts">
+import OnTheCloud from "public/svg/optimized/svg_cloud.svg"
+import TrafficCosts from "public/svg/optimized/svg_costs.svg"
+import AtEdge from "public/svg/optimized/svg_edge.svg"
+import NetworkResilience from "public/svg/optimized/svg_network.svg"
 import { useI18n } from "vue-i18n"
-
-import AtEdge from "~/public/svg/optimized/AtEdge.svg"
-import NetworkResilience from "~/public/svg/optimized/NetworkResilience.svg"
-import OnTheCloud from "~/public/svg/optimized/OnTheCloud.svg"
-import TrafficCosts from "~/public/svg/optimized/TrafficCosts.svg"
 
 const { t } = useI18n()
 const svg = [

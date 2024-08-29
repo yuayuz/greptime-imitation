@@ -16,12 +16,12 @@
         </p>
         <div class="tw-flex tw-space-x-5">
           <button
-            class="tw-rounded-md tw-bg-zinc-100 tw-px-12 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-transition-shadow hover:tw-opacity-80 hover:tw-shadow-2xl dark:tw-shadow-gray-500"
+            class="tw-rounded-md tw-bg-zinc-100 tw-px-12 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-transition-shadow hover:tw-scale-105 hover:tw-opacity-80 dark:tw-shadow-gray-500"
           >
             {{ t("home.button1") }}
           </button>
           <button
-            class="tw-rounded-md tw-border tw-border-white tw-px-8 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-shadow-white hover:tw-shadow-2xl hover:tw-shadow-white dark:tw-shadow-white"
+            class="tw-rounded-md tw-border tw-border-white tw-px-8 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-shadow-white hover:tw-scale-105 dark:tw-shadow-white"
           >
             {{ t("home.button2") }}
           </button>
@@ -53,12 +53,12 @@
             </p>
             <div class="tw-flex tw-space-x-5">
               <button
-                class="tw-rounded-md tw-bg-zinc-100 tw-px-12 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-transition-shadow hover:tw-opacity-80 hover:tw-shadow-2xl dark:tw-shadow-gray-500"
+                class="tw-rounded-md tw-bg-zinc-100 tw-px-10 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-transition-shadow hover:tw-scale-105 hover:tw-opacity-80 dark:tw-shadow-gray-500"
               >
                 {{ t("home.button1") }}
               </button>
               <button
-                class="tw-rounded-md tw-border tw-border-white tw-px-8 tw-py-2 tw-text-lg tw-text-black tw-shadow tw-shadow-white hover:tw-shadow-2xl hover:tw-shadow-white dark:tw-shadow-white"
+                class="tw-rounded-md tw-border tw-border-white tw-px-6 tw-py-2 tw-text-lg tw-text-white tw-shadow tw-shadow-white hover:tw-scale-105 hover:tw-shadow-white"
               >
                 {{ t("home.button2") }}
               </button>

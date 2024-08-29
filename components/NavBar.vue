@@ -235,7 +235,7 @@
           <nav-bar-button>Contact us</nav-bar-button>
           <nav-bar-button>Sign in</nav-bar-button>
           <button
-            class="tw-rounded-md tw-bg-violet-600 tw-px-4 tw-py-1 tw-text-base tw-text-white tw-shadow tw-delay-150 tw-ease-in-out hover:tw--translate-y-1 hover:tw-scale-110 hover:tw-transform"
+            class="tw-rounded-md tw-bg-violet-600 tw-px-4 tw-py-1 tw-text-base tw-text-white tw-shadow tw-delay-150 tw-ease-in-out hover:tw-scale-110 hover:tw-transform"
           >
             Start Instantly
           </button>

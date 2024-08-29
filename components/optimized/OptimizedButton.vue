@@ -1,11 +1,12 @@
 <template>
   <div
-    class="tw-h-[5.2rem] tw-w-full tw-rounded-md tw-border tw-py-[1.4rem] tw-pl-8 tw-shadow-xl hover:tw-border-purple-900 hover:tw-shadow-xl hover:tw-shadow-violet-400 dark:tw-border-slate-400 dark:tw-shadow dark:tw-shadow-white"
+    class="tw-h-[5.2rem] tw-w-full tw-rounded-md tw-border tw-py-[1.4rem] tw-pl-8 tw-shadow-xl hover:tw-border-purple-900"
     :class="
       model === props.model
-        ? 'tw-scale-110 tw-border-2 tw-border-purple-900 tw-shadow-xl tw-shadow-purple-400 dark:tw-border-purple-900 dark:tw-shadow-xl dark:tw-shadow-purple-900'
-        : ''
+        ? 'tw-scale-110 tw-border-2 tw-border-purple-400 tw-shadow-xl'
+        : 'dark:tw-border-zinc-800'
     "
+    style="transform-origin: left"
   >
     <div
       class="tw-flex tw-cursor-pointer tw-space-x-4"

@@ -47,11 +47,19 @@
       </greptime-d-b-card>
     </div>
     <div class="tw-flex tw-justify-center tw-space-x-6">
-      <v-btn color="white" density="default" class="hover:tw-scale-105"
+      <v-btn
+        color="white"
+        size="large"
+        density="default"
+        class="hover:tw-scale-105"
         >GreptimePlay
       </v-btn>
 
-      <v-btn variant="outlined" density="default" class="hover:tw-scale-105"
+      <v-btn
+        variant="outlined"
+        size="large"
+        density="default"
+        class="hover:tw-scale-105"
         >{{ t("GreptimeDB.Button") }}
       </v-btn>
     </div>

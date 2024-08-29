@@ -27,7 +27,7 @@
           color="white"
           density="default"
           width="181"
-          class="tw-text-base tw-font-black hover:tw-scale-105"
+          class="tw-text-2xl tw-font-black hover:tw-scale-105"
           >{{ t("GreptimeCloud.Button") }}
         </v-btn>
       </div>
@@ -55,7 +55,7 @@
         color="white"
         density="default"
         width="181"
-        class="tw-text-base tw-font-black hover:tw-scale-105"
+        class="tw-text-2xl tw-font-black hover:tw-scale-105"
         >{{ t("GreptimeCloud.Button") }}
       </v-btn>
     </div>

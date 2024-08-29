@@ -62,6 +62,7 @@
                   title="GreptimeDB Enterprise"
                   subtitle="GreptimeDB with advanced and enterprise features."
                   lines="two"
+                  @click="navigate('enterprise')"
                   prepend-icon="mdi-circle-medium"
                 >
                 </v-list-item>
@@ -257,6 +258,8 @@ import image from "public/logo_text.png"
 import { ref } from "vue"
 import { useTheme } from "vuetify"
 
+import { navigateTo } from "#imports"
+
 const onProductOpen = ref(false)
 const onSolutionOpen = ref(false)
 const onResourcesOpen = ref(false)
@@ -280,6 +283,11 @@ const darkMode = () => {
     localStorage.theme = "tw-dark"
   }
   mode.value = theme.global.name.value
+}
+function navigate(page: string) {
+  return navigateTo({
+    path: `/${page}`,
+  })
 }
 </script>
 

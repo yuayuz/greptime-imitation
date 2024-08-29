@@ -1,7 +1,7 @@
 <template>
   <nav-bar v-model="hidden" />
-  <div class="tw-h-full tw-pt-[4.25rem]" :hidden="hidden">
-    <div class="tw-h-full">
+  <div class="tw-h-full tw-pt-[5rem]" :hidden="hidden">
+    <div class="tw-mx-auto tw-h-full 2xl:tw-w-[82.5rem]">
       <slot />
     </div>
   </div>

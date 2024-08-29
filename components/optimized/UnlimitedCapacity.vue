@@ -2,12 +2,12 @@
   <div class="tw-flex tw-justify-between">
     <div class="tw-w-full" v-for="n in 3" :key="n">
       <div
-        class="tw-mx-auto tw-w-4/5 tw-rounded-lg dark:tw-border dark:tw-border-white dark:tw-shadow dark:tw-shadow-white"
+        class="tw-mx-auto tw-w-4/5 tw-rounded-md tw-outline tw-outline-white dark:tw-outline dark:tw-outline-zinc-500"
       >
         <v-card
           color="deep-purple-accent-4"
           height="129"
-          class="tw-flex tw-w-full tw-content-center tw-rounded-lg"
+          class="tw-flex tw-w-full tw-content-center tw-rounded-3xl"
         >
           <div class="tw-justify-center tw-space-y-1 tw-text-center">
             <div class="tw-text-4xl tw-font-bold">{{ title[n - 1] }}</div>

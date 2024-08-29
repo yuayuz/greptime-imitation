@@ -36,7 +36,7 @@
 
       <v-carousel
         height="370.75"
-        class="tw-border tw-shadow-violet-400 dark:tw-border-white"
+        class="tw-border tw-shadow-violet-400 dark:tw-border-zinc-800"
         :cycle="true"
         hide-delimiters
         v-model="model"

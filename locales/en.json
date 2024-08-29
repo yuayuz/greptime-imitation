@@ -155,5 +155,12 @@
       "Button": "subscribe"
     },
     "Footer": "©Copyright 2024 Greptime Inc. All Rights Reserved"
+  },
+  "EnterprisePage": {
+    "Enterprise": {
+      "Title": "GreptimeDB Enterprise",
+      "Message": "GreptimeDB Enterprise Edition tailors time-series database solutions to the specific business needs of enterprises, providing customized solutions and 24/7 rapid technical support. This reduces data usage costs and enhances data usage efficiency for businesses.",
+      "Button": "Request a Demo"
+    }
   }
 }

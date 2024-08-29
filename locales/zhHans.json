@@ -155,5 +155,12 @@
       "Button": "订阅"
     },
     "Footer": "©2024 格睿云(北京)技术咨询有限公司 | 京ICP备 2023008042号 | 京公网安备 11010502052203号"
+  },
+  "EnterprisePage": {
+    "Enterprise": {
+      "Title": "GreptimeDB 企业版",
+      "Message": "GreptimeDB 企业版根据企业的业务实际需求，为企业提供定制级时序数据解决方案及 7*24 小时快速技术支持等。降低企业数据使用成本、提高企业数据使用效率。",
+      "Button": "Request a Demo"
+    }
   }
 }

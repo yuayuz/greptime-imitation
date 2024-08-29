@@ -13,6 +13,7 @@
     "@mdi/font": "^7.4.47",
     "@nuxtjs/i18n": "^8.5.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "highlight.js": "^11.10.0",
     "nuxt": "^3.12.4",
     "vue": "latest",
     "vuetify-nuxt-module": "^0.17.1"
